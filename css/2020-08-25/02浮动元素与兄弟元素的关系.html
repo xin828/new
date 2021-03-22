@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*浮动元素和兄弟之间的关系
+            前提条件:在一个父盒子中,如果 前一个兄弟元素是
+            1.浮动元素,当前盒子(也是浮动的)会与前一个盒子的顶部对齐
+            2.是标准流,那么当前的盒子会显示在前一个兄弟的下方.
+
+            总结:浮动元素只会影响当前的或者是后面的标准流盒子,不会影响前面的标准流.
+         */
+        .father {
+            width: 500px;
+            height: 400px;
+            background: pink;
+            padding: 10px;
+            border: 10px solid orange;
+        }
+
+        .son1,
+        .son2,
+        .son3 {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        .son1 {
+            float: left;
+        }
+
+        .son2 {
+            text-align:center;
+            background-color: green;
+        }
+
+        .son3 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 要比较兄弟元素浮动带来的影响  
+        1.要探讨浮动元素对前面兄弟元素的影响
+        2.浮动元素对后面兄弟元素的影响
+    -->
+    <div class="father">
+        <div class="son1">1</div>
+        <div class="son2">2</div>
+        <div class="son3">3</div>
+    </div>
+</body>
+
+</html>

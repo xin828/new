@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.w900{
+    width: 900px;
+    margin: auto;
+}
+li{
+    list-style: none;
+}
+/* 通栏 */
+.nav{
+     background-color: pink;
+     height: 80px;
+}
+.area{
+   height: 80px;
+   background-color:red;
+}
+.menu ul{
+    width: 908px;
+    height: 150px;
+}
+.menu ul li{
+    float: left;
+    width: 217px;
+    height: 150px;
+    margin-right: 10px;
+    background-color: pink;
+}
+.menu .list2{
+    background-color: orangered;
+}
+.menu .list3{
+    background-color: pink;
+}
+.menu .list4{
+    background-color: yellow;
+}
+.content{
+    height: 500px;
+    background-color: skyblue;
+}
+.con-lt{
+    float: left;
+    width: 300px;
+    height: 498px;
+    background-color:orange;
+    border: 1px solid red;
+}
+.con-rt{
+    float: right;
+    width: 588px;
+    height: 500px;
+    background-color:green;
+}
+.foother{
+    height: 100px;
+    background-color:#000;
+}

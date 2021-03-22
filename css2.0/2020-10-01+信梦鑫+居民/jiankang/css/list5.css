@@ -1,0 +1,182 @@
+/* 头部开始 */
+
+.head {
+    width: 100%;
+    height: 50px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+.hd a {
+    line-height: 50px;
+}
+
+.hd span {
+    font-size: 12px;
+    color: #6e6e6e;
+    margin: 0 8px;
+}
+
+.hd i {
+    font-size: 12px;
+    color: #a6a6a6;
+}
+
+
+/* 头部结束 */
+
+
+/* 内容开始 */
+
+.content h2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin: 24px 0 24px 10px;
+}
+
+.name {
+    position: relative;
+    width: 1200px;
+    height: 590px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 40px;
+}
+
+.account span {
+    display: block;
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    margin-bottom: 7px;
+    background: url("../img/shimin_step.png") no-repeat;
+    background-size: 38px 38px;
+}
+
+.account .one {
+    background: url("../img/shimin_cur.png") no-repeat;
+}
+
+.account .hu {
+    color: #7dbddd;
+}
+
+.account i {
+    color: #666;
+    font-size: 12px;
+}
+
+.account {
+    margin: 66px 0 0 229px;
+}
+
+.gy {
+    display: inline-block;
+    width: 280px;
+    height: 3px;
+    background-color: #b9b9b9;
+    margin: 15px 10px 0 0;
+}
+
+.codes .red {
+    color: #ff0000;
+}
+
+.codes {
+    width: 700px;
+    margin: 50px 0 0 149px;
+}
+
+.text {
+    width: 412px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    color: #757575;
+    font-size: 12px;
+    margin-left: 5px;
+    text-indent: 12px;
+    border: 1px solid #e8e8e8;
+}
+
+.suru {
+    width: 290px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    color: #757575;
+    font-size: 12px;
+    margin-left: 5px;
+    text-indent: 12px;
+    border: 1px solid #e8e8e8;
+}
+
+.codes span {
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin: 8px 0 10px 50px;
+    background: url("../img/tip_icon.png") no-repeat;
+}
+
+.codes .me {
+    font-size: 14px;
+    color: #000;
+}
+
+.codes em {
+    color: #3388ff;
+    font-size: 14px;
+}
+
+.dl {
+    margin: 22px 0 0 52px;
+}
+
+.yan {
+    margin-left: 10px;
+}
+
+.down {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #00aaee;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 8px;
+}
+
+.box {
+    margin: 15px 0 0 52px;
+}
+
+.dl .mes {
+    color: #3388ff;
+}
+
+.explain {
+    position: absolute;
+    top: 186px;
+    right: 346px;
+}
+
+.explain h5 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.explain p {
+    font-size: 12px;
+    color: #333;
+}
+
+
+/* 内容结束 */

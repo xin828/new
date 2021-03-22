@@ -1,0 +1,251 @@
+/*轮播图开始*/
+
+.banner {
+    width: 100%;
+    height: 502px;
+    background: url("../img/cc_01.jpg") no-repeat;
+}
+
+.nav {
+    height: 102px;
+    padding-top: 47px;
+}
+
+.nav-t li {
+    float: left;
+    height: 102px;
+    width: 173px;
+    font-size: 18px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.nav-t li:last-child {
+    padding-right: 5px;
+}
+
+.nav-t .regard {
+    line-height: 102px;
+    font-size: 18px;
+}
+
+.nav .navs {
+    position: fixed;
+    top: 50px;
+    left: 160px;
+    width: 1582px;
+    z-index: 2;
+    border-bottom: 5px solid #007579;
+    background-color: #fff;
+}
+
+.nav-t p {
+    line-height: 35px;
+    margin-right: 20px;
+}
+
+.nav-t .one,
+.two,
+.three,
+.four,
+.five {
+    transition: all 1s;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+li:hover .one {
+    height: 330px;
+}
+
+li:hover .two {
+    height: 330px;
+}
+
+li:hover .three {
+    height: 330px;
+}
+
+li:hover .four {
+    height: 330px;
+}
+
+li:hover .five {
+    height: 190px;
+}
+
+.nav-t li:first-child {
+    padding-left: 40px;
+}
+
+.navs a {
+    font-size: 20px;
+    color: #333;
+}
+
+.nav-t span {
+    color: #333;
+    font-size: 8px;
+    margin-left: 8px;
+}
+
+.nav-b ul {
+    margin-left: 360px;
+}
+
+.nav-b li {
+    float: left;
+    margin-right: 65px;
+}
+
+.nav-b {
+    text-align: center;
+}
+
+.nav-b h2 {
+    font-size: 53px;
+    font-weight: 400;
+    color: #fff;
+    margin: 100px 0 36px 0;
+}
+
+.nav-b span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.nav-b li:hover span {
+    background-color: #007579;
+}
+
+.nav-b i {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* 轮播图开始 */
+
+
+/* 内容开始 */
+
+.content {
+    width: 100%;
+    padding: 78px 0 111px 0;
+    background-color: #f0f3f6;
+}
+
+.car li {
+    float: left;
+    width: 384px;
+    height: 577px;
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+.car ul {
+    margin-bottom: 70px;
+}
+
+.car li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.car li:hover {
+    box-shadow: 0 0 7px 4px rgba(0, 0, 0, .1);
+}
+
+.car li:hover span {
+    background-color: #007579;
+    color: #fff;
+}
+
+.car li:hover em {
+    border: 1px solid #fff;
+}
+
+.car h2 {
+    font-size: 24px;
+    color: #595757;
+    text-align: center;
+}
+
+.car .carry {
+    color: #007579;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.car i {
+    display: block;
+    width: 338px;
+    height: 2px;
+    background-color: #ebebeb;
+    margin: 24px 0 20px 23px;
+}
+
+.car p {
+    color: #595757;
+    font-size: 16px;
+    margin: 0 0 8px 23px;
+}
+
+.car span {
+    display: inline-block;
+    width: 190px;
+    height: 48px;
+    font-size: 16px;
+    color: #6c6c6c;
+    background-color: #dcdddd;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.car em {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+    border: 1px solid #6c6c6c;
+}
+
+.dot {
+    padding-top: 53px;
+}
+
+.dot li {
+    float: left;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 55px;
+    font-size: 25px;
+    color: #4b4847;
+    text-align: center;
+    margin-right: 13px;
+}
+
+.dot li:hover {
+    background-color: #e60012;
+    color: #fff;
+}
+
+.dot li:hover a {
+    color: #fff;
+}
+
+.dot li a {
+    font-size: 19px;
+    color: #4b4847;
+}
+
+
+/* 内容结束 */

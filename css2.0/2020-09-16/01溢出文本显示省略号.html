@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        white-space   设置文本的显示方式
+        normal   默认处理方式
+        nowrap   强制一行显示 ,不断行
+        */
+        /* 
+        text-overflow   文本溢出
+        clip   文本溢出的时候裁剪,不显示省略标记
+        ellipsis    当文本溢出的时候显示省略号
+        */
+        
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+        
+        p {
+            /* 单行文本溢出显示省略号,要搭配overflow:hidden使用 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+    </div>
+</body>
+
+</html>

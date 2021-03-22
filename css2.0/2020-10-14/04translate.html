@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* transform:translate(x,y)  x表示的水平移动   y表示的垂直方向移动
+            transform:translateX()   表示设置x轴方向移动
+             transform:translateY()   表示设置y轴方向移动
+
+
+             特点:
+             1.最大的优势是不会影响其他的元素
+             2.translate中的100%单位.是相对于本身的宽度和高度来进行计算的
+             3.对行内标签无效
+        */
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            /* 谁发生变化就给谁设置过渡 */
+            transition: all 0.3s;
+            margin-bottom: 20px;
+        }
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* 谁发生变化就给谁设置过渡 */
+            transition: all 0.3s;
+        }
+        /* 还是通过hover  来展示位移 */
+        
+        .box:hover {
+            transform: translate(100px, 100px);
+            /* 如果我们只需要设置一个方向   translate(x,y)不可省略,可以设置为0 */
+            /* transform: translate(100px,0); */
+            /* 如果只需要设置x方向 */
+            /* transform:translateX(200px); */
+            /* 如果只需要设置y方向 */
+            transform: translateX(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

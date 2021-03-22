@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            flex-basis   设置项目的大小(项目将占据固定空间)   定义在计算剩余空间之前,默认值为auto   跟设置width或者height一样
+        */
+        
+        .wrap {
+            display: flex;
+            width: 700px;
+            height: 500px;
+            background-color: hotpink;
+        }
+        
+        .wrap span {
+            width: 100px;
+            height: 50px;
+            background-color: orange;
+        }
+        
+        .wrap span:nth-child(2) {
+            flex-basis: 200px;
+        }
+        
+        .wrap span:nth-child(2n) {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除浮动方法2
+            给父盒子设置overflow:hidden
+         */
+          .box1{
+            
+            width: 800px; 
+            margin: auto;
+            background-color:green;
+            overflow:hidden;
+            /* overflow:auto; */
+            /* overflow:scroll;   带滚动条*/
+        }
+        .son1,
+        .son2{
+            float: left;
+            width: 200px;
+            height: 100px;
+            background-color:sandybrown ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="son1">1</div>
+        <div class="son2">2</div>
+    </div>
+</body>
+</html>

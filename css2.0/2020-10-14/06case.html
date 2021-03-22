@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            border-radius: 20px;
+            border: 2px solid #ccc;
+            overflow: hidden;
+        }
+        
+        .box:after {
+            position: absolute;
+            left: -1px;
+            bottom: -43px;
+            content: "";
+            width: 123px;
+            height: 42px;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, .3);
+            z-index: -1;
+            transition: all .7s;
+        }
+        
+        .box:hover::after {
+            display: block;
+            bottom: -1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span>搜索</span>
+    </div>
+</body>
+
+</html>

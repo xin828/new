@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* box-sizing表示的是css3盒子模型
+            属性值:
+            content-box   表示的是传统的盒子模型
+            盒子的大小=widt/height+padding+border
+
+            
+            border-box     表示的ie的盒子模型
+            盒子的大小   width ( 包含了padding 和border  大小)
+
+        */
+        
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            /* 设置盒子模型  会撑大盒子*/
+            box-sizing: content-box;
+            padding: 10px;
+            border: 10px solid #000;
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /* 设置盒子模型 不会把盒子撑大  但内容的宽度会减小*/
+            box-sizing: border-box;
+            padding: 10px;
+            border: 10px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <br>
+    <div class="box2"></div>
+</body>
+
+</html>

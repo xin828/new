@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid rgb(189, 66, 189);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext("2d");
+
+        /* 
+            鼠标移动的时候绘制小球
+            小球继续做动画
+
+            绘制小球 - 鼠标移动时收集arc的五个参数
+            定时器 绘制小球 改变圆心和半径的数据 重新绘制
+
+        */
+
+        // 记录小球初始状态的半径
+        var maxRadius = 10;
+
+        //记录所有小球的数据
+        var circleArr = [];
+
+        // 设置半径每次减小的频率
+        var rate = 0.5;
+
+        //定义斜边的长
+        var del = 4;
+
+        canvas.onmousemove = function(e) {
+            //收集arc的五个参数
+            //圆心的位置
+            var curX = e.offsetX;
+            var curY = e.offsetY;
+
+            //定义一个随机的角度 方便圆心扩散
+            var deg = Math.floor(Math.random() * 360);
+
+            circleArr.push({
+                x: curX,
+                y: curY,
+                r: maxRadius,
+                color: getRandomColor(),
+                dx: Math.random() * del * Math.sin(deg * Math.PI / 180),
+                dy: Math.random() * del * Math.cos(deg * Math.PI / 180),
+            })
+        }
+
+        //定时器控制小球动画
+        setInterval(() => {
+            //单纯的改数据
+            circleArr.forEach((item, idx) => {
+                //半径逐渐减小
+                item.r -= rate;
+
+                //改圆心的位置
+                item.x += item.dx;
+                item.y += item.dy;
+
+                //判断如果半径小于0就不能画 数据要删除
+                if (item.r < 0) {
+                    circleArr.splice(idx, 1);
+                }
+
+            })
+
+            //清除画布
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            circleArr.forEach(item => {
+                ctx.beginPath();
+                ctx.arc(item.x, item.y, item.r, 0, Math.PI * 2);
+                ctx.fillStyle = item.color;
+                ctx.fill();
+            })
+        }, 50)
+
+        //获取随机颜色的方法
+        function getRandomColor() {
+            var r = parseInt(Math.random() * 256);
+            var g = parseInt(Math.random() * 256);
+            var b = parseInt(Math.random() * 256);
+
+            return `rgb(${r},${g},${b})`;
+        }
+    </script>
+</body>
+
+</html>

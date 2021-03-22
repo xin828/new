@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .nav {
+            width: 200px;
+            height: 175px;
+            background-color: #fff;
+            margin: 200px;
+            border-radius: 50%;
+            transition: all .5s;
+            padding-top: 25px;
+            transform: scale(1.05, 1.05);
+        }
+        
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            border-radius: 50%;
+            margin: auto;
+        }
+        
+        .nav:hover {
+            border: 5px solid red;
+        } */
+        
+        .wrap {
+            position: relative;
+            display: block;
+            width: 130px;
+            height: 130px;
+            margin: 100px;
+            background-color: skyblue;
+            border-radius: 50%;
+        }
+        
+        .wrap:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            width: 127px;
+            height: 127px;
+            border-radius: 50%;
+            border: 2px solid skyblue;
+            transition: all .8s;
+        }
+        
+        .wrap:hover::after {
+            transform: scale(1.2, 1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="wrap"></a>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 从小到大 */
+        
+        @media screen and (min-width:320px) {
+            html {
+                font-size: 20px;
+            }
+            body {
+                background-color: green;
+            }
+        }
+        
+        @media screen and (min-width:750px) {
+            html {
+                font-size: 16px;
+            }
+            body {
+                background-color: yellow;
+            }
+        }
+        
+        @media screen and (min-width:1080px) {
+            html {
+                font-size: 14px;
+            }
+            body {
+                background-color: skyblue;
+            }
+        }
+        
+        p {
+            line-height: 2rem;
+            font-size: 1.5rem;
+            background-color: pink;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p>这是一段文字</p>
+</body>
+
+</html>

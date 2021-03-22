@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         /* 块元素转换成行内元素 
+         display：inline；
+         
+          */
+          .box{
+              display: inline;
+              background-color: coral;
+          }
+          span{
+              /* 行内元素转换为块元素 */
+              display: block;
+              background-color: cyan;
+              width: 200px;
+              height: 100px;
+          }
+          .wrap{
+              display: inline-block;
+              background-color: darkorange;
+              width: 200px;
+              height: 100px;
+          }
+          .skip{
+                display: block;
+                background-color: cyan;
+          }
+          .sina{
+            display:inline-block;
+          }
+
+
+          /* 
+            总结:
+            显示模式的转换
+            1.转换块元素  display:block;
+            2.转换成行内元素 display:inline;
+            3.转换行内块元素 display:inline-block;
+          
+          
+           */
+     </style>
+ </head>
+ <body>
+     <!-- 块级元素转换成行内元素 -->
+    
+     <div class="box">哈哈哈哈</div>
+     <div class="box">哈哈哈哈</div>
+     <!-- 行内元素转换成块元素 -->
+     <span>hh</span>
+     <span>pp</span>
+     <a href="#" class="skip">百度</a>
+     <!-- 块元素/行内元素转成行内块元素 -->
+     <div class="wrap">div是一个块元素</div>
+     <div class="wrap">div是一个块元素</div>
+     <a href="#" class="sina">新浪</a>
+ </body>
+ </html>

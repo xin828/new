@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var myCanvas = document.querySelector('canvas');
+        var ctx = myCanvas.getContext('2d');
+        ctx.beginPath();
+        // ctx.moveTo(100, 100);
+        // ctx.lineTo(200, 100);
+
+        // ctx.moveTo(100, 100);
+        // ctx.lineTo(100, 200);
+
+        // ctx.moveTo(200, 100);
+        // ctx.lineTo(100, 200);
+
+        // ctx.moveTo(400, 100);
+        // ctx.lineTo(200, 100);
+
+        // ctx.moveTo(400, 100);
+        // ctx.lineTo(100, 200);
+
+        /* 起始点和lineTo的结束点无法完全闭合,有缺角 */
+        ctx.moveTo(100, 100);
+        ctx.lineTo(200, 100);
+        ctx.lineTo(200, 200);
+        // ctx.lineTo(100, 100);
+        /* 关闭路径 */
+        ctx.closePath();
+        ctx.lineWidth = 10;
+        // 描边
+        // ctx.stroke();
+        //填充
+        ctx.fillStyle = 'pink';
+        ctx.fill();
+    </script>
+</body>
+
+</html>

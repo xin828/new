@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        var cvsw = ctx.canvas.width;
+        var cvsh = ctx.canvas.height;
+
+        /* 分成的份数 */
+        var num = 6;
+
+        /* 定义圆的半径 */
+        var r = 150;
+
+        /* 一份有多少弧度 */
+        var angle = Math.PI * 2 / num;
+
+        /* 圆心坐标 */
+        var x0 = cvsw / 2;
+        var y0 = cvsh / 2;
+
+        /* 随机色 */
+        function getRandom() {
+            var r = parseInt(Math.random() * 256);
+            var g = parseInt(Math.random() * 256);
+            var b = parseInt(Math.random() * 256);
+            return "rgb(" + r + "," + g + "," + b + ")";
+            return `rgb(${r},${g},${b})`;
+
+        }
+
+        /* 上一次绘制的结束弧度是当前的起始弧度 */
+
+        for (var i = 0; i <= num; i++) {
+            ctx.beginPath();
+            var startAngle = i * angle;
+            var endAngle = (i + 1) * angle;
+            ctx.moveTo(x0, y0);
+            /* 绘制圆弧 */
+            ctx.arc(x0, y0, r, startAngle, endAngle);
+            ctx.fillStyle = getRandom();
+            ctx.fill();
+            // ctx.stroke();
+        }
+    </script>
+</body>
+
+</html>

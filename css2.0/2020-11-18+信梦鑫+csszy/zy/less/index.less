@@ -1,0 +1,240 @@
+/* 公共样式 */
+input,
+button {
+    outline: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/*公共样式结束*/
+/*第一区域开始*/
+.blue{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #B2C5CC;
+    padding-bottom: 200px;
+
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom:110px;
+    padding-top:45px;
+    .nav-t{
+        display: flex;
+        width: 500px;
+    }
+    .imoc{
+        display: none;
+    }
+}
+.nav-t{
+    li{
+      width: 20%;
+    }
+    
+}
+.nav-t a{
+    color: #757575;
+    font-size: 15px;
+}
+.nav-t li:nth-child(1) a{
+    color: #afafaf;
+}
+.blue{
+    p{
+        margin: 40px 0 78px 0;
+        color: #fff;
+        font-size: 16px;
+    }
+    .start{
+        width: 165px;
+        height: 47px;
+        margin: auto;
+        background-color: #fff;
+        line-height: 47px;
+    }
+}
+.start a{
+    color: #000;
+}
+
+/*第一区域结束*/
+
+/*第二区域开始*/
+.regard{
+    display: flex;
+    height: 78px;
+    width: 100%;
+    text-align: center;
+    line-height: 78px;
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    li{
+        width: 25%;
+    }
+    
+}
+.regard a{
+    color: #bababb;
+    font-size: 16px;
+}
+.regard li:nth-child(1) a{
+    color:#545454;
+}
+
+/*第二区域结束*/
+
+/*第三区域开始*/
+
+.reactive { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 110px 0;
+    h2{
+    font-size: 23px;
+    font-weight: 400;
+    color: #555555;
+    align-self: center;
+    margin-bottom: 35px;
+    }
+    p{
+        max-width: 430px;
+        font-size: 12px;
+        color: #aaaaaa;
+        line-height: 26px;
+        align-self: center;
+    }
+}
+/*第三区域结束*/
+
+/*第四区域开始*/
+.tmooc{
+    display: flex;
+    justify-content: space-between;
+    height: 78px;
+    background-color: #f4f4f4;
+    line-height: 78px;
+    box-sizing: border-box;
+    padding: 0 60px;
+    span{
+        color: #555555;
+        font-size: 16px;
+
+    }
+    a{
+        font-size: 13px;
+        color: #555555;
+    }
+}
+.tmooc a span{
+    font-size: 13px;
+    color: #0e0e0e;
+}
+/*第四区域结束*/
+
+/*第五区域开始*/
+.course{
+    display: flex;
+    padding: 76px 60px 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    background:url("../img/bg.jpg") no-repeat;
+    background-size:100% 690px;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-evenly;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 400;
+        color: #353535;
+        margin-bottom: 20px;
+    }
+}
+.course li img{
+    width:100%;
+    height: 100%;
+}
+.course ul li{
+    width: 32%;
+
+    margin:0 1% 2% 0;
+}
+
+/*第五区域结束*/
+
+/*第六区域结束*/
+.copy{
+    height: 68px;
+    background-color: #f1f1f1;
+    line-height: 68px;
+    text-align: center;
+    p{
+        font-size: 22px;
+        color: #000;
+    }
+}
+/*第六区域结束*/
+
+@media screen and (max-width:750px){
+   .nav-t{
+       height: 0;
+       overflow: hidden;
+   }
+   .nav{
+       flex-direction: column;
+       padding: 0;
+   }
+   .nav .imoc{
+       height: 80px;
+       width: 100%;
+       text-align: center;
+       line-height: 80px;
+       color:#fff;
+       display: block;
+       font-size: 22px;
+       background-color: #7ea6ae;
+   }
+   .square{
+        position: absolute;
+        right: 20px;
+        top:30px;
+       width: 20px;
+       height: 20px;
+       border:2px solid #afc9d6;
+   }
+   .course ul{
+      flex-wrap: wrap;
+       
+   }
+   .course ul li{
+       width: 48%;
+   }
+   .course{
+       background-size: 100% 725px;
+   } 
+   .tmooc{
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+       height: 110px;
+       line-height:0;
+   }
+   .copy{
+       p{
+           font-size: 10px;
+       }
+   }
+}
+
+

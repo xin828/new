@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script>
+        //操作样式之css的方式
+        $(function() {
+            // $("div").css("属性名")   表示的是获取css
+            // console.log($("div").css("width"));
+            // $("div").css("width", "300px"); //设置css样式
+            // $("div").css("width", 300);
+            // $("div").css(width, "300px");//属性名一定要加引号
+            $("div").css({
+                width: 400,
+                height: 300,
+                backgroundColor: "red" //如果是复合属性则按照驼峰命名法,如果值不是数值,则要添加引号
+            });
+        });
+    </script>
+</body>
+
+</html>

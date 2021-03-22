@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 240px;
+        }
+        
+        .box li {
+            position: relative;
+            float: left;
+            list-style: none;
+            width: 200px;
+            height: 240px;
+            border: 1px solid gray;
+            /* 使用margin负值压住相邻盒子的边框 */
+            margin-left: -1px;
+        }
+        
+        .box li:hover {
+            /* 通过设置相对定位,让盒子hover的时候 层级最高 */
+            z-index: 1;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="box">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

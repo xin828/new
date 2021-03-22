@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            position: absolute;
+            /* 这个left 50%是走父元素的一半 */
+            left: 50%;
+            top: 50%;
+            /* 这里的margin-left:是往回走自己的盒子宽度的一半 */
+            margin-left: -100px;
+            /* 这里的margin-top:是往回走自己的盒子高度的一半 */
+            margin-top: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /*绝对定位垂直水平方向居中
+          方法一:position-left-margin-left/margin-top
+          适用于:已知宽高的情况下
+          写法:
+          position:absolute
+          left:50%;
+          top:50%;
+          width:200px;
+          height:100px;
+           margin-left: -100px;
+            margin-top: -100px;
+         */
+
+         .father{
+             position: relative;
+             width: 400px;
+             height: 400px;
+             background-color: gray;
+             margin: 10px;
+         }
+         .son{
+             position: absolute;
+             left: 0;
+             top: 0;
+             right: 0; 
+             bottom: 0;
+             margin: auto;
+             width: 100px;
+             height: 50px;
+             
+             background-color: skyblue;
+         }
+
+         /* 绝对定位垂直水平方向居中
+            方法二:
+             position: absolute;
+             left: 0;
+             top: 0;
+             right: 0; 
+             bottom: 0;
+             margin: auto;
+             width: 100px;
+             height: 50px;
+             
+          */
+    </style>
+</head>
+
+<body>
+    <!-- 方法一:盒子垂直水平居中 -->
+    <div class="box"></div>
+    <!-- 方法二:盒子垂直水平居中 -->
+    <div class="father">
+        <span class="son">这是文字</span>
+    </div>
+</body>
+
+</html>

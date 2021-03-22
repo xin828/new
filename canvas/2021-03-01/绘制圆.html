@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var myCanvas = document.querySelector('canvas');
+        var ctx = myCanvas.getContext('2d');
+
+        var r = 150;
+
+        // 圆心
+        var x0 = ctx.canvas.width / 2;
+        var y0 = ctx.canvas.height / 2;
+
+        var data = [50, 20, 10, 20, 30];
+
+        // 份数
+        var sum = 0;
+        data.forEach(val => {
+            sum += val;
+            // console.log(sum);
+        });
+        // 一份有多少弧度
+        // var angle = Math.PI * 2 / num;
+
+        var anlist = [];
+        data.forEach(val => {
+            anlist.push(Math.PI * 2 / sum * val);
+        });
+        // var data2 = [1 * (angle * 10), 2 * (angle * 20), 3 * (angle * 30), 4 * (angle * 40), 5 * (angle * 50)];
+        // console.log(data2);
+        var startAngle = 0;
+
+        for (var i = 0; i <= anlist.length; i++) {
+            ctx.beginPath();
+            ctx.moveTo(x0, y0);
+            ctx.arc(x0, y0, r, startAngle, startAngle + anlist[i]);
+            ctx.fillStyle = getRandom();
+            ctx.fill();
+            ctx.stroke();
+            startAngle += anlist[i];
+        }
+
+        // 随机色
+        function getRandom() {
+            var r = parseInt(Math.random() * 256);
+            var g = parseInt(Math.random() * 256);
+            var b = parseInt(Math.random() * 256);
+            return `rgb(${r},${g},${b})`;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单控件 -->
+    <!-- input  表示的是单行文本输入框 单标签
+    语法格式：
+    <input type="属性值" value="值">
+    text  文本输入
+    password  密码输入框
+    radio 单选按钮 （要给表单设置控件名称）
+    checkbox 多选按钮
+    batton 普通按钮
+    submit  提交按钮
+    image  图片形式的提交按钮  必须要设置src属性,获取图片
+    file 文件域 上传文件
+-->
+    <from>
+    用户名：<input type="text" value="值" name=""><br/>
+    密码： <input type="password"><br/>
+    性别:<input type="radio" name="sex">男<input type="radio" name="sex">女<br/>
+    爱好：<input type="checkbox" name="like">打篮球
+          <input type="checkbox" name="like">踢足球
+          <input type="checkbox" name="like">打羽毛球
+          <input type="checkbox" name="like">打乒乓球<br/>
+          <input type="button" value="登录按钮"><br/><br/>
+          <input type="submit" valie="提交按钮">
+          <input type="reset" value="重置按钮">
+          <!-- 插入图片的按钮 -->
+          <input type="image" src="img/01.png"><br/>
+          <!-- 文件域 上传文件 -->
+          <input type="file" value="上传文件">
+
+
+    </from>
+</body>
+</html>

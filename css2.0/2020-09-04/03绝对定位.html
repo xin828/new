@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        绝对定位:拼爹型
+        特点:
+        1.参考的是以带定位的有父元素来移动位置
+        父元素(祖先)有定位的情况下,子盒子的定位元素根据父元素来移动位置
+        父元素没有定位的情况下,定位元素根据浏览器来移动
+        2.完全脱离标准流,不占位置
+        */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .yeye {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            margin: 100px;
+             /* position: relative; */
+        }
+
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+
+        .box2 {
+            /* 设置绝对定位 */
+            position: absolute;
+            right: 100px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yeye">
+        <div class="father">
+            <div class="box2"></div>
+            <div class="box3">3</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

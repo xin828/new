@@ -1,0 +1,19 @@
+.father .son {
+  font-size: 14px;
+  background-color: skyblue;
+}
+.father a {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+}
+.father a:hover {
+  background-color: pink;
+}
+.father p {
+  font-size: 30px;
+  color: bisque;
+}
+.father p.son {
+  background-color: orange;
+}

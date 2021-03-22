@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1.引入jquery文件 -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li>多个里面筛选一个</li>
+        <li>多个里面筛选一个</li>
+        <li>多个里面筛选一个</li>
+        <li>多个里面筛选一个</li>
+        <li>多个里面筛选一个</li>
+        <li>多个里面筛选一个</li>
+        <li>多个里面筛选一个</li>
+    </ul>
+    <ol>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+    </ol>
+    <script>
+        $(function() {
+            $("ul li:first").css("color", "red");
+            $("ul li:last").css("color", "green");
+            //eq(索引值)从0开始
+            $("ul li:eq(3)").css("color", "pink");
+            //odd表示的是索引值为奇数   索引值从0开始
+            $("ol li:odd").css("color", "yellow");
+            $("ol li:even").css("color", "blue");
+        })
+    </script>
+</body>
+
+</html>

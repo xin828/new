@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 绝对定位中的口诀是:子绝父相
+            子元素是绝对定位,给父元素设置相对定位
+        */
+
+        .father {
+            /* 给父元素设置相对定位 */
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            margin: auto;
+        }
+        
+        .son {
+        /* 子元素设置绝对定位 */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color:greenyellow;
+        }
+    </style>
+</head>
+<body>
+   
+        <div class="father">
+            
+            <div class="son">3</div>
+        </div>
+   
+</body>
+</html>

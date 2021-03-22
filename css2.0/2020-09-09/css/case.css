@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+/* 轮播图 */
+.banner{
+    position: relative;
+    width: 520px;
+    margin: 100px auto;
+}
+.arrow-lt,
+.arrow-rt{
+     position: absolute;
+     top: 50%;
+    width: 24px;
+    height: 38px;
+    margin-top: -19px;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+.arrow-lt{
+    left: 0;
+    border-radius: 0 19px 19px 0;
+
+}
+.arrow-rt{
+    right: 0;
+    border-radius:19px 0 0 19px;
+}
+.dot{
+    position: absolute;
+    left: 50%;
+    bottom: 13px;
+    width: 70px;
+    height: 12px;
+    line-height: 12px;
+    margin-left: -35px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius:6px;
+}
+.dot li{
+    float: left;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color:#ccc;
+    margin: 1px 4px 0;
+}
+.dot .active{
+    background-color: orange;
+}

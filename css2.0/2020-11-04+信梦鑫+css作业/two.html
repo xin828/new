@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 459px;
+            height: 200px;
+        }
+        
+        .box img {
+            animation: move 2s linear forwards;
+        }
+        
+        .photo {
+            display: block;
+            width: 70px;
+            height: 30px;
+            background: url("img/65.png") no-repeat;
+            animation: photo 2s linear forwards;
+        }
+        
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(380px);
+            }
+        }
+        
+        @keyframes photo {
+            0% {
+                width: 70px;
+            }
+            100% {
+                width: 459px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img/64.png" alt="">
+        <span class="photo"></span>
+    </div>
+</body>
+
+</html>

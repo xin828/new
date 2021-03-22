@@ -1,0 +1,515 @@
+/* 轮播图开始*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 488px;
+    background: url("../img/news_banner.jpg") no-repeat;
+    background-size: 100% 488px;
+}
+
+.dot {
+    position: absolute;
+    left: 48%;
+    bottom: 32px;
+}
+
+.banner span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #fff;
+}
+
+.banner .blue {
+    background-color: #00aaee;
+}
+
+
+/* 轮播图结束 */
+
+
+/* 健康计划开始 */
+
+.plan {
+    margin: 60px 0 90px 0;
+    /* padding-bottom: 60px; */
+}
+
+.plan li {
+    float: left;
+    width: 290px;
+    height: 250px;
+    margin-right: 13px;
+}
+
+
+/* .plan li:hover {
+    margin-top: -20px;
+    height: 280px;
+} */
+
+.plan .rit {
+    margin-right: 0;
+}
+
+.plan li .he {
+    text-align: center;
+}
+
+.he img {
+    margin: 58px 0 18px 0;
+}
+
+.he h3 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.he a {
+    color: #fff;
+    font-size: 13px;
+}
+
+.health1 {
+    background-color: #6699ff;
+}
+
+.health2 {
+    background-color: #6686ff;
+}
+
+.health3 {
+    background-color: #9878ff;
+}
+
+.health4 {
+    background-color: #c178ff;
+}
+
+
+/* 健康计划结束 */
+
+
+/* 便民通道开始  */
+
+.con-t {
+    width: 100%;
+    height: 650px;
+    background: url("../img/banner2.jpg") no-repeat;
+    background-size: 100% 650px;
+}
+
+.vice {
+    padding-top: 50px;
+}
+
+.vice h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.vice p {
+    color: #707070;
+    font-size: 12px;
+    text-align: center;
+}
+
+.service {
+    position: relative;
+}
+
+.service li {
+    border-radius: 50%;
+    text-align: center;
+}
+
+.service a {
+    display: block;
+    font-size: 20px;
+    color: #fefefe;
+}
+
+.service .ser1 {
+    position: absolute;
+    left: 0;
+    top: 137px;
+    width: 142px;
+    height: 142px;
+    background-color: #5cabc2;
+}
+
+.service .ser1:hover {
+    width: 144px;
+    height: 144px;
+}
+
+.ser1 img {
+    margin: 18px 0 12px 0;
+}
+
+.ser2 {
+    position: absolute;
+    left: 224px;
+    top: 67px;
+    width: 151px;
+    height: 151px;
+    background-color: #a087f4;
+}
+
+.service .ser2:hover {
+    width: 153px;
+    height: 153px;
+}
+
+.ser2 img {
+    margin: 28px 0 12px 0;
+}
+
+.ser3 {
+    position: absolute;
+    left: 390px;
+    top: 206px;
+    width: 161px;
+    height: 161px;
+    background-color: #3cb880;
+}
+
+.service .ser3:hover {
+    width: 163px;
+    height: 163px;
+}
+
+.ser3 img {
+    margin: 38px 0 10px 0;
+}
+
+.ser4 {
+    position: absolute;
+    right: 448px;
+    top: 85px;
+    width: 121px;
+    height: 121px;
+    background-color: #f9b961;
+}
+
+.service .ser4:hover,
+.service .ser6:hover {
+    width: 123px;
+    height: 123px;
+}
+
+.ser4 img {
+    margin: 20px 0 12px 0;
+}
+
+.ser5 {
+    position: absolute;
+    right: 260px;
+    top: 248px;
+    width: 131px;
+    height: 131px;
+    background-color: #40b2ec;
+}
+
+.service .ser5:hover {
+    width: 134px;
+    height: 134px;
+}
+
+.ser5 img {
+    margin: 22px 0 12px 0;
+}
+
+.ser6 {
+    position: absolute;
+    right: 165px;
+    top: 66px;
+    width: 121px;
+    height: 121px;
+    background-color: #5acd3d;
+}
+
+.ser6 img {
+    margin: 20px 0 12px 0;
+}
+
+.ser7 {
+    position: absolute;
+    right: 0;
+    top: 133px;
+    width: 160px;
+    height: 160px;
+    background-color: #88a1f8;
+}
+
+.service .ser7:hover {
+    width: 162px;
+    height: 162px;
+}
+
+.ser7 img {
+    margin: 17px 0 12px 0;
+}
+
+
+/* 便民通道结束 */
+
+
+/* 信息公开开始 */
+
+.message {
+    margin: 50px 0 24px 0;
+}
+
+.message h3 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.message p {
+    color: #707070;
+    font-size: 10px;
+    text-align: center;
+}
+
+.edu {
+    position: relative;
+    width: 500px;
+    height: 328px;
+    background: url("../img/education_banner.jpg") no-repeat;
+}
+
+.num {
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    height: 31px;
+    background-color: #404549;
+    border-bottom: 5px solid #4d4d4d;
+}
+
+.num a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 31px;
+    margin-left: 15px;
+}
+
+.num span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.num span:hover {
+    color: #00aaee;
+    border: 1px solid #00aaee;
+}
+
+.ber {
+    margin: 7px 10px 0 0;
+}
+
+.mess li {
+    width: 660px;
+    height: 100px;
+    background-color: #f9f7f7;
+    margin: 0 0 14px 36px;
+}
+
+.mess .time h5 {
+    font-size: 24px;
+    color: #5e5e5e;
+    font-weight: 400;
+}
+
+.time {
+    margin: 31px 28px 24px 18px;
+}
+
+.mess li .hour {
+    color: #5e5e5e;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.party {
+    font-size: 18px;
+    color: #000;
+    margin: 21px 0 10px 0;
+}
+
+.par {
+    font-size: 14px;
+    color: #888;
+}
+
+.mo {
+    width: 100px;
+    height: 28px;
+    background-color: #7d7d7d;
+    border-radius: 3px;
+    margin: 50px 0 65px 552px;
+}
+
+.mo a {
+    font-size: 12px;
+    color: #fff;
+    line-height: 28px;
+    margin: 0 5px 0 35px;
+}
+
+
+/* 信息公开结束 */
+
+
+/* 健康教育 开始*/
+
+.educations {
+    background-color: #eee;
+    padding-bottom: 65px;
+}
+
+.food {
+    position: relative;
+}
+
+.heal {
+    padding: 50px 0 38px 0;
+}
+
+.heal h3 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.heal p {
+    color: #707070;
+    font-size: 10px;
+    text-align: center;
+}
+
+.food li {
+    float: left;
+    width: 390px;
+    margin-right: 15px;
+}
+
+.food .cea {
+    margin-right: 0;
+}
+
+.food .educat {
+    width: 390px;
+    height: 164px;
+}
+
+.food .six {
+    position: absolute;
+    top: 124px;
+    width: 390px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-indent: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.date {
+    font-size: 10px;
+    color: #888;
+    margin: 15px 0 16px 0;
+}
+
+.fod {
+    color: #888;
+    font-size: 14px;
+}
+
+.mer {
+    width: 100px;
+    height: 28px;
+    background-color: #7d7d7d;
+    border-radius: 3px;
+    margin: 50px 0 0 540px;
+}
+
+.mer a {
+    font-size: 12px;
+    color: #fff;
+    line-height: 28px;
+    margin: 0 5px 0 35px;
+}
+
+
+/* 健康教育结束 */
+
+
+/* 徽章开始 */
+
+.footh {
+    position: relative;
+    margin-top: 30px;
+}
+
+.foot-t li {
+    float: left;
+    width: 226px;
+    height: 140px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.foot-t p {
+    font-size: 12px;
+    color: #333;
+    margin: 0 26px;
+}
+
+.foot-t img {
+    margin: 22px 0 4px 0;
+}
+
+.foot-t .cen {
+    margin: 31px 0 12px 0;
+}
+
+.foot-t .centre {
+    margin-right: 0;
+}
+
+.badge {
+    margin-bottom: 28px;
+}
+
+.tole {
+    position: absolute;
+    left: -27px;
+    top: 52px;
+}
+
+.tori {
+    position: absolute;
+    right: -27px;
+    top: 52px;
+}
+
+
+/* 徽章结束 */

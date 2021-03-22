@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 400px;
+            height: 300px;
+            border: 1px solid red;
+            transform: translate(-50%, -50%);
+        }
+        
+        .son {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            margin-left: -50px;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+        
+        .son::after {
+            display: block;
+            content: "转折点";
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            transform: rotate(90deg);
+            transform-origin: left bottom;
+            transition: all 0.5s;
+        }
+        
+        .son:hover::after {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

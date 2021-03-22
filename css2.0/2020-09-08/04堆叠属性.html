@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 堆叠属性:z-index
+            只有设置了绝对/固定/相对定位,才会有堆叠属性
+            默认值 z-index:0;属性值取值范围为 负整数,正整数,数值越大越在上面   后来者居上
+            数字后面不能加单位
+         */
+        .box1,
+        .box2,
+        .box3{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box1{
+            z-index: 1;
+        }
+        .box2{
+            left: 40px;
+            top: 40px;
+            background-color: purple; 
+            /* z-index: 2; */
+        }
+        .box3{
+            left: 80px;
+            top: 80px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

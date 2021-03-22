@@ -1,0 +1,116 @@
+/*在app.less里面导入common.less文件*/
+@import "common.less";
+/*顶部搜索开始*/
+
+.search-content{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width:15rem;
+    display: flex;
+    /*元素的rem的值=页面元素的px / html字体大小*/
+    height:88 / @rem;
+    background: #FFc001;
+}
+
+.classify{
+    width: 44 / @rem;
+    height: 70 / @rem;
+    margin:11 / @rem 25 / @rem 7 / @rem 24 / @rem;
+}
+.login{
+    width: 75/@rem;
+    height:70/@rem;
+    line-height: 70/@rem;
+    text-align: center;
+    margin: 10/@rem;
+    color: #fff;
+    font-size:25 / @rem;
+}
+.search{
+    flex: 1;
+}
+.search input{
+    width: 100%;
+    height: 64/@rem;
+    border-radius: 32/@rem;
+    background-color: #fff2cc;
+   padding-left: 55/@rem;
+   box-sizing: border-box;
+   margin-top: 12/@rem;
+   font-size: 25/@rem;
+}
+/*顶部搜索结束*/
+
+/*banner部分开始*/
+.focus{
+    width: 100%;
+    margin-top: 88/@rem;
+    img{
+        width: 100%;
+    }
+}
+/*banner部分结束*/
+
+/*橱窗部分开始*/
+.showcase{
+    display: flex;
+    a{
+        flex: 1;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+}
+/*橱窗部分结束*/
+
+/*主导航栏开始*/
+.nav{
+    width: 100%;
+    padding-bottom: 80/@rem;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            flex: 0 0 20%;
+            height: 140/@rem;
+            display: flex;
+            justify-content: center;
+            font-size: 25/@rem;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 82/@rem;
+                height: 82/@rem;
+                margin: 0 24/@rem 10/@rem;
+            }
+        }
+    }
+}
+/*主导航栏结束*/
+
+/*底部开始*/
+
+.footer{
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 320px;
+    max-width: 750px;
+    height: 80/@rem;
+    background-color: pink;
+    span{
+        width: 50/@rem;
+        height: 50/@rem;
+        background-color: purple;
+    }
+}
+/*底部结束*/
+

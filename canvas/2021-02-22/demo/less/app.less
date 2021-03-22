@@ -1,0 +1,8 @@
+@screenWidth:750;
+/* less更新除法运算要加() 或者在"/"前面加.  */
+// @vw:@screenWidth./100vw;
+@vw:(@screenWidth/100vw);
+.innerbox{
+    // width: 750./@vw;
+    width: (750/@vw);
+}

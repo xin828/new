@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1.引入jquery文件 -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="son">
+            <p></p>
+        </div>
+    </div>
+    <script>
+        //筛选的方法   都要带小括号
+        $(function() {
+            //1.查找父元素  parent()   最近一级父元素   亲爸爸
+            console.log($(".son").parent());
+            //2.子  children()  类似于子代选择器  ul>li   选择器的是亲儿子
+            // $(".nav").children("p").css("color", "red");
+            console.log($(".nav").children("p"));
+            // 选择里面所有的儿子   包括儿子和孙子  find()   类似于我们的后代选择器
+            $(".nav").find("p").css("color", "red");
+        })
+    </script>
+</body>
+
+</html>

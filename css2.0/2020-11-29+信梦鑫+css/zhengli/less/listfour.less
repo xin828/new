@@ -1,0 +1,234 @@
+
+//初始化样式
+
+.dn{
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    /* 禁止图片长按保存 */
+    pointer-events: none;
+    /* 那个图片要用就设auto */
+    /* pointer-events: auto; */
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+input,
+select {
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+div {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img[src=""] {
+  display: none;
+}
+
+body,
+html{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // overflow: hidden;
+    background: #565759;
+}
+
+// 表单提示文字颜色
+::-webkit-input-placeholder{
+    color: #999;
+}
+
+.pg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// 定义设计稿宽度
+@screenWidth:750;
+
+//换算vw
+@vw:@screenWidth/100vw;
+
+.setwh(@w: 750,@h: 1448){
+    width: @w/@vw;
+    height: @h/@vw;
+}
+
+// less  定位函数  左上
+.lt(@l:0,@t:0){
+    position: absolute;
+    left: @l/@vw;
+    top: @t/@vw;
+}
+
+// 右上
+.rt(@r:0,@t:0){
+    position: absolute;
+    right: @r/@vw;
+    top: @t/@vw;
+}
+
+// 左下
+
+.lb(@l:0,@b:0){
+    position: absolute;
+    left: @l/@vw;
+    bottom: @b/@vw;
+}
+
+// 右下
+
+.rb(@r:0,@b:0){
+    position: absolute;
+    right: @r/@vw;
+    bottom: @b/@vw;
+}
+
+.cl(@w){
+    position: absolute;
+    left: 50%;
+    margin-left: -@w/2/@vw;
+}
+
+.ct(@h){
+    position: absolute;
+    top: 50%;
+    margin-top: -@h/2/@vw;
+}
+/*登录框开始*/
+.login{
+    width: 100%;
+    padding-bottom: 58/@vw;
+    background: url("../img/bg.png") no-repeat;
+    background-size: 100%;
+} 
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 55/@vw;
+    margin-bottom: 160/@vw;
+    img{
+    width: 65/@vw;
+    height: 40/@vw;
+  }
+  h2{
+      font-size: 35/@vw;
+      color: #fff;
+  }
+}
+
+.nav{
+    ul{
+        display: flex;
+        margin-left: 25/@vw;
+        li{
+            width: 200/@vw;
+            height: 59/@vw;
+            font-size:24/@vw;
+            text-align: center;
+            line-height:59/@vw;
+            background-color: #1175d2;
+            color: #fff;
+            border-radius:10/@vw 10/@vw 0 0;
+        }
+    }
+}
+
+
+.item {
+        width: 700/@vw;
+        background-color:rgba(255,255,255,.8);
+        margin-left: 25/@vw;
+        box-sizing: border-box;
+        padding: 85/@vw 0 0 0;
+    .con-b{
+        margin-left: 119/@vw;
+        .bett{
+            position: relative;
+            display: flex;
+            .place{
+                width: 460/@vw;
+                height: 54/@vw;
+                box-sizing: border-box;
+                font-size: 25/@vw;
+                margin-bottom: 66/@vw;
+                border-bottom: 1px solid #999;
+            }
+            .gain{
+                position: absolute;
+                top: 15/@vw;
+                right: 120/@vw;
+                font-size: 24/@vw;
+                color: #1175d2;
+            }
+            
+        }
+        .place{
+            display: block;
+            width: 460/@vw;
+            height: 54/@vw;
+            box-sizing: border-box;
+            font-size: 25/@vw;
+            margin-bottom: 66/@vw;
+            border-bottom: 1px solid #999;
+        }
+      
+    }
+}
+.blue{
+    width: 400/@vw;
+    height: 66/@vw;
+    background-color: #1175d2;
+    color: #fff;
+    text-align: center;
+    line-height: 66/@vw;
+    font-size: 25/@vw;
+    border-radius: 5/@vw;
+    margin:24/@vw 0 115/@vw 30/@vw;
+}
+
+.account{
+    margin-left: 150/@vw;
+    padding-bottom: 60/@vw;
+    span{
+        font-size: 27/@vw;
+        color: #1175d2;
+        border-bottom: 1px solid #1175d2;
+        padding-bottom: 10/@vw;
+        &:first-child{
+            margin-right: 64/@vw;
+        }
+    }
+}
+
+.copy{
+    margin: 95/@vw 0 0 255/@vw;
+    span{
+    font-size: 24/@vw;
+    color: #fff;
+    margin-right: 34/@vw;
+    }
+   
+}
+/*登录框结束*/ 

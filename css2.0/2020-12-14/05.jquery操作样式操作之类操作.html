@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        
+        .current {
+            background-color: orange;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="current"></div>
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            //1.添加类 addClass()
+            // $("div").click(function() {
+            //         // 添加类名current  前面不要加点
+            //         $(this).addClass("current");
+            //     })
+
+            //2.删除类 removeClass()
+            // $("div").click(function() {
+            //     $(this).removeClass("current");
+            // })
+
+            //3.切换类 toggleClass()
+            $("div").click(function() {
+                $(this).toggleClass("current");
+            })
+
+            // 原生js中 calssName  会覆盖元素原先里面的类名,jquery里面类操作只是对指定类进行操作,不影响原先的类名
+        })
+    </script>
+</body>
+
+</html>

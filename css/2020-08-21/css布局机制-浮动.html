@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浮动:
+        让盒子从普通流中浮起来,主要是让多个块级盒子一行显示多个
+         */
+      .box{
+          /* 转换标签的显示模式,盒子与盒子之间会有空白间距 */
+        /* display: inline-block; */
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        /* 用浮动让三个块级盒子在一行上显示 */
+        float: left;
+      }
+      .bg2{
+          background-color: powderblue;
+      }
+    </style>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box bg2">2</div>
+    <div class="box">3</div>
+</body>
+</html>

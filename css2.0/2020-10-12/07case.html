@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 引入字体图标 */
+        
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?hrstq9');
+            src: url('fonts/icomoon.eot?hrstq9#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?hrstq9') format('truetype'), url('fonts/icomoon.woff?hrstq9') format('woff'), url('fonts/icomoon.svg?hrstq9#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        
+        div::before,
+        div::after {
+            width: 20px;
+            height: 50px;
+            text-align: center;
+            /* 改变显示模式 */
+            display: inline-block;
+        }
+        
+        div::before {
+            content: "道";
+            background-color: mediumaquamarine;
+        }
+        
+        div::after {
+            content: "德";
+            background-color: lightskyblue;
+        }
+        
+        p::before {
+            content: "\e972";
+            font-family: "icomoon";
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+    <p>网易</p>
+</body>
+
+</html>

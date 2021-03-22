@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a href="//www.baidu.com" title="大秦赋">大秦赋</a>
+    <input type="checkbox" checked="checked">
+    <div>我是div</div>
+    <span>123</span>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function() {
+            // 1. element.prop("属性名")  获取元素的固有属性
+            // console.log($("a").prop("title"));
+            // element.prop("属性名","属性值")  设置元素的固有属性值
+            // console.log($("a").prop("title", "嬴政"));
+            $("input").change(function() {
+                console.log($(this).prop("checked"));
+            })
+
+            // 2.元素的自定义属性  attr()
+            //  attr("属性名") 表示的是获取属性   相当于原生的getAttribute
+            // console.log($("a").attr("href"));
+            // console.log($("div").prop("index"));
+            // console.log($("div").attr("index"));
+            //attr("属性名","属性值")  表示的是设置属性   相当于原生的setAttribute
+        })
+        atrt("span").arrt("index", "3");
+
+        // 3.数据缓存  data()  这个里面的数据都是放在元素的内存里面的
+        console.log($("div").data("index"));
+        // 这个里面的数据都是放在元素的内存里面的,结构上看不到
+        $("span").data("u", "lily");
+        $("span").data("name", "cici");
+        // 这个方法获取data-H5自定义的  开头的属性不用写data-  data-index="1"   获取的值是数字型
+    </script>
+</body>
+
+</html>

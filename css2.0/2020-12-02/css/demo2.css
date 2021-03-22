@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+.box {
+  height: 60px;
+  background-color: gray;
+}
+.box li {
+  text-align: center;
+  line-height: 60px;
+}
+.box li a {
+  color: #fff;
+}

@@ -1,0 +1,248 @@
+/* 轮播图 开始*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 610px;
+    background: url("../img/manage_banner.jpg") no-repeat;
+}
+
+.two {
+    position: absolute;
+    top: 288px;
+    left: 356px;
+}
+
+.roid {
+    width: 132px;
+    height: 132px;
+    margin-right: 10px;
+}
+
+.android a {
+    display: block;
+    width: 240px;
+    height: 44px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 44px;
+    border: 1px solid #fff;
+    border-radius: 22px;
+}
+
+.order {
+    margin-bottom: 60px;
+}
+
+.micon {
+    margin: 10px 0 20px 8px;
+}
+
+.mi {
+    margin-right: 10px;
+}
+
+.wave1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    background: url("../img/wave1.png") repeat-x;
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 100px;
+    background: url("../img/wave2.png") repeat-x 120px -4px;
+}
+
+.smart .gx {
+    margin-left: 60px;
+}
+
+.smart li {
+    float: left;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    margin-right: 128px;
+}
+
+.smart li:hover p {
+    color: skyblue;
+}
+
+.smart .icon {
+    margin-right: 0;
+}
+
+.smart img {
+    margin: 50px 0 20px 0;
+}
+
+
+/* 轮播图结束 */
+
+
+/* 预约挂号开始 */
+
+.make {
+    width: 100%;
+    height: 731px;
+    background: url("../img/manage_bg.jpg") no-repeat;
+}
+
+.orde {
+    position: relative;
+}
+
+.make .icon7 {
+    margin-top: 35px;
+}
+
+.new {
+    position: absolute;
+    top: 275px;
+    right: 240px;
+}
+
+.news {
+    position: absolute;
+    bottom: 223px;
+    right: 83px;
+}
+
+.new h3 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.new p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.micon12 {
+    position: absolute;
+    bottom: 32px;
+    right: 388px;
+}
+
+.news a {
+    display: inline-block;
+    width: 380px;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* 预约挂号结束 */
+
+
+/* 智能导诊开始 */
+
+.smarts {
+    width: 100%;
+    height: 731px;
+}
+
+.roller {
+    position: relative;
+}
+
+.icon8 {
+    margin-top: 25px;
+}
+
+.old h3 {
+    color: #5d5d5d;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.old p {
+    color: #5d5d5d;
+    font-size: 20px;
+}
+
+.olds a {
+    display: inline-block;
+    width: 380px;
+    color: #5d5d5d;
+    font-size: 18px;
+}
+
+.old {
+    position: absolute;
+    top: 260px;
+    left: 0;
+}
+
+.olds {
+    position: absolute;
+    top: 390px;
+    left: 60px;
+}
+
+.micon11 {
+    position: absolute;
+    top: -13px;
+    left: -36px;
+}
+
+.mic {
+    position: absolute;
+    bottom: 4px;
+    right: 388px;
+}
+
+.newss {
+    position: absolute;
+    bottom: 255px;
+    right: 103px;
+}
+
+.newss a {
+    display: inline-block;
+    width: 380px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.fe {
+    position: absolute;
+    bottom: 223px;
+    right: 103px;
+}
+
+.fe a {
+    display: inline-block;
+    width: 380px;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* 智能导诊结束 */
+
+
+/* 固定定位开始 */
+
+.top {
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #666;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/* 固定定位结束 */

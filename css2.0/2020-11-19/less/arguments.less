@@ -1,0 +1,22 @@
+// .border(@w,@style,@color){
+//     border: @w,@style,@color;
+// }
+
+.border(@w,@style,@color){
+    //  @arguments接收了一组数据
+    border: @arguments;
+    // 相当于border:@w,@style@color;
+}
+
+
+// 高级创参方式
+.border(...){
+    border: @arguments;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    // 传递多个参数
+    .border(10px, solid, rgb(45, 201, 40));
+}

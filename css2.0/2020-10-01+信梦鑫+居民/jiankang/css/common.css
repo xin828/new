@@ -1,0 +1,151 @@
+/* 公共样式 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.red {
+    color: #e33333;
+}
+
+input,
+button {
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/* 版心 */
+
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 导航栏开始 */
+
+.log {
+    margin-top: 12px;
+}
+
+.hd li {
+    float: left;
+    width: 104px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.hd .one {
+    width: 77px;
+    margin-left: 35px;
+}
+
+.hd li:hover {
+    background-color: #00aaee;
+}
+
+.hd li:hover a {
+    color: #fff;
+}
+
+.hd li a {
+    color: #333;
+    font-size: 16px;
+}
+
+.bd {
+    height: 100px;
+    line-height: 100px;
+}
+
+.bd a:hover {
+    color: #00aaee;
+}
+
+.dow {
+    margin-right: 20px;
+}
+
+.bar {
+    margin: 0 5px;
+}
+
+
+/* 导航栏结束 */
+
+
+/* 页脚开始 */
+
+.footer {
+    background-color: #177cb0;
+}
+
+.ft dl {
+    float: left;
+    margin: 39px 109px 0 0;
+}
+
+.ft dt {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.ft .ma {
+    width: 131px;
+    height: 131px;
+    margin-bottom: 4px;
+}
+
+.ft dd {
+    color: #d4d4d4;
+    font-size: 14px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.ft dd:hover {
+    color: #fff;
+}
+
+.ft .code {
+    margin: 30px 109px 0 0;
+}
+
+.relation dd {
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.code a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.copy {
+    color: #ccbdbf;
+    font-size: 14px;
+}
+
+.copy p {
+    padding: 30px 0 23px 246px;
+}
+
+.hn {
+    margin-left: 64px;
+}
+
+
+/* 页脚结束 */

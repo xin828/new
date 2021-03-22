@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            transform-style:flat/preserve-3d
+            flat    默认的   不开启3d空间
+            preserve-3d  让子元素开启3d空间
+             transform-style   
+        */
+        
+        body {
+            perspective: 500px;
+        }
+        
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            /* background-color: pink; */
+            transition: all 1s;
+            /* 开启3d空间  */
+            transform-style: preserve-3d;
+        }
+        
+        .box:hover {
+            transform: rotateY(60deg);
+        }
+        
+        .box div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: orange;
+        }
+        
+        div:last-child {
+            background-color: purple;
+            transform: rotateX(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

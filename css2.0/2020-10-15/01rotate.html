@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* rotate表示的是旋转
+            单位deg  表示的角度   分为顺时针和逆时针两个方向
+            顺时针的角度是正的
+            逆时针的角度是负的
+            默认旋转的中心是元素的中心点
+        */
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            background-color: hotpink;
+            /* 顺时针 */
+            /* transform: rotate(45deg); */
+            /* 逆时针 */
+            /* transform: rotate(-45deg); */
+            /* 过渡 */
+            transition: all .5s;
+        }
+        
+        .box:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>

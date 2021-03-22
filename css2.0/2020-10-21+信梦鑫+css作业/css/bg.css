@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bg {
+    width: 275px;
+    height: 185px;
+    margin: auto;
+    background: url("../img/bgi.jpg") no-repeat;
+}
+
+.bg span {
+    display: inline-block;
+    width: 275px;
+    height: 185px;
+    background-color: rgba(195, 244, 149, .5);
+    display: none;
+}
+
+.bg:hover span {
+    display: block;
+    animation: bg 1.2s 1 forwards;
+}
+
+@keyframes bg {
+    0% {
+        transform: scale(0, 0);
+        transform-origin: right bottom;
+    }
+    100% {
+        transform: scale(1, 1);
+        transform-origin: right bottom;
+    }
+}

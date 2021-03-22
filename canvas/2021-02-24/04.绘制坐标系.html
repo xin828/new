@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var myCanvas = document.querySelector('canvas');
+        var ctx = myCanvas.getContext('2d');
+
+        /* 绘制坐标系 */
+
+        /* 1.确定原点 */
+        /* 2.距离画布旁边的距离 */
+        /* 3.确定坐标轴的长度 */
+        /* 4.确定箭头的大小,等腰三角形 10 */
+        /* 5.箭头绘制填充 */
+
+        /* 距离画布旁边的距离 */
+        var space = 20;
+        /* 箭头垂直线的长度 */
+        var arrowSize = 10;
+
+        /* 计算原点 */
+        var cvsw = ctx.canvas.width;
+        var cvsh = ctx.canvas.height;
+
+        var x0 = space;
+        var y0 = cvsh - space;
+
+        /* 绘制x轴方向的线 */
+
+        ctx.beginPath();
+        ctx.moveTo(x0, y0);
+        ctx.lineTo(cvsw - space, y0);
+        //箭头
+        ctx.lineTo(cvsw - space - arrowSize, y0 + arrowSize / 2);
+        ctx.lineTo(cvsw - space - arrowSize, y0 - arrowSize / 2);
+        ctx.lineTo(cvsw - space, y0);
+        ctx.fill();
+        // 描边
+        ctx.stroke();
+
+        //绘制y轴方向的线
+        ctx.beginPath();
+        ctx.moveTo(x0, y0);
+        ctx.lineTo(x0, space);
+        // 箭头
+        ctx.lineTo(space + arrowSize / 2, space + arrowSize);
+        ctx.lineTo(space - arrowSize / 2, space + arrowSize);
+        ctx.lineTo(x0, space);
+        ctx.fill();
+        // 描边
+        ctx.stroke();
+    </script>
+</body>
+
+</html>

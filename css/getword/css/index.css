@@ -1,0 +1,114 @@
+
+/* 多彩字体颜色 */
+.colorful{
+	
+	font-size: 20px;
+	background-image: 
+	-webkit-gradient( linear, left top, right top, color-stop(0, #f22), 
+	color-stop(0.15, #f2f), 
+	color-stop(0.3, #22f), 
+	color-stop(0.45, #2ff), 
+	color-stop(0.6, #2f2),
+	color-stop(0.75, #2f2), 
+	color-stop(0.9, #ff2), 
+	color-stop(1, #f22) );
+	color: transparent;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-ms-background-clip: text
+}
+   #screen
+      {
+          width:400px;
+          height:500px;
+          border:1px solid black;
+          text-align:center;
+          left:50%;
+          position:absolute;
+          margin-left:-200px;
+       top:50%;
+         margin-top :-250px;
+     }
+     .menu
+     {
+     
+         width:200px;
+         height:100px;
+         position:absolute;
+         left:100px;
+         top:200px;    
+         z-index:10;
+         visibility:hidden;
+         visibility:visible;
+     }
+     .menu div
+     {
+         border:1px solid black; 
+         width:200px;  
+         height:30px;
+         line-height:30px; 
+        
+     }
+     
+     #beginGame
+     {
+         cursor:pointer;
+     }
+     
+     div[name="word"]
+     {
+         width:198px;
+         height:20px;
+         border:1px solid Red;
+         color:Red;
+         float:left;
+     }
+     
+       div[name="chinese"]
+     {
+         width:198px;
+         height:20px;
+         border:1px solid Green;
+         color:Green;
+         float:left;
+      
+     }
+     div[name="row"]
+     {
+         height:22px;
+         position :absolute;
+       
+     }
+     #logo
+     {
+         position:absolute; 
+         width:200px; 
+         top:100px; 
+         left:100px; 
+         z-index:10;
+     }
+     
+     #logo img
+     {
+          width:160px; 
+          height:40px;
+     }
+     
+     #txtletterCount
+     {
+          width:20px;
+     }
+     
+     #txtNewLetterTime
+     {
+          width:40px;
+     }
+     
+     #tim
+     {
+         width:50px; 
+         position:absolute; 
+         bottom:0px; 
+         right:0px; 
+         border:1px dotted black;
+     }

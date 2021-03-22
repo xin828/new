@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box,
+        p {
+            position: relative;
+            width: 200px;
+            height: 30px;
+            border: 1px solid pink;
+        }
+        
+        .box span {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url("img/sprite.png") no-repeat 0 0;
+        }
+        /* 伪元素 插入图片*/
+        
+        p::after {
+            position: absolute;
+            right: 5px;
+            top: 7px;
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background: url("img/sprite.png") no-repeat 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span></span>
+    </div>
+    <p></p>
+</body>
+
+</html>

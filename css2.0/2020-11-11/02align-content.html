@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            align-content设置项目在交叉轴上的对齐方式（多行）
+            align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+            flex-start    从交叉轴顶部开始   默认的
+            flex-end      从交叉轴底部开始
+            center        交叉轴居中
+            space-between    两端对齐，平分剩余空间
+            space-around  每根轴线两侧的间隔都相等，项目相接的地方比边框之间的间距要宽一倍
+            stretch   拉伸
+            space-evenly   每个项目交叉轴的间距相同
+         */
+        
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-content: space-between;
+            width: 800px;
+            height: 400px;
+            background-color: rgb(226, 180, 203);
+        }
+        
+        .wrap span {
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+        }
+        
+        .wrap span:nth-child(2n) {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+</body>
+
+</html>

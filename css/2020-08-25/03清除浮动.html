@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除浮动指的是:清除浮动后造成的影响
+        清除浮动的本质:
+            清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0 的问题。清除浮动之后， 父级就会根据浮动的子盒子自动检测高度。父级有了高度，就不会影响下面的标准流了
+         */
+        .box1,
+        .box2{
+            width: 800px; 
+            margin: auto;
+            background-color:green;
+        }
+        .box1{
+            overflow: hidden;
+        }
+        .box2{
+            height: 200px;
+            background-color:plum;
+        }
+        .son1,
+        .son2{
+            float: left;
+            width: 200px;
+            height: 100px;
+            background-color:sandybrown ;
+        }
+        .son2{
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="son1">1</div>
+        <div class="son2">2</div>
+    </div>
+    <div class="box2">
+        这里是正常排列的盒子
+    </div>
+</body>
+</html>

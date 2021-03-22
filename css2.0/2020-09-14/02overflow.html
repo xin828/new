@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            /* 不裁剪内容,也不出现滚动条 */
+            /* overflow: visible; */
+            /* 溢出部分隐藏 */
+            /* overflow: hidden; */
+            /* 添加横向和纵向的滚动条 */
+            /* overflow: scroll; */
+            /* 内容超出,自动出现滚动条 */
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 显示与隐藏
+        overflow:hidden/visible/scroll/auto;
+        visible   不剪切内容,也不添加滚动条   默认
+        hidden    溢出部分隐藏
+        overflow-y: scroll   垂直方向出现滚动条
+        overflow-x: scroll    水平方向出现滚动条
+        scroll    添加横向和纵向的滚动条
+        auto      内容超出,自动出现滚动条
+    -->
+    <div class="box">哈哈哈哈哈哈哈哈哈哈或哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+</body>
+
+</html>

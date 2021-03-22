@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        // 图片宽高 200*200
+        var imageWidth = 200;
+        var imageHeight = 200;
+
+        /* 计算出画布的中心点 */
+        var x0 = canvas.width / 2;
+        var y0 = canvas.height / 2;
+
+
+        CanvasRenderingContext2D.prototype.roundRect = function(x, y, w, h, r) {
+            if (w < 2 * r) {
+                r = w / 2;
+            }
+            if (h < 2 * r) {
+                r = h / 2;
+            }
+            this.beginPath();
+            this.moveTo(x + r, y);
+            this.arcTo(x + w, y, x + w, y + h, r);
+            this.arcTo(x + w, y + h, x, y + h, r);
+            this.arcTo(x, y + h, x, y, r);
+            this.arcTo(x, y, x + w, y, r);
+            this.closePath();
+            this.stroke();
+            return this;
+        }
+
+        ctx.roundRect(x0 - imageWidth / 2, y0 - imageHeight / 2, imageWidth, imageHeight, 50);
+
+        /* 裁剪 只有先绘制的圆角矩形区域内的才会展示  */
+        ctx.clip();
+
+        /* 绘制图片 */
+        var image = new Image();
+        image.onload = function() {
+            ctx.drawImage(image, x0 - imageWidth / 2, y0 - imageHeight / 2, imageWidth, imageHeight);
+
+            /* 从canvas中导出一张图片 */
+            var canvasUrl = canvas.toDataURL();
+            console.log(canvasUrl);
+
+        }
+        image.src = "img/y.png";
+
+
+
+
+
+        // /* 绘制圆弧 */
+        // ctx.beginPath();
+        // /* 水平上方的线和右上角的弧 */
+        // ctx.moveTo(x0 - imageWidth / 2 + 50, y0 - imageHeight / 2);
+        // ctx.lineTo(x0 + imageWidth / 2 - 50, y0 - imageHeight / 2);
+        // ctx.arcTo(x0 + imageWidth / 2, y0 - imageHeight / 2, x0 + imageWidth / 2, y0 - imageHeight / 2 + 100, 50);
+
+        // /* 垂直右边的线和右下角的弧 */
+        // ctx.lineTo(x0 + imageWidth / 2, y0 + imageHeight / 2 - 50);
+        // ctx.arcTo(x0 + imageWidth / 2, y0 + imageHeight / 2, x0 + imageWidth / 2 - 50, y0 + imageHeight / 2, 50);
+
+        // /* 水平边下方的线和左下角的弧 */
+        // ctx.lineTo(x0 - imageWidth / 2 + 50, y0 + imageHeight / 2);
+        // ctx.arcTo(x0 - imageWidth / 2, y0 + imageHeight / 2, x0 - imageWidth / 2, y0 + imageHeight / 2 - 50, 50);
+
+        // /* 垂直左边的线和左上角的弧 */
+        // ctx.lineTo(x0 - imageWidth / 2, y0 - 50);
+        // ctx.arcTo(x0 - imageWidth / 2, y0 - imageHeight / 2, x0 - 50, y0 - imageHeight / 2, 50);
+        // ctx.stroke();
+    </script>
+</body>
+
+</html>

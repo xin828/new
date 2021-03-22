@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子元素选择器 用">"连接
+            父级选择器>子元素选择器(亲儿子){
+                属性:属性值;
+            }
+         */
+
+        /* 选择box盒子下的所有a标签 */
+        .box a {
+            color:purple;
+        }
+
+        /* 选中box盒子里面的文本为"新浪"的标签(选中的是亲儿子,孙子不能选到) */
+        .box>a {
+            color:orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#">新浪</a>
+        <p>
+            <a href="#">百度</a>
+        </p>
+    </div>
+</body>
+</html>

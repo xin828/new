@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+         opacity   取值范围是[0.0- 1.0] 
+          0表示完全透明    1表示完全不透明  位置还在
+
+          opacity  和  rgba 是区别?
+          opacity 会影响里面的子元素
+          rgba则不会影响
+
+        IE8及更早的版本支持替代的filter属性
+        filter:alpha(opacity=number)  中number取值[0~100],0完全透明,100不透明  opacity{ opacity:0.5; filter:alpha(opacity=50); }
+        */
+        
+        div[class^="box"] {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+        
+        .box1 {
+            /* 0===transparent   完全透明 */
+            opacity: 0;
+        }
+        /* 在IE下子元素设置的opacity不起作用,在firefox和Chrome下,子元素最终的opacity=父元素opacity*子元素opacity 
+        
+        子元素会继承父元素的透明度*/
+    </style>
+</head>
+
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+</body>
+
+</html>

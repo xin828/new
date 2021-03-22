@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 内部样式表 -->
+    <style>
+        /* 后代选择器(常用)  
+            父级选择器  子级选择器 {
+                属性:属性值;
+            }
+            表示的是选择子孙后代 
+         */
+        /* box盒子的下的p标签 */
+        .box p {
+            background-color: skyblue;
+        }
+        /* box盒子下的strong标签 */
+        .box strong {
+            color:#fff;
+        }
+        /* box盒子下的a标签,修改字体颜色 */
+        /* class 用"."*/
+        .box a{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+            这是<strong>段落标签</strong>
+        </p>
+        <a href="#">点击跳转</a>
+        <span>一行显示多个span</span>
+    </div>
+
+</body>
+</html>

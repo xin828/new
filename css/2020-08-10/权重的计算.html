@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav a{
+            color: brown;
+        }
+        .first{
+            color: chocolate;
+        }
+        /* .nav a的权重大于.first 的权重  所以.first没有改变.nav a的样式 */
+        /* 如果要改变样式,增加权重 */
+        /* 第一种方式 
+         .nav .first{
+            color: dodgerblue;
+        } */
+        /* 第二种方式 */
+        a.first{
+            color: gold;
+        }
+        /* :hover伪类   0010
+         */
+         /* 
+         数位没有进制
+         0,0,0,5+0,0,0,5=0,0,0,10
+          */
+    </style>
+</head>
+<body>
+    <div>人生</div>
+    <div class="nav">
+        <a href="#" class="first">哼哼</a>
+        <a href="#">嘿嘿</a>
+        <a href="#">哈哈</a>
+        <a href="#">哇哇</a>
+    </div>
+</body>
+</html>

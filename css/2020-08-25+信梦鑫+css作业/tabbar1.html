@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            height: 52px;
+            background-color: #293649;
+        }
+        .nav-right{
+            float: right;
+        }
+        .logo{
+            float:left;
+            margin-left: 50px;
+            margin-right:50px;
+        }
+        .nav-right li{
+           float: left;
+            list-style: none;
+            width: 80px;
+            height: 52px;
+            line-height: 52px;
+        }
+        a{ 
+            text-decoration: none;
+            font-weight:200;
+            color:#fff;
+        }
+        .on{
+            width: 85px;
+            line-height: 52px;
+           
+           
+           text-align: center;
+        }
+        .on a{
+             border: 1px solid red;
+             padding: 5px;
+              border-radius:14px;
+        }
+        a:hover{
+            color: #ee4747;
+        }
+        .nav-right .p1,
+        .nav-right .p2,
+        .nav-right .p3{
+            display: inline-block;
+            margin-top: 8px;
+            width: 36px;
+            height: 36px;
+            background: url("img/download1.png") no-repeat 0 0;
+        }
+        .nav-right .p2{
+            background: url("img/download1.png") no-repeat  -35px 0;
+        }
+        .nav-right .p3{
+            background: url("img/download1.png") no-repeat -70px 0;
+        }
+        .nav-right .p1:hover{
+            background: url("img/download1.png") no-repeat 0 -34px;
+        }
+        .nav-right .p2:hover{
+            background: url("img/download1.png") no-repeat -35px -35px;
+        }
+        .nav-right .p3:hover{
+            background: url("img/download1.png") no-repeat -70px -36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">服务</a>
+                </li>
+                <li>
+                    <a href="#">案例</a>
+                </li>
+                <li>
+                    <a href="#">特效</a>
+                </li>
+                <li>
+                    <a href="#">问题</a>
+                </li>
+                <li>
+                    <a href="#">关于</a>
+                </li>
+                <li>
+                   <a href="#" class="p1"></a>
+                </li>
+                <li>
+                    <a href="#" class="p2"></a>
+                 </li>
+                 <li>
+                    <a href="#" class="p3"></a>
+                 </li>
+                <li class="on">
+                    <a href="#">在线下单</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

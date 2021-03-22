@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .box1{
+            width: 800px; 
+            margin: auto;
+            background-color:orange;
+        }
+        .son1,
+        .son2{
+            float: left;
+            width: 200px;
+            height: 100px;
+            background-color:yellowgreen ;
+        }
+        .son2{
+            background-color: pink;
+        }
+        /* 通过after伪类清除浮动 
+            ::after表示的是  在...之后
+        */
+        .clearfix::after {
+            /* 伪元素里面必须要写content属性,否则无效 */
+            content:"";
+            display: block;
+            height: 0;
+            clear: both;
+            /* 相当于overflow:hidden; */
+            visibility: hidden;
+        }
+        .clearfix{
+            *zoom: 1;
+            /* IE6、7 专有 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix">
+        <div class="son1">1号盒子</div>
+        <div class="son2">2号盒子</div>
+    </div>
+</body>
+</html>

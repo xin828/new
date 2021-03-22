@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪元素选择器 
+            :::before   在xx之前插入
+            :::after    在元素内部的后面插入
+
+            注意事项:
+            1.伪元素必须要设置content属性;
+            2.before和after创建的是一个元素(标签),但是是行内标签
+            3.创建出来的元素在DOM中查找不到,所以称为伪元素
+            4.伪元素和标签选择器一样,权重为0001
+
+        */
+        
+        span::before {
+            content: "我的";
+            color: red;
+        }
+        /* 在span标签内部文本之后插入 */
+        
+        span::after {
+            content: "很美";
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <span>祖国</span>
+</body>
+
+</html>

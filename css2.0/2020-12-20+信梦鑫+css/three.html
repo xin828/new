@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            height: 50px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>即将上线</h3>
+    <ul>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+        <li>星球大战外传科幻迷不容错过</li>
+    </ul>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+        $(function() {
+            var time = setInterval("info()", 1000);
+            $("ul").click(
+                function() {
+                    clearInterval(time);
+                },
+
+                function() {
+                    time = setInterval("info()", 1000);
+                }
+            )
+        })
+
+        function info() {
+            var li = $("ul>li:eq(0)").clone()
+            $("ul>li:eq(0)").animate({
+                marginTop: "-20px"
+            }, 1000, function() {
+                $("ul>li:eq(0)").remove();
+                $("ul").append(li)
+            })
+        }
+    </script>
+</body>
+
+</html>

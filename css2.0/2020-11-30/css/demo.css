@@ -1,0 +1,9 @@
+.container {
+  background-color: pink;
+  height: 30px;
+}
+.container [class^="col-lg"] {
+  height: 30px;
+  background-color: skyblue;
+  border-right: 1px solid #fff;
+}

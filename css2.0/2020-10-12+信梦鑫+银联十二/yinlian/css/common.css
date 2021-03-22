@@ -1,0 +1,194 @@
+/* 公共样式 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.red {
+    color: #e33333;
+}
+
+input,
+button {
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/* 版心 */
+
+.head {
+    background-color: #f5f5f5;
+}
+
+.w1226 {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+
+/* 顶部开始 */
+
+.top li {
+    float: left;
+    width: 271px;
+    height: 39px;
+    line-height: 39px;
+}
+
+.top i {
+    color: #000;
+    font-size: 14px;
+}
+
+.top li span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    margin: 0 14px 0 12px;
+}
+
+.top li:hover {
+    background-color: #db1f4a;
+}
+
+.time {
+    margin-right: 14px;
+}
+
+.top li:hover span {
+    background-color: #fff;
+}
+
+.top li:hover i {
+    color: #fff;
+}
+
+
+/* 顶部结束 */
+
+
+/* logo部分开始 */
+
+.log {
+    height: 102px;
+}
+
+.logo a {
+    display: block;
+    width: 156px;
+    height: 40px;
+    background: url("../img/logo.png") no-repeat;
+    font-size: 0;
+    margin-top: 30px;
+}
+
+.home .list1 span {
+    background: url("../img/home.png") no-repeat;
+}
+
+.home .list2 span {
+    background: url("../img/home.png") no-repeat -128px 0;
+}
+
+.home .list3 span {
+    background: url("../img/home.png") no-repeat -257px 0;
+}
+
+.home .list4 span {
+    background: url("../img/home.png") no-repeat -385px 0;
+}
+
+.home .list5 span {
+    background: url("../img/44.png") no-repeat;
+}
+
+.list1:hover span {
+    background: url("../img/h1.png") no-repeat;
+    background-size: 30px 30px;
+}
+
+.list2:hover span {
+    background: url("../img/h2.png") no-repeat;
+    background-size: 30px 30px;
+}
+
+.list3:hover span {
+    background: url("../img/h5.png") no-repeat;
+    background-size: 28px 28px;
+}
+
+.list4:hover span {
+    background: url("../img/h3.png") no-repeat;
+    background-size: 30px 32px;
+}
+
+.list5:hover span {
+    background: url("../img/4.png") no-repeat;
+    background-size: 32px 32px;
+}
+
+.home li span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 18px 0 11px 40px;
+}
+
+.home li {
+    float: left;
+    width: 108px;
+    height: 102px;
+    text-align: center;
+}
+
+.home li em {
+    color: #000;
+    font-size: 16px;
+}
+
+.home li:hover {
+    background-color: #dc2245;
+}
+
+.home li:hover em {
+    color: #fff;
+}
+
+
+/* logo部分结束 */
+
+
+/* 页脚开始 */
+
+.footer {
+    margin: auto;
+    width: 630px;
+    height: 66px;
+    line-height: 66px;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #000;
+}
+
+.footer span {
+    color: #999;
+    margin: 0 15px;
+}
+
+.footer img {
+    margin: 24px 9px 0 0;
+}
+
+
+/* 页脚结束 */

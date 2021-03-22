@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css 第三大特性
+            1.优先级 跟权重有关系
+            特点:
+            1.选择器相同,就执行层叠性
+            2.选择器不同,就会涉及到优先级
+         */
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        } 
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* 类名选择器权重大于标签选择器 */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

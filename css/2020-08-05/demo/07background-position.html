@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 背景图片的位置
+            background-position:length| 方位名词;
+            background-position:x坐标  y坐标
+            1.length  表示属性值可以填百分数%,或者精确的数值
+            2.方位名词
+            top  
+         */
+        .box{
+            height: 756px;
+             background-color: skyblue;
+             background-image: url("../img/hh.jpg");
+             background-repeat: no-repeat;
+             /* 背景位置 */
+             /* background-position:50% 50%; */
+             /*1.如果position指定的是 精确的值,那么第一个指定的是x,第二个一定指的是y 单位是px */
+             /* background-position:200px 50px; */
+             /* 2.如果只指定一个数值，第一个一定是x，那么另外一个默认垂直居中 */
+             /* 背景位置   方位名词 */
+             /* background-position: left top; */
+             /* 3.如果指定了两个值,两个值都是方位名词,两个值的前后顺序没有关系 */
+             /* 4.如果指定了一个方位名词,另一个值默认居中对齐 */
+             /* background-position:left; */
+             /* 5.如果指定的两个值是:精确值和方位名词混用,那么第一个指定的一定是x坐标,另外一个指的是y坐标 */
+             /* background-position: 100px bottom; */
+             /* 一般的我们工作中用居中对齐最多 */
+             background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            transform:skew(x,y)  单位为deg
+            transform:skewX()  x轴方向倾斜
+            transform:skewY()  y轴方向倾斜
+         */
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: hotpink;
+            transition: all 1s;
+        }
+        
+        .box:hover {
+            /* 表示x轴45deg   y轴是45deg */
+            /* transform: skew(45deg, 45deg); */
+            transform: skew(120deg);
+            /* 如果只写了一个值  skew(45deg)  第一个参数为x轴  第二个参数默认为0 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

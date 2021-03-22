@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*时间曲线:
+            ease  默认的   逐渐变慢
+            linear   匀速的
+            ease-in  加速
+            ease-out  减速
+            ease-in-out  先加速再减速
+         */
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            /* transition: all 1s; */
+            /* transition: all 1s linear; */
+            /* transition: all 1s ease-in;
+            transition: all 1s ease-out; */
+            transition: all 1s ease-in-out;
+        }
+        
+        .box:hover {
+            height: 300px;
+            width: 300px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

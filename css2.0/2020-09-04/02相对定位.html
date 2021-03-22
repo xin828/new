@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0 ;
+            margin: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box2{
+            /* 设置一个相对定位 */
+            position: relative;
+            left: 80px;
+            top: 120px;
+            background-color:#ccc ;
+        }
+
+        /* 
+        相对定位的特点：（自恋型）
+        1.相对于他自己 原来在标准流中的位置移动
+        2.仍保留在标准流中的位置（占位置）
+        */
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        特:
+        设置浮动之后,块级盒子在一行上显示,类似于行内块 
+        但与真正的行内块相比,没有空白间隙
+        */
+         .box1{
+             float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box2{
+            float:left;
+            width: 300px;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+        /* 总结:
+            3个特点:
+            1.脱离标准流(普通流),漂浮在普通流之上
+            2.原来所占的位置漏给了下面的普通流,不占位置
+            3.设置浮动之后,块级盒子在一行上显示,类似于行内块 ,但与真正的行内块相比,没有空白间隙
+         */
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

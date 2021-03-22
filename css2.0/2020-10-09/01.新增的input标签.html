@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+        }
+        
+        input {
+            border: 0;
+            outline: 0;
+            border: 1px solid orange;
+        }
+        
+        form {
+            background-color: pink;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        新增的表单属性：
+        required   表示必填字段
+        placeholder  提示文本
+        autofocus    自动聚焦
+        autocomplete   值分为off/on   on表示保存用户上一次输入的值(默认)    off 表示的关闭  不保存用户上次键入的值
+        在实际的工作中,autocomplete一般设置为off
+        multiple   选择多文件上传
+     -->
+    <form action="">
+        <ul>
+            <li>
+                用户名:<input type="text" value="请输入您的用户名" autofocus="autofocus">
+            </li>
+            <li>
+                昵称:<input type="text" placeholder="请输入您的昵称">
+            </li>
+            <li>
+                密码:<input type="password" placeholder="请输入您的密码">
+            </li>
+            <li>
+                邮箱:<input type="email" name="email" required="required" placeholder="邮箱格式为:邮箱名@xx.com">
+            </li>
+            <li>
+                地址:<input type="url">
+            </li>
+            <li>
+                手机号码:<input type="tel" required="required">
+            </li>
+            <li>
+                日期:<input type="date">
+            </li>
+            <li>
+                时间:<input type="time">
+            </li>
+            <li>
+                搜索:<input type="search" name="search" autocomplete="off">
+            </li>
+            <li>
+                月份:<input type="month">
+            </li>
+            <li>
+                周:<input type="week">
+            </li>
+            <li>
+                选择文件:
+            </li>
+            <li>
+                <input type="submit">
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>

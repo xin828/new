@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* 当屏幕宽度大于1280px的时候 container的宽度设置为1280 */
+
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+
+/* 左侧 */
+
+.header {
+    padding-left: 0;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    background-color: #429ad9;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* 小屏幕下的logo */
+
+.logo span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #cccccc;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #fff;
+    color: #666;
+}
+
+.nav a:focus {
+    color: #666;
+}
+
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.nav a:hover::before {
+    color: #666;
+}
+
+
+/* .nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+} */
+
+
+/* 中间部分 */
+
+.mid {
+    margin-top: 10px;
+}
+
+.news li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.news li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.news li p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 12px;
+}
+
+.news li img {
+    width: 100%;
+    height: 100%;
+}
+
+.news li:nth-of-type(1) {
+    width: 50%;
+    height: 266px;
+}
+
+.news li:nth-of-type(1) p {
+    width: 100%;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.news li:nth-of-type(1) img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 发表部分 */
+
+.publish {
+    border-top: 1px solid #ccc;
+}
+
+.publish .row {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.dec-color {
+    color: #777;
+    padding-bottom: 10px;
+}
+
+
+/* 右侧 */
+
+.banner {
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.hot-search {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 0 20px 20px;
+}
+
+.hot-search a:hover {
+    text-decoration: none;
+}
+
+.hot-search div {
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.hot-search p {
+    font-size: 12px;
+}
+
+
+/* 媒体查询 */
+
+
+/* 当我们进入 小屏幕 还有 超小屏幕的时候 我们 nav 里面的li 浮动起来 并且宽度为 20%  */
+
+@media screen and (max-width:991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+}
+
+
+/* 屏幕尺寸小于 768px */
+
+@media screen and (max-width:767px) {
+    .news li {
+        width: 50%;
+    }
+    .nav a {
+        font-size: 14px;
+        padding-left: 3px;
+    }
+    .news li:nth-of-type(1) {
+        width: 100%;
+    }
+    .publish h3 {
+        font-size: 14px;
+    }
+}

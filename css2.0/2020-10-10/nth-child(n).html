@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 5px;
+        }
+        /* 
+        nth-child(数值,公式(n),关键词)   选择E元素中的任意一个  
+        n可以是数值,关键字,公式
+        如果n是数值选中第几个就是第几个
+        如果n是关键词   even  偶数   odd   奇数
+        */
+        
+        li:nth-child(3) {
+            background-color: pink;
+        }
+        
+        li:nth-child(10) {
+            background-color: red;
+        }
+        /* li:nth-child(even) {
+            background-color: orange;
+        }
+        
+        li:nth-child(odd) {
+            background-color: gray;
+        } */
+        /* 公式表示偶数 */
+        
+        li:nth-child(2n) {
+            background-color: purple;
+        }
+        /* 公式表示奇数 */
+        
+        li:nth-child(2n-1) {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+</body>
+
+</html>

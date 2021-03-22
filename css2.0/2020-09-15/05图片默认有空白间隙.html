@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 出现的问题:图片或者表单等行内块元素，他的底线会和父级盒子的基线对齐.就是图片底侧会有一个空白间隙*/
+        /* 解决的方法:
+            1.vertical-align:middle | top| bottom;  让图片不要和基线对齐 (只要不是与基线对齐就可以);
+            2.可以给图片设置display:block;  
+            注意:在ie浏览器里面需要给图片设置border:0;
+         */
+        
+        .box img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img/3.jpg" alt="">
+    </div>
+</body>
+
+</html>

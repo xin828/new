@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var myCanvas = document.querySelector('canvas');
+
+        var ctx = myCanvas.getContext('2d');
+
+        /* 1.绘制两个正方形 一大200一小100 套在一起 */
+        ctx.moveTo(100, 100);
+        ctx.lineTo(300, 100);
+        ctx.lineTo(300, 300);
+        ctx.lineTo(100, 300);
+        ctx.closePath();
+
+        ctx.moveTo(150, 150);
+        ctx.lineTo(150, 250);
+        ctx.lineTo(250, 250);
+        ctx.lineTo(250, 150);
+
+
+        ctx.closePath();
+        // 描边
+        // ctx.stroke();
+        ctx.fill();
+    </script>
+    <!-- 
+        非0填充的规则
+        1.看一块区域是否填充
+        2.从这个区域拉一根线
+        3.看这直线相交的轨迹
+        4.如果是顺时针轨迹+1
+        5.如果是逆时针轨迹-1
+        6.所有的轨迹值计算出来
+        7.如果结果是非0那么就填充
+        8.如果是0就不填充
+     -->
+</body>
+
+</html>

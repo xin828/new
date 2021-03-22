@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="yeye">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        //parents()获取全部的祖先辈
+        console.log($(".son").parents());
+        //parents(选择器) 
+        console.log($(".son").parents(".yeye"));
+    </script>
+</body>
+
+</html>

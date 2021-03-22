@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+
+    <script>
+        //绘制一个饼图
+        //1. 根据数据画出一个饼图
+        //2. 从扇形的弧中心绘制一条伸出来的横线 绘制文字
+        //3. 绘制文字说明
+
+        class Pie {
+            constructor(ctx) {
+                // 1. 根据数据画出一个饼图
+                //获取元素 上下文环境
+                this.ctx = ctx || document.querySelector('canvas').getContext('2d');
+
+                //获取画布的宽高
+                this.w = this.ctx.canvas.width;
+                this.h = this.ctx.canvas.height;
+
+                // 决定圆心的位置
+                this.x0 = this.w / 2 + 50;
+                this.y0 = this.h / 2;
+
+                //设置圆弧的半径
+                this.r = 150;
+
+                // 伸出去的长度
+                this.outLine = 20;
+
+                //决定矩形的大小
+                this.rectW = 40;
+                this.rectH = 20;
+
+                //矩形距离左边的间距
+                this.sapce = 25;
+            }
+
+            //一些初始的操作就放在这里面进行
+            init(data) {
+
+                this.drawPie(data)
+
+            }
+
+            //画饼的方法
+            drawPie(data) {
+                //起始弧度和结束弧度
+
+                // 拿到转换成弧度的数据
+                var radList = this.transformRad(data);
+
+                //起始的弧度
+                var startAngle = 0;
+                //画饼
+                radList.forEach((item, idx) => {
+                    //结束的弧度
+                    var endAngle = startAngle + item.rad;
+
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(this.x0, this.y0);
+                    this.ctx.arc(this.x0, this.y0, this.r, startAngle, endAngle);
+
+                    // 获取随机颜色填充饼图
+                    var color = this.getRandomColor();
+                    this.ctx.fillStyle = color;
+
+                    this.ctx.fill();
+
+                    //画伸出去的那条线
+                    this.drawTitle(startAngle, item.rad, color, item.title);
+
+                    //绘制描述
+                    this.drawDesc(idx, item.title);
+
+                    //更新开始的弧度 将上一次的结束弧度换成下一次的开始弧度
+                    startAngle = endAngle;
+
+                })
+
+            }
+
+            //画文字标题
+            drawTitle(startAngle, angle, color, title) {
+                //1.画斜边那条线 确定两个点
+                // 第一个点是圆心点this.x0,this.y0 第二点就是斜边边上的点edgex,edgey
+                // y坐标 = sin() * r + 自己决定的长度
+                // x坐标 = cos() * r + 自己决定的长度
+                //记录斜边
+                var edge = this.r + this.outLine;
+                //y直角边
+                var edgeY = Math.sin(startAngle + angle / 2) * edge;
+                //x直角边
+                var edgeX = Math.cos(startAngle + angle / 2) * edge;
+
+                //把求出来的斜边点转换成画布左上角相对的点
+                var outX = this.x0 + edgeX;
+                var outY = this.y0 + edgeY;
+
+                //画线
+                this.ctx.beginPath();
+                this.ctx.moveTo(this.x0, this.y0);
+                this.ctx.lineTo(outX, outY);
+
+                // 设置字体大小
+                this.ctx.font = "16px 微软雅黑";
+
+                //获取当前绘制文字的宽度
+                var titleW = this.ctx.measureText(title).width;
+
+
+                //延长的水平线 判断线走左边延申还是右边
+                //修改文字的对齐方式
+                if (outX > this.x0) {
+                    //右边
+                    this.ctx.lineTo(outX + titleW, outY);
+                    this.ctx.textAlign = 'left';
+
+                } else {
+                    this.ctx.lineTo(outX - titleW, outY);
+                    this.ctx.textAlign = 'right';
+                }
+
+
+                this.ctx.strokeStyle = color;
+                this.ctx.stroke();
+                this.ctx.textBaseline = 'bottom';
+                this.ctx.fillText(title, outX, outY);
+
+            }
+
+
+            //绘制描述
+            drawDesc(idx, title) {
+                //绘制矩形
+                this.ctx.fillRect(this.sapce, this.sapce + idx * (this.rectH + 10), this.rectW, this.rectH);
+
+                //绘制文字
+                this.ctx.beginPath();
+                this.ctx.textAlign = 'left';
+                this.ctx.textBaseline = 'top';
+                this.ctx.fillText(title, this.sapce + this.rectW + 10, this.sapce + idx * (this.rectH + 10) + 4);
+            }
+
+            //获取随机颜色的方法
+            getRandomColor() {
+                var r = Math.floor(Math.random() * 256);
+                var g = Math.floor(Math.random() * 256);
+                var b = Math.floor(Math.random() * 256);
+
+                return `rgb(${r},${g},${b})`;
+            }
+
+            //计算弧度的方法
+            transformRad(data) {
+                // 1度 = π/180
+                // 360度 = 360 * π / 180 
+                //当前的收入 / 总收入 = 当前的弧度 / 饼的弧度
+
+                //声明一个变量记录总数
+                let total = 0;
+                data.forEach(item => {
+                    total += item.num;
+                });
+
+                // 当前的弧度 = 当前的收入 / 总收入 * 饼的弧度
+                data.forEach(item => {
+                    let rad = item.num / total * 360 * Math.PI / 180;
+                    item.rad = rad;
+                });
+                return data;
+            }
+
+        }
+
+
+
+
+        //模拟数据
+        var data = [{
+            num: 15,
+            title: "15万"
+        }, {
+            num: 30,
+            title: "30万"
+        }, {
+            num: 18,
+            title: "2万"
+        }, {
+            num: 10,
+            title: "10万"
+        }, {
+            num: 20,
+            title: "20万"
+        }];
+
+
+        let pie = new Pie();
+        pie.init(data);
+    </script>
+</body>
+
+</html>

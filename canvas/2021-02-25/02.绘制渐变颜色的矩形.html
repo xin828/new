@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #cccccc;
+        }
+        
+        .box {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background-image: linear-gradient(to right, red, pink);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <div class="box"></div>
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        // fillStyle  可以是预定颜色"pink".rgb(),rgba(),#00f
+
+        /* 可以使用一个渐变的颜色方案填充矩形 */
+        /* 创建一个渐变的颜色方案 */
+        // ctx.createLinearGradient(x0, y0, x1, y1);x0,y0分别表示起点的坐标  x1,y1表示的是终点的坐标
+
+        /* 设置渐变色的方向 */
+        // var linearGradient = ctx.createLinearGradient(0, 100, 600, 100);
+        var linearGradient = ctx.createLinearGradient(100, 100, 400, 300);
+        /* 给渐变方案添加颜色 */
+        linearGradient.addColorStop(0, 'red');
+        linearGradient.addColorStop(0.5, 'skyblue');
+        linearGradient.addColorStop(1, 'pink');
+        // ctx.fillStyle = 'pink';
+        ctx.fillStyle = linearGradient;
+        ctx.fillRect(100, 100, 300, 100);
+
+        /* red -----> pink */
+        /* 渐变里面有方向,起始颜色 结束颜色 */
+    </script>
+</body>
+
+</html>

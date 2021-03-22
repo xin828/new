@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.w970 {
+    width: 970px;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 重置结束 */
+
+
+/* 导航栏开始  */
+
+.box {
+    background: url(../img/wx.jpg) repeat-x;
+}
+
+.logo img {
+    float: left;
+    width: 134px;
+    margin-top: 13px;
+    margin-right: 90px;
+}
+
+.head li a {
+    color: #fff;
+    line-height: 74px;
+    font-size: 12px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.head span {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.head li {
+    float: left;
+}
+
+.page a {
+    background: url(../img/to.png) no-repeat left;
+}
+
+.page span {
+    background: url(../img/to.png) no-repeat right;
+}
+
+.head li a:hover {
+    background: url(../img/to.png) no-repeat left;
+}
+
+.head li a:hover span {
+    background: url(../img/to.png) no-repeat right;
+}
+
+
+/* 导航栏结束 */
+
+
+/*  内容*/
+
+.con {
+    background-color: #dfdde0;
+    border-bottom: 1px solid #c8c8c6;
+}
+
+.con-l h3 {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 55px 0 20px 0;
+}
+
+.con-l p {
+    font-size: 15px;
+    color: #979797;
+    margin-bottom: 10px;
+}
+
+.con-l .account a {
+    color: #609700;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.con-l .account li {
+    color: #999;
+    margin-bottom: 6px;
+}
+
+.free img {
+    margin: 15px 0 10px 0;
+}
+
+.con-r {
+    margin: 40px 80px 0 0;
+}
+
+.win {
+    text-align: center;
+}
+
+.win p {
+    font-size: 14px;
+    color: #0b0b0b;
+}
+
+.win span {
+    font-size: 14px;
+    color: #669a0b;
+}
+
+.win .dian {
+    margin: 40px 0 10px 0;
+}
+
+
+/* 内容结束 */
+
+
+/* 轮播图 */
+
+.banner {
+    margin-top: 40px;
+    border-bottom: 1px solid #d4dadf;
+}
+
+.more {
+    float: left;
+    width: 220px;
+}
+
+.more h4 {
+    font-size: 14px;
+    color: #000;
+    margin-top: 5px;
+}
+
+.more p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.more a {
+    font-size: 14px;
+    color: #609700;
+    margin-top: 6px;
+}
+
+.more-three h4 {
+    font-size: 14px;
+    color: #000;
+    margin-top: 5px;
+}
+
+.more-three p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.more-three a {
+    font-size: 14px;
+    color: #609700;
+    margin-top: 6px;
+}
+
+.more-three {
+    float: left;
+    width: 200px;
+}
+
+.ban-r h2 {
+    font-size: 14px;
+}
+
+.ban-r a {
+    font-size: 12px;
+    color: #609700;
+    width: 285px;
+    margin-left: 4px;
+}
+
+.ban-r li {
+    color: #999;
+    margin-top: 6px;
+}
+
+.ban-r .new {
+    color: #ff0000;
+}
+
+.ban-r li p {
+    float: left;
+}
+
+.ban-r span.date {
+    float: right;
+    color: #999;
+}
+
+.look {
+    margin-bottom: 15px;
+}
+
+.ban-r .lian {
+    vertical-align: middle;
+}
+
+.ban-r .relation {
+    color: #000;
+    margin-bottom: 25px;
+}
+
+
+/* 轮播图结束 */
+
+
+/* 页脚 */
+
+.foo-l li {
+    float: left;
+}
+
+.foo-r li {
+    float: left;
+}
+
+.footer li {
+    color: #888;
+}
+
+.footer a {
+    font-size: 12px;
+    color: #888;
+    margin: 10px 8px;
+}
+
+.time {
+    font-size: 12px;
+    color: #888;
+}
+
+
+/* 页脚结束 */

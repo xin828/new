@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            容器属性:
+            1.flex-direction:  主轴的方向(项目排列方向)
+            row(水平方向) 默认的
+            row-reverse(水平方向逆向) 用的少
+            column(垂直方向)
+            column-reverse(垂直方向逆向) 用的少
+
+        */
+        
+        .wrap {
+            /* 设置弹性布局 */
+            display: flex;
+            /* 容器默认的主轴是水平方向,交叉轴是垂直方向 */
+            /* flex-direction: row; */
+            /* 主轴是水平方向,起始点变成了从右到左 */
+            /* flex-direction: row-reverse; */
+            /* 改变主轴的方向,主轴是垂直方向 */
+            flex-direction: column;
+            /* 改变主轴的方向,主轴是垂直方向 起始点变成了从下到上 */
+            /* flex-direction: column-reverse; */
+            width: 800px;
+            height: 300px;
+            background-color: hotpink;
+        }
+        
+        .wrap span {
+            width: 50px;
+            height: 50px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <span>1</span>
+        <span>2</span>
+    </div>
+</body>
+
+</html>

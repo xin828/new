@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 设置弹性布局 */
+            /* 添加webkit前缀 */
+            display: -webkit-flex;
+            display: flex;
+            width: 300px;
+            height: 200px;
+            justify-content: space-between;
+            background-color: pink;
+        }
+        
+        span {
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+        }
+        
+        span:nth-of-type(2) {
+            background-color: skyblue;
+        }
+        /* box设置弹性布局之后,box叫做容器, box里面的子元素叫做项目 */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+
+</html>

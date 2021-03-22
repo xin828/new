@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 内部样式表 -->
+    <style>
+        /* 
+            text-decoration  文本修饰
+            值:
+                none  (默认值)取消下划线
+                underline  文本下方有横线
+        
+         */
+        a {
+            /* 取消下划线 常用*/
+            text-decoration:none;
+            color:gray;
+        }
+        p {
+            /* 设置下划线 常用 html中的标签是 ins u*/
+            text-decoration: underline;
+        }
+        .three {
+            /* 文本上一条线 不常用*/
+            text-decoration: overline;
+        }
+        .box{
+            /* 穿过文本的一条线 不常用 相当于删除线  html中的标签del  s*/
+            text-decoration:line-through;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com">百度</a>
+    <a href="#">点击一下</a>
+
+    <p>乘风破浪的姐姐</p>
+    <span class="three">三十而已</span>
+
+    <div class="box">二十不惑</div>
+
+</body>
+</html>

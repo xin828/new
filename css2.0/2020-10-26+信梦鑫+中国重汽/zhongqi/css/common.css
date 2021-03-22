@@ -1,0 +1,113 @@
+/* 公共样式 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.red {
+    color: #e33333;
+}
+
+input,
+button {
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/* 版心 */
+
+.w1582 {
+    width: 1582px;
+    margin: 0 auto;
+}
+
+
+/* 页脚开始 */
+
+.footer-t {
+    width: 100%;
+    height: 787px;
+    background: url("../img/footer.jpg") no-repeat;
+}
+
+.footer {
+    padding-top: 157px;
+}
+
+.help {
+    padding-bottom: 80px;
+    border-bottom: 2px solid #1f304f;
+}
+
+.help dl {
+    float: left;
+    margin-right: 156px;
+}
+
+.help dl:last-child {
+    margin-right: 0;
+}
+
+.help dt {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 23px;
+    cursor: pointer;
+}
+
+.help dt:hover {
+    color: red;
+}
+
+.help dd:hover {
+    color: rgb(159, 23, 12);
+}
+
+.help .hot p:hover,
+.help .hot h3:hover {
+    color: red;
+}
+
+.hot {
+    margin-top: 100px;
+}
+
+.help .hot p {
+    color: #fff;
+    font-size: 21px;
+}
+
+.help .hot h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.help dd {
+    color: #bbbac8;
+    font-size: 16px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.copy p {
+    color: #898989;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.copy p:hover {
+    color: red;
+}
+
+
+/* 页脚结束 */

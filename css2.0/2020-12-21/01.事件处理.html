@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .current {
+            background-color: skyblue;
+            color: #fff;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            //element.事件(function(){})
+            // $("div").click(function() {
+            //     $(this).css("background-color", "purple")
+            // })
+            // $("div").mouseover(function() {
+            //     $(this).css("background-color", "red")
+            // })
+
+            //2.事件处理on
+            //(1)on可以绑定1个或者多个事件
+            // $("div").on({
+            //     click: function() {
+            //         $(this).css("color", "white");
+            //     },
+            //     mouseover: function() {
+            //         $(this).css("background-color", "purple");
+            //     },
+            //     mouseleave: function() {
+            //         $(this).css("background-color", "pink");
+            //     }
+            // })
+
+            //如果事件处理相同 事件以空格隔开
+            // $("div").on("mouseover mouseleave", function() {
+            //     $(this).toggleClass("current");
+            // })
+
+            //(2)on可以实现事件委托(委派)
+            // $("ul li").click()
+            // $("ul").on("click", "li", function() {
+            //         alert("ul 的li")
+            //     })
+            //click 绑定在ul上  但是触发的对象是ul 里面的li
+
+            //(3)on  可以未来动态创建的元素绑定事件
+            // $("ol li").click(function() {//单个事件不能给未来动态创建的元素绑定事件
+            //     alert("ol 的li");
+            // })
+            $("ol").on("click", "li", function() {
+                alert("ol 的li")
+            })
+            var li = $("<li>我是后面创建的li</li>");
+            $("ol").append(li);
+        })
+    </script>
+</head>
+
+<body>
+    <div>22222</div>
+    <ul>
+        <li>我们都是ul的孩子</li>
+        <li>我们都是ul的孩子</li>
+        <li>我们都是ul的孩子</li>
+        <li>我们都是ul的孩子</li>
+        <li>我们都是ul的孩子</li>
+    </ul>
+    <ol></ol>
+</body>
+
+</html>

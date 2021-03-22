@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 取消所有元素默认的内外边距 */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            height: 42px;
+            background-color: rgb(252,252,252);
+            border-top: 4px solid rgb(255,133,0);
+            border-bottom: 1px soild rgb(238,237,240);
+        }
+        .box a{
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(76,76,76);
+            font-size: 12px;
+            /* 设置内边距 上下 左右 */
+            padding:0 22px;
+             /* 单行文本垂直居中 */
+            line-height: 42px;
+        }
+        .box a:hover{
+          background-color: rgb(238,238,238);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#">设为首页</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">博客</a>
+        <a href="#">微博</a>
+        <a href="#">关注我</a>
+    </div>
+</body>
+</html>

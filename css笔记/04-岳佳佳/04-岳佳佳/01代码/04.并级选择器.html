@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 并集选择器
+            格式:
+            选择器1,选择器2,选择器3 {
+                属性:属性值;
+            }
+            注意:
+            1.多个选择器具有相同的样式
+            2.选择器与选择器之间用逗号隔开
+            3.
+         */
+        a {
+            color:orangered;
+        }
+        /* span {
+            color:gray;
+            font-size: 20px; 
+        }
+        p {
+            color:gray;
+            font-size: 20px; 
+        } */
+        /* span和p具有相同样式 用并集选择器 */
+        span,p {
+            color:gray;
+            font-size: 20px;
+        }
+        /* 取消标题的加粗效果 */
+        /* h1 {
+            font-weight: 400;
+        }
+        h2 {
+            font-weight: 400;
+        }
+        h3 {
+            font-weight: 400;
+        } */
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: 400;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="#">人气冲天张雨绮女团</a><br/>
+    <span>可爱的钟晓芹</span>
+    <p>美国政府为什么对TikTok下死手？</p>
+
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+</body>
+</html>

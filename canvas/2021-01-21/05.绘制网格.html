@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var myCanvas = document.querySelector('canvas');
+        var ctx = myCanvas.getContext('2d');
+
+        /* 1.绘制网格 */
+        /* 2.网格大小 */
+        /* 3.画多少条x轴方向的线  横线的条数 画布的高度 */
+        /* 4.画多少条y轴方向的线  竖线的条数 画布的宽度 */
+
+        /* 1.绘制网格 */
+        /* 2.网格大小 */
+        var gridSize = 10;
+        /* 3.画多少条x轴方向的线  横线的条数 画布的高度 */
+        // var canvasHeight = myCanvas.height;
+        // var canvasWidth = myCanvas.width;
+        // console.log(canvasHeight, canvasWidth);
+        var canvasHeight = ctx.canvas.height;
+        var canvasWidth = ctx.canvas.width;
+        // 横线的总条数
+        var xLineTotal = Math.floor(canvasHeight / gridSize);
+        console.log(xLineTotal);
+        ctx.strokeStyle = '#ccc';
+        for (var i = 0; i <= xLineTotal; i++) {
+            ctx.beginPath();
+            ctx.moveTo(0, i * gridSize);
+            ctx.lineTo(canvasWidth, i * gridSize - 0.5);
+            ctx.stroke();
+        }
+        // console.log(canvasHeight, canvasWidth);
+
+        /* 4.画多少条y轴方向的线  竖线的条数 画布的宽度 */
+        // 竖线的总条数
+        var yLineTotal = Math.floor(canvasWidth / gridSize);
+        for (var i = 0; i <= yLineTotal; i++) {
+            ctx.beginPath();
+            ctx.moveTo(i * gridSize, 0);
+            ctx.lineTo(i * gridSize - 0.5, canvasHeight);
+            ctx.stroke();
+        }
+    </script>
+</body>
+
+</html>

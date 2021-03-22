@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        /* translate() 参数为一组坐标 x，y 重新映射在画布上的位置 */
+
+        // ctx.translate(100, 100);
+
+
+        // ctx.scale(0.5, 1);
+
+
+
+        var startAngle = 0;
+
+        /* 移动这个画布的左上角的位置 */
+        ctx.translate(200, 150);
+
+        setInterval(() => {
+            startAngle++;
+            ctx.rotate(startAngle * Math.PI / 180);
+            ctx.strokeRect(-100, -50, 200, 100);
+
+        }, 800);
+    </script>
+</body>
+
+</html>

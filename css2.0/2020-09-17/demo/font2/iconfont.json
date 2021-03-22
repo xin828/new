@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17224004",
+      "name": "游戏机",
+      "font_class": "youxiji",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "17224011",
+      "name": "喜欢",
+      "font_class": "xihuan",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "17224211",
+      "name": "通知",
+      "font_class": "tongzhi",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "17224220",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "17224231",
+      "name": "地点",
+      "font_class": "didian",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "17224234",
+      "name": "话筒",
+      "font_class": "huatong",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "17224236",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "17224292",
+      "name": "吉他",
+      "font_class": "jita",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    }
+  ]
+}

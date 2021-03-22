@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            /*父元素设置相对定位 */
+            position: relative;
+            width: 310px;
+            height: 190px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 100px auto;
+        }
+        .mark-top{
+            /* 子元素设置绝对定位 */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .mark-bottom{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img/adv.jpg">
+        <img src="img/top_tu.gif" class="mark-top">
+        <img src="img/br.gif" class="mark-bottom">
+    </div>
+</body>
+
+</html>

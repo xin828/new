@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 复合选择器:由两个及两个以上基础选择器组成
+            后代选择器 
+            作用:可以选择器子孙后代
+            格式:
+            父级(祖先)选择器1 子级(孙子)选择器2  {
+                属性1:属性值1;
+                属性2:属性值2;
+            }
+            注意:
+            父级选择器 和 子级选择器之间用空格隔开
+
+        */
+        .head a {
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- 后代选择器 -->
+    <div class="head">
+        <a href="#">新闻</a>&nbsp;&nbsp;
+        <a href="#">hao123</a>&nbsp;&nbsp;
+        <a href="#">地图</a>&nbsp;&nbsp;
+        <a href="#">视频</a>&nbsp;&nbsp;
+        <a href="#">贴吧</a>&nbsp;&nbsp;
+        <a href="#">学术</a>&nbsp;&nbsp;
+        <a href="#">登录</a>&nbsp;&nbsp;
+        <a href="#">设置</a>&nbsp;&nbsp;
+        <a href="#">更多产品</a>
+        <p>
+            <a href="#">p标签里面的a</a>
+        </p>
+    </div>
+
+    <div class="content">
+        <a href="#">推广</a>
+        <a href="#">百度一下</a>
+    </div>
+</body>
+</html>

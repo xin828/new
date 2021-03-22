@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            弹性布局设置盒子水平垂直居中
+            盒子宽高可以未知
+            第一种方式:
+            1.给父盒子设置弹性布局
+            2.给子元素设置margin:auto;
+            .fa{
+                display:flex;
+            }
+            .son{
+                margin:auto;
+            }
+
+            第二种方式:
+            1.给父盒子设置弹性布局
+            2.然后再设置主轴对齐方式和交叉轴对齐方式  多行用align-content,单行用align-items
+            
+            .fa{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+
+        */
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <span>123</span>
+    </div>
+</body>
+
+</html>

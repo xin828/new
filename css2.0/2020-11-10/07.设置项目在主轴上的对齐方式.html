@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            容器属性
+            justify-content  用来设置项目在主轴上的对齐方式
+            justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+            flex-start  主轴开始的位置
+            flex-end   主轴结束的位置
+            center   主轴中间位置(居中)
+            space-between 两端对齐 ,中间的间隔相等
+            space-around 每个项目两侧的间隔相等,所有项目相接地方两侧的间隔变成原来的1倍
+            space-evenly  每一个项目的间距都均分
+        */
+        
+        div {
+            /* 设置弹性布局 */
+            display: flex;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+        }
+        
+        div span {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+
+    </div>
+</body>
+
+</html>

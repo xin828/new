@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 228px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+        
+        .box::after {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            content: "";
+            width: 8px;
+            height: 8px;
+            border: 1px solid #000;
+            border-left: none;
+            border-bottom: none;
+            margin-top: -8px;
+            /* 旋转 */
+            transform: rotate(135deg);
+            /* 过渡 */
+            transition: all .3s;
+        }
+        /* box盒子hover 的时候  after伪类发生变化 */
+        
+        .box:hover::after {
+            transform: rotate(315deg);
+            margin-top: -4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

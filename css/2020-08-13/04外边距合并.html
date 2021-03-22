@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        .box-top,
+        .box-bottom{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .box-top{
+            margin-bottom: 20px;
+        }
+        .box-bottom{
+            margin-top: 50px;
+        }
+        /* 相邻两个盒子的垂直外边距发生了合并,
+        其中外边距的值去两者中最大的,叫做外边距合并(外边距塌陷)
+        解决方案:
+        尽量给只给一个盒子添加margin值/或者设置同一方向
+         */
+    </style>
+</head>
+<body>
+    <div class="box-top"></div>
+    <div class="box-bottom"></div>
+</body>
+</html>

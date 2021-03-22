@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /* 2.调用动画 */
+            animation: move 2s linear infinite;
+        }
+        /* 1.定义动画 */
+        
+        @keyframes move {
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(500px);
+            }
+        }
+        /* 练习: 从左边到右边 x轴位移 500px */
+        /*  */
+        
+        .wrap {
+            width: 300px;
+            height: 300px;
+            /* text-align: right; */
+            border: 1px solid red;
+            overflow: hidden;
+        }
+        
+        .wrap h3,
+        .wrap p,
+        .btn {
+            width: 100px;
+            /* margin-left: 300px; */
+            /* 2.调用动画 */
+            animation: moveLeft 1.2s linear forwards;
+        }
+        
+        .wrap p {
+            animation-delay: .2s;
+        }
+        
+        .btn {
+            animation-delay: .4s;
+        }
+        /* 1.定义一个动画 */
+        
+        @keyframes moveLeft {
+            0% {
+                opacity: 0;
+                transform: translate3d(300px, 0, 0);
+            }
+            100% {
+                opacity: 1;
+                transform: translate3d(0px, 0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <div class="wrap">
+        <h3>标题1</h3>
+        <p>这是段落</p>
+        <div class="btn"> 按钮 </div>
+    </div>
+</body>
+
+</html>

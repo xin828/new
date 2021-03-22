@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1.引入jquery文件 -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>我是div</div>
+    <div class="nav">我是nav div</div>
+    <p>我是p</p>
+    <p>我是p</p>
+    <ul>
+        <li>我是ul 的</li>
+        <li>我是ul 的</li>
+        <li>我是ul 的</li>
+        <li>我是ul 的</li>
+        <li>我是ul 的</li>
+    </ul>
+    <ol id="two">
+        <li>我是ol 的</li>
+        <li>我是ol 的</li>
+        <li>我是ol 的</li>
+        <li>我是ol 的</li>
+        <li>我是ol 的</li>
+    </ol>
+    <script>
+        //基础选择器  $("选择器")  选择器是css选择器,要使用引号
+
+        console.log($("div"));
+        console.log($(".nav"));
+        console.log($("ul>li"));
+        console.log($("*"));
+        console.log($("#two"));
+        console.log($("p,div,ol,ul"));
+        //$(".nav + p")表示选择.nav标签后面紧挨着的p标签
+        console.log($(".nav + p"));
+    </script>
+</body>
+
+</html>

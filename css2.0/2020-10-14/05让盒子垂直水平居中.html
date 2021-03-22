@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 让盒子垂直水平居中
+            要已知宽高
+            方法一:
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px 0 0 -100px;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            
+
+            方法二:
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: auto;
+
+            方法三:
+            不需要已知盒子的宽高
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        */
+        /* .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px 0 0 -100px;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        } */
+        /* .box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: auto;
+        } */
+        
+        .father {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+        }
+        
+        .father span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* translate中的%单位  是相对于自身的宽高来计算的*/
+            transform: translate(-50%, -50%);
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <div class="father">
+        <span>小盒子</span>
+    </div>
+</body>
+
+</html>

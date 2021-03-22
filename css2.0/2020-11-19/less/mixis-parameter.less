@@ -1,0 +1,41 @@
+// 声明函数  用".",括号里面可以写参数,可以是一个参数也可以是多个,多个参数之间用逗号隔开
+.fr(){
+    float:right;
+}
+
+// 1.定义函数
+.border-radius(@w,@style,@color){
+    border:@w @style @color;
+}
+
+
+// 如果不想传参数   设置默认值
+.border-radius(@w:1px,@style:solid,@color:green){
+    border:@w @style @color;
+}
+.lt(@left:0px,@top:0px){
+    position: absolute;
+    left: @left;
+    top: @top;
+}
+
+// 定义盒子宽高
+.size(@w,@h){
+    width: @w;
+    height: @h;
+}
+
+.wrap{
+  .size(200px,200px);
+    // 2.调用函数
+    // .border-radius(2px,solid,red);
+    
+    // 如果使用默认值,不用传参
+    // .border-radius();
+    .border-radius(2px);
+}
+.box{
+    .size(100px,100px);
+    .border-radius(10px,solid,orange);
+    .lt(50%,50%);
+}

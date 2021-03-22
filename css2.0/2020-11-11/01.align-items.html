@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            align-items   设置项目在交叉轴的对齐方式(单行)
+            align-items :  flex-start/flex-end/center/stretch(拉伸)/baseline
+            flex-start  从交叉轴顶部开始
+            flex-end    从交叉轴底部开始
+            center   居中
+            stretch(拉伸)  拉伸
+            baseline    基线对齐
+        */
+        
+        .wrap {
+            /* 1.定义弹性布局 */
+            display: flex;
+            /* 设置项目在交叉轴上的对齐方式   单行 */
+            align-items: flex-end;
+            align-items: stretch;
+            width: 400px;
+            height: 200px;
+            background-color: hotpink;
+        }
+        
+        .wrap span {
+            width: 100px;
+            /* 设置拉伸,项目不需要设置高度 */
+            /* height: 100px; */
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <span>1</span>
+        <span>2</span>
+    </div>
+</body>
+
+</html>

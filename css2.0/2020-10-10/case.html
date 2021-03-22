@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[value^="请输入"],
+        input[placeholder^="请输入"] {
+            color: red;
+            font-weight: 700;
+        }
+        /*         
+        input::placeholder {
+            color: red;
+        }
+         */
+        
+        input[value*="邮箱"] {
+            background-color: green;
+        }
+        
+        input[value$="地址"] {
+            border-radius: 10px;
+            border: dashed 4px red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 练习
+    找到以"请输入"开头的,设置字体加粗,颜色red
+    -->
+    <input type="text" value="用户名">
+    <input type="text" value="昵称">
+    <input type="password" placeholder="请输入密码">
+    <input type="email" value="请输入用户的126邮箱">
+    <input type="email" value="请输入163邮箱">
+    <input type="email" value="QQ邮箱">
+    <input type="email" value="请输入foxmail邮箱">
+    <input type="url" value="用户注册的url">
+    <input type="url" value="请输入百度的地址">
+    <input type="url" value="京东的地址">
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        background-size: 背景图片的宽度   背景图片的高度
+        background-size:长度/百分比  /cover /contain
+         */
+        
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            background: url("dog.jpg") no-repeat;
+            /* background-size: 背景图片的宽度   背景图片的高度 */
+            /* background-size: 500px 200px; */
+            /* 1.如果只写一个参数   第一个值为宽度   高度省略了,高度会等比缩放 */
+            /* background-size: 500px; */
+            /* 里面的单位可以跟%,相对于父盒子来说 */
+            /* background-size:50%; */
+            /* 3.cover  全部覆盖div盒子 */
+            /* background-size: cover; */
+            /* 4.contain  是图片的宽度和高度都等比拉伸  当宽度或者高度  铺满整个div盒子就不会再进行拉伸了 */
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

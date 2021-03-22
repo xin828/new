@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            padding 表示的内边距
+            分为四个方向
+            padding-top  表示的是上内边距
+            padding-right 表示的是右内边距
+            padding-bottom 表示的是下内边距
+            padding-left   表示的是左内边距
+
+            总结:给盒子设置内边距,发生了两件事
+                1.盒子的内容和边框之间有了间距
+                2.盒子变大了
+         */
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            /* padding-top: 20px;
+            padding-right:10px;
+            padding-bottom:50px;
+            padding-left :100px; */
+            /* 综合写法  顺时针  分为上,右,下,左,每个值之间用空格隔开 */
+            /* padding:20px 10px 50px 100px; */
+            /* 一个值表示上右下左,四个方位数值相同 */
+            /* padding:20px; */
+            /* 两个值,第一个表示上下,第二个表示左右 */
+            /* padding:20px 10px; */
+            /* 三个值  第一个数表示的是上内边距,第二个数表示的是左右的内边距,第三个数表示的是下内边距*/
+            padding:20px 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        这是内容
+    </div>
+</body>
+</html>

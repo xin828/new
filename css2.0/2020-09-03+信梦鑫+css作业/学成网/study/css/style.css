@@ -1,0 +1,347 @@
+/* ================ css重置样式开始 ================ */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* 取消项目符 */
+li{
+    list-style: none;
+}
+/* 取消下划线 */
+a{
+    text-decoration: none;
+    color: #050505;
+}
+/* 确定版心 */
+.w1200{
+   width: 1200px;
+   margin: auto;
+}
+body{
+    background-color: #f3f5f7;
+}
+/* 左浮动 */
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/* 清除浮动 */
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;
+}
+
+/* ================ css重置样式结束 ================ */
+
+/* 顶部 */
+.head-top{
+    height: 101px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.head{
+    margin-top: 30px;
+    height:42px;
+}
+.logo{
+    width: 195px;
+}
+.logo img{
+    width: 100%;
+    /* display: block; */
+    vertical-align: middle;
+}
+.nav{
+    margin-left: 70px;
+    margin-right:65px;
+}
+
+.nav li{
+    float: left;
+    margin-right: 28px;
+  
+}
+.nav li a{
+    display: inline-block;
+      line-height: 40px;
+      padding: 0 8px;
+}
+
+.nav li a:hover{
+     border-bottom: 2px solid #00a4ff;
+}
+/* .active{
+    border-bottom: 2px solid #00a4ff;
+} */
+.search input{
+    float: left;
+    width:360px ;
+    height: 38px;
+    border: 1px solid #00a4ff;
+     color: #bfbfbf;
+    border-right: none;
+    text-indent: 19px;
+}
+.search button{
+    float: left;
+    width:50px;
+    height:40px;
+    border: 0;
+    background: url(../img/fa-search.png) no-repeat;
+}
+/* banner部分 */
+.banner{
+    height: 420px;
+    background: #1c036c url(../img/banner2.png) no-repeat center top;
+}
+
+.list-left{
+    width: 150px;
+    height: 408px;
+    padding: 12px 20px 0;
+    background-color: rgba(0,0,0, 0.3);
+}
+.list-left a{
+    display: block;
+    line-height: 44px;
+    color:#fff;
+}
+/* 鼠标移到li上面   a发生怎样的变化 */
+.list-left li:hover a{
+    color: #0093d1;
+}
+.list-left a span{
+    float: right;
+}
+.my-schedule{
+    width: 228px;
+    height: 300px;
+    /* 在浮动的情况下,垂直外边距不会发生合并 */
+    margin-top:52px;
+    background-color: #fff;
+}
+.my-schedule h3{
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    background-color: #9bceea;
+}
+.my-schedule ul{
+    padding: 9px 17px 12px;
+}
+.my-schedule li{
+    padding: 10px 0 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+.my-schedule h4{
+    font-size:16px;
+}
+.my-schedule p{
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.my-schedule .btn{
+    border-bottom: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+.btn a{
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color:  #22b0ff;;
+    border: 1px solid #22b0ff;
+}
+/* 精品推荐 */
+.goods{
+    height: 60px;
+    line-height: 60px;
+    margin-top: 8px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #767676;
+}
+.title{
+    width: 133px;
+    font-size: 16px;
+    color: #00a4ff;
+    text-align: center;
+}
+.sub-nav a{
+    padding: 0 35px;
+    color: #050505;
+}
+.sub-nav{
+    color: #bfbfbf;
+}
+.sub-nav a:hover{
+    color: #00a4ff;
+}
+.edit{
+    margin-right:26px;
+    color: #00a4ff;
+    font-size: 14px;
+}
+/* 内容区域 */
+.content{
+    margin-top: 32px;
+}
+
+.content-title{
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+}
+.more{
+    margin-right: 30px;
+    color: #a5a5a5;
+    font-size: 12px;
+}
+/* 精品推荐 */
+.boutique-hd{
+    height: 60px;
+    line-height: 60px;
+}
+.boutique-bd ul{
+    width: 1215px;
+
+}
+.boutique-bd li{
+    position: relative;
+    float: left;
+    width: 228px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.list{
+    display: block;
+}
+.list img{
+    /* width: 100%; */
+    display:block;
+}
+.boutique-bd ul .mark-hot{
+    position: absolute;
+    right: -5px;
+    top: 4px;
+    width:40px ;
+    height: 30px;
+}
+.text{
+    padding: 20px 22px;
+    background-color: #fff;
+}
+.text h3{
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.text p{
+    font-size: 14px;
+    color: #999;
+}
+.orange{
+    color: #ff7c2e;
+}
+
+/* 编程入门 */
+.content-title{
+    font-weight: 400;
+    font-size: 20px;
+}
+.box-nav{
+    margin-left: 352px;
+}
+.box-nav li{
+    float: left ;
+    margin-right: 70px;
+}
+.box-nav a{
+    color: #868686;
+}
+.active a{
+    color: #00a4ff;
+}
+.box-hd-lt{
+    width: 228px;
+}
+.box-hd-rt{
+    width: 957px;
+    margin-left: 15px;
+}
+.rt-img{
+    margin-bottom: 20px;
+}
+.box-hd-rt ul{
+    width: 972px;
+    margin-bottom: 10px;
+}
+.box-hd-rt li{
+    width: 228px;
+    float: left;
+    margin-right: 15px;
+}
+
+/* 页面底部 */
+.footer{
+    height: 385px;
+    padding-top:33px ;
+    background-color: #fff;
+
+}
+.footer-lt img{
+    width: 195px;
+    height: 42px; 
+    margin-bottom: 19px;
+
+}
+.copyright{
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.app{
+    display: block;
+    width: 118px;
+    height: 34px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 34px;
+    color: #00a4ff;
+}
+.footer-rt{
+    margin-right: 30px;
+}
+.footer-rt dl{
+    float: left;
+    /* width: 100px; */
+}
+.footer-rt dt{
+    line-height: 33px;
+    font-size: 16px;
+    color: #333;
+
+}
+.footer-rt dd a{
+    color: #333;
+    font-size: 12px;
+}
+.footer-rt dd a:over{
+    color: #00a4ff;
+}
+.m-l-r{
+    margin-left: 140px;
+    margin-right: 120px;
+}

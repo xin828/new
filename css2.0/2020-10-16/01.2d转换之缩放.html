@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            2D转换之缩放
+            transform:scale(x,y)  x,y之间使用逗号分隔
+            x,y表示的是倍数   不带单位
+            1表示不变  
+         */
+        
+        .wrap {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        
+        .wrap:hover {
+            /* 
+                1.scale里面的x,y不带单位  就是倍数的意思  1表示1倍  1.2表示1.2倍
+
+              */
+            /* transform:scale(x,y);  */
+            /* transform: scale(2,2); */
+            /* 修改宽度为原来的两倍,高度不变 */
+            /* transform:scale(2,1);  */
+            /* 如果只写了一个参数,那么第二个参数和第一个一致 */
+            /* transform:scale(2)  */
+            /* 小于1的表示缩小 */
+            /* transform:scale(0.8,0.8); */
+            /* 默认的是中心点缩放,可以设置缩放的中心点 */
+            /* transform:scale(0.8,0.8); */
+            /* transform-origin:left top; */
+            /* 最大的优势是不影响其他的盒子 */
+            transform: scale(0.5, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap"></div>
+</body>
+
+</html>

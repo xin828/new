@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid rgb(189, 66, 189);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext("2d");
+
+        //画图
+        //创建图片对象
+        var image = new Image();
+        image.onload = function() {
+            /*  
+                图片对象 image
+                截取的x轴位置
+                截取的y轴位置
+                截取的图片的宽度
+                截取的图片的高度
+                画布上的x轴
+                画布上的y轴
+                图片的宽度
+                图片的高度
+            */
+            //获取图片的宽高
+            var imageWidth = image.width;
+            var imageHeiht = image.height;
+
+            //计算人物所占的宽高
+            var personWidth = imageWidth / 4;
+            var personHeiht = imageHeiht / 4;
+
+            // 绘制在画布的最中心
+            var x0 = ctx.canvas.width / 2 - personWidth / 2;
+            var y0 = ctx.canvas.height / 2 - personWidth / 2;
+
+            ctx.drawImage(image, 0, 0, personWidth, personHeiht, x0, y0, personWidth, personHeiht);
+            var index = 0;
+            setInterval(() => {
+                index++;
+                if (index >= 4) {
+                    index = 0;
+                }
+                //清除画布 
+                ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+                //重新绘制
+                ctx.drawImage(image, index * personWidth, 0, personWidth, personHeiht, x0, y0, personWidth, personHeiht);
+
+                // if (index >= 3) {
+                //     index = -1;
+                // }
+            }, 300)
+        }
+        image.src = "img/04.png";
+    </script>
+</body>
+
+</html>

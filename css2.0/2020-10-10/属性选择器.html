@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            color: pink;
+            cursor: pointer;
+        }
+        /*属性选择器 []表示属性 
+            E[attr]  E表示的是元素(标签)   attr表示属性
+             
+            属性选择器的权重是 0 0 1 0    相当于类名选择器
+          */
+        /* 权重 0001+0010=0011 */
+        
+        button[disabled] {
+            color: red;
+            cursor: default;
+        }
+        /* 
+            E[att="val"]  E[attr]  E表示的是元素(标签)   attr表示属性   val表示的是属性的值
+        */
+        
+        input[type="text"] {
+            color: skyblue;
+        }
+        
+        input[value="请输入新浪网址"],
+        input[value="用户名"] {
+            color: lightgreen;
+        }
+        
+        input[type="email"] {
+            background-color: pink;
+            color: red;
+        }
+        /* 
+            E[att^="val"] ^表示 att属性以val开头
+        */
+        
+        li[class^="icon"] {
+            width: 200px;
+            height: 38px;
+            margin-bottom: 5px;
+            background-color: lightsalmon;
+        }
+        /* 
+        E[att$="val"]$表示   att属性以val结尾
+        */
+        
+        li[class$="icon"] {
+            width: 200px;
+            height: 38px;
+            margin-bottom: 5px;
+            background-color: orangered;
+        }
+        /* 
+        E[att*="val"]*表示   att属性值包含val的
+        */
+        
+        li[class*="icon"] {
+            margin-bottom: 5px;
+            width: 200px;
+            height: 38px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <button>按钮</button>
+    <button>按钮</button>
+    <button disabled="disabled">按钮</button>
+    <button disabled="disabled">按钮</button>
+
+    <input type="text" value="文本框">
+    <input type="text" value="文本框">
+    <input type="text" value="文本框">
+
+    <input type="search" value="搜索框">
+    <input type="search" value="搜索框">
+    <input type="search" value="搜索框">
+
+    <!-- 练习:
+        通过属性选择器   选择器value值只有新浪的,用户名 字体颜色为lightgree  
+        获取所有邮箱类型   设置背景颜色为pink  字体为红色  
+     -->
+    <input type="email" value="请输入邮箱">
+    <input type="email" value="请输入邮箱">
+    <input type="url" value="请输入百度网址">
+    <input type="url" value="请输入新浪网址">
+    <input type="text" value="昵称">
+    <input type="text" value="用户名">
+
+    <ul>
+        <li class="icon1"></li>
+        <li class="icon2"></li>
+        <li class="icon3"></li>
+        <li class="bicon4"></li>
+        <li class="aicon"></li>
+
+    </ul>
+    <div class="iconb"></div>
+    <div class="icona"></div>
+    <p class="qicon"></p>
+    <p class="hiconl"></p>
+
+</body>
+
+</html>

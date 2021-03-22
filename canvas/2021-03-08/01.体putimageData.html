@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var canvas = document.querySelector("canvas");
+        var ctx = canvas.getContext("2d");
+
+        var canvaswidth = canvas.width;
+        var canvasheight = canvas.height;
+
+        //绘制一张阿骨朵的图片
+        var image = new Image();
+        image.onload = function() {
+            ctx.drawImage(image, 0, 0, canvaswidth, canvasheight);
+
+            var canvasData = ctx.getImageData(0, 0, canvaswidth, canvasheight);
+            var cvsDataArr = canvasData.data;
+            //遍历数组
+            // for (var i = 0; i < cvsDataArr.length; i += 4) {
+            //     cvsDataArr[i] = 255 - cvsDataArr[i];
+            //     cvsDataArr[i + 1] = 255 - cvsDataArr[i + 1];
+            //     cvsDataArr[i + 2] = 255 - cvsDataArr[i + 2];
+            //     cvsDataArr[i + 3] = 255;
+            // }
+            // ctx.putImageData(canvasData, 0, 0);
+        }
+        image.src = "img/16.jpg";
+    </script>
+</body>
+
+</html>

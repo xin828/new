@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        
+        div:nth-child(2) {
+            background-color: orange;
+        }
+        
+        div:nth-child(3) {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>1</div>
+    <div>12</div>
+    <div>3</div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            //1.  element.each(function(index,domEle){})  index表示的是索引号   domEle 表示的是获取的元素  遍历 匹配每一个元素
+            var sum = 0;
+            $("div").each(function(i, ele) {
+                // $(ele) 表示将ele转成jquery对象
+                console.log(i);
+                console.log($(ele).css("background-color"));
+                console.log($(ele));
+                sum += parseInt($(ele).text())
+            })
+            console.log(sum);
+        })
+    </script>
+</body>
+
+</html>

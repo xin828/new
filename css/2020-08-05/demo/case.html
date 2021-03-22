@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*1. 所有的标签在一行上,要有宽高 需要转换成行内块*/
+        a{
+            /* 行内元素转成行内块 */
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            color: #fff;
+            background-color: pink;
+            /* 文字水平居中 */
+            text-align: center;
+            /* 取消下划线 */
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 28px; 
+        }
+        /* 2.鼠标移上去,a标签发生变化 */
+        a:hover{
+            background-color: orange;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">新闻</a>
+    <a href="#">体育</a>
+    <a href="#">汽车</a>
+    <a href="#">好用</a>
+</body>
+</html>

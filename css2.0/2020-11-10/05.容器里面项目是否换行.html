@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            容器属性:
+            flex-direction 设置主轴的方向
+            flex-wrap:nowrap/wrap/wrap-reverse  控制主轴上的项目是否换行
+            nowrap  不换行 默认的
+            wrap  换行 第一行在上面
+            wrap-reverse 换行反向 第一行在下面
+        */
+        
+        div {
+            /* 设置弹性布局 */
+            display: flex;
+            /* 换行 */
+            flex-wrap: wrap;
+            /* 第一行在下面 */
+            flex-wrap: wrap-reverse;
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+        }
+        
+        div span {
+            width: 200px;
+            height: 100px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            font-size: 20px;
+            width: 0;
+            height: 26px;
+            /* 调用动画 */
+            /* steps()里面填步数,和动画运行的时间有关系 */
+            animation: step 4.2s steps(14) infinite;
+            overflow: hidden;
+        }
+        /* 定义动画 */
+        
+        @keyframes step {
+            0% {}
+            100% {
+                width: 280px;
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        转折点象棋选拔赛我在这里等你
+    </div>
+
+</body>
+
+</html>

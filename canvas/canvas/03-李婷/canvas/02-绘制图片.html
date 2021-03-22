@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        var canvas = document.querySelector("canvas");
+        var ctx = canvas.getContext('2d');
+
+
+        //创建图片对象
+        var image = new Image();
+        // 图片资源加载完毕
+        image.onload = function() {
+            //绘制图片
+            // console.dir(image);
+
+            // 绘制图片有三种方式
+
+            //方式一：三个参数
+            // ctx.drawImage(image,x,y)
+            //图片对象 画布的x轴位置 画布的y轴位置
+            // ctx.drawImage(image, 100, 100);
+
+            //方式一：三个参数
+            // ctx.drawImage(image,x,y,width,height)
+            //图片对象 画布的x轴位置 画布的y轴位置 图片的宽 图片的高
+            // ctx.drawImage(image, 100, 100, 100, 100);
+
+            //方式一：三个参数
+            // ctx.drawImage(image,sx,sy,swidth,sheight,x,y,width,height)
+            //图片对象 截取图片的x坐标 截取图片y轴的坐标 截取图片的范围之宽度 截取图片的范围之高度 画布的x轴位置 画布的y轴位置 图片的宽 图片的高 
+            ctx.drawImage(image, 402, 345, 273, 336, 100, 100, 100, 50);
+
+        }
+        image.src = 'img/02.jpg';
+    </script>
+</body>
+
+</html>

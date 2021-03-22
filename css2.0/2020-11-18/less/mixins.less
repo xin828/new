@@ -1,0 +1,32 @@
+//定义一个函数   使用"."
+@num:10;
+
+.fl{
+    float: left;
+}
+// 带了小括号,调用的时候才会用到,不会显示在css中
+.fr(){
+    float: right;
+}
+.border{
+    border: 5px dashed red;
+}
+
+.box{
+    width: 40px * @num;
+    height: 40px * @num;
+    background-color: pink;
+    div{
+        width: 10px * @num;
+        height: 10px * @num;
+        background-color: orange;
+    }
+    :nth-child(1){
+        // 当函数调用
+        .fl();    
+        .border();
+    }
+    :nth-child(2){
+        .fr();    
+    }
+}

@@ -1,0 +1,38 @@
+// 混合的匹配模式
+// @_  表示的是通用参数
+
+.triangle(@_,@w,@style,@color){
+    width: 0;
+    height: 0;
+    border-width: @w;
+    border-style: @style;
+   
+}
+
+// 定义函数
+.triangle(T,@w,@style,@color){
+     border-color:@color transparent transparent transparent;
+}
+.triangle(B,@w,@style,@color){
+    border-color:transparent transparent @color transparent;
+}
+.triangle(L,@w,@style,@color){
+    border-color:transparent transparent transparent @color;
+}
+.triangle(R,@w,@style,@color){
+   border-color:transparent @color transparent transparent;
+}
+
+//调用
+.box{
+    .triangle(T,20px,solid,red);
+}
+.wrap{
+    .triangle(B,20px,solid,green);
+}
+.wrap1{
+    .triangle(R,20px,solid,red);
+}
+.box1{
+    .triangle(L,20px,solid,green);
+}

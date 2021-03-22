@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 3d转换有:
+            3d位移  translate3d(x,y,z)
+            3d旋转  rotate3d(x,y,z,angle)
+            3d缩放  scale3d(x,y,z)
+            perspective  表示的是透视
+         */
+        /* 要看到3d的效果    就需要给父盒子设置透视   透视的单位是px, 数值越小就表示物体距离视角越近
+
+
+            透视特点是:近大远小
+         */
+        
+        body {
+            /* perspective 一定要给父盒子设置 */
+            perspective: 200px;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: hotpink;
+            transition: all 1s;
+        }
+        
+        .box:hover {
+            /* translate3d(x,y,z)  不能省略,但是没有的可以设置0 */
+            /* transform: translate3d(100px, 200px, 200px); */
+            /* 如果想使用3d  只需要X轴方向 */
+            /* transform: translateX(200px); */
+            /* 如果只需要y轴方向    */
+            /* transform: translateY(200px); */
+            /* 如果只需要z轴方向    */
+            transform: translateZ(200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        border表示的边框
+        语法格式:
+        border:border-width | border-style|
+        border-color;
+        边框:边框的宽度 |边框的风格|边框的颜色
+        border-width:数值,单位是px
+        border-style:none(默认的)solid(实线)|dashed(虚线)|dotted(点线)
+        border-color:颜色值
+
+
+         */
+         .box{
+             width: 100px;
+             height: 100px;
+             background-color: pink;
+             /* 边框的粗细 */
+             /* border-width: 10px; */
+             /* 实线 */
+             /* border-style: solid; */
+             /* 虚线 */
+             /* border-style: dashed; */
+             /* 点线 */
+             /* border-style: dotted; */
+            /* 边框线的颜色 */
+             /* border-color: red; */
+
+             /* 边框线的综合写法  没有顺序*/
+             border:10px dotted red;
+             /* border-left: greenyellow;
+             border-right-color: skyblue;
+             border-top-color: tomato;
+             border-bottom-color:green ; */
+             border-right: solid skyblue;
+         }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

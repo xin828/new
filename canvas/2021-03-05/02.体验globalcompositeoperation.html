@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        //绘制那张猪的图片
+        //再绘制一个粉红色的圆  半径150  圆心 画布中心点
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        var canvaswidth = canvas.width;
+        var canvasheight = canvas.height;
+
+        var image = new Image();
+        image.onload = function() {
+            ctx.drawImage(image, canvaswidth / 2 - 300 / 2, canvasheight / 2 - 200 / 2, 300, 200);
+
+            //soure-over 默认值  原图像(后面画的) 盖在目标图像(先画的)上方
+            ctx.globalCompositeOperation = 'destination-out';
+
+            ctx.arc(canvaswidth / 2, canvasheight / 2, 150, 0, Math.PI * 2);
+            ctx.fillStyle = "pink";
+            ctx.fill();
+        }
+        image.src = 'img/02.jpg';
+    </script>
+</body>
+
+</html>

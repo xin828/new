@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            谷歌浏览器的前缀:   -webkit-
+            safari  浏览器的前缀   -webkit-
+            firefox(火狐)  浏览器的前缀  -moz-
+            ie  浏览器的前缀     -ms-
+            欧朋 浏览器的前缀   -o-
+        */
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            -webkit-animation: move 2s linear infinite;
+            -moz-animation: move 2s linear infinite;
+            -ms-animation: move 2s linear infinite;
+            animation: move 2s linear infinite;
+        }
+        
+        @-webkit-keyframes move {
+            0%,
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+            50% {
+                transform: translate3d(300px, 0, 0);
+            }
+        }
+        
+        @-ms-keyframes move {
+            0%,
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+            50% {
+                transform: translate3d(300px, 0, 0);
+            }
+        }
+        
+        @keyframes move {
+            0%,
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+            50% {
+                transform: translate3d(300px, 0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

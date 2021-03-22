@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul {
+            width: 1040px;
+            height: 615px;
+            border: 2px solid red;
+        }
+        
+        ul li {
+            float: left;
+            width: 200px;
+            height: 200px;
+            list-style: none;
+            background-color: pink;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+        /* 要求一行放五个
+            根本问题:ul宽度不够
+
+            盒子的实际空间的宽度=width(内容宽度)+padding(左右)+border(左右)+margin(左右)
+            盒子的实际空间的高度=width(内容高度)+padding(上下)+border(上下)+margin(上下)
+        */
+        
+        li:nth-child(5n) {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

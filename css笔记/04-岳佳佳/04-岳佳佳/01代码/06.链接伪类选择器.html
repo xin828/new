@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 链接伪类选择器 
+            用冒号:连接
+            :link 表示的是未点击之前的状态
+            :visited 表示已经访问的链接
+            :hover  鼠标移到链接上的状态
+            :active  点击时的状态
+
+            链接设置按照  lvha 的顺序,不一致会可能引起错误.
+
+            记忆的方法:
+            love hate
+            lv包包  非常h a o          
+        */
+        a {
+            color:#333;
+            font-weight: 700;
+        }
+        
+        /* 未点击之前的颜色 */
+        /* 交集选择器 */
+        a:link {
+            color:yellowgreen;
+        }
+        /* 已经访问的 */
+        a:visited{
+            color:purple;
+        }
+        /* 鼠标移到链接上的状态 */
+        a:hover {
+            color:pink;
+        }
+        /* 点击链接的状态 */
+        a:active {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>未访问的状态</h2>
+    <a href="###">京东</a>
+    <h2>已经访问的状态</h2>
+    <a href="#">京东</a>
+    <h2>鼠标移上去的状态</h2>
+    <a href="#">京东</a>
+</body>
+</html>

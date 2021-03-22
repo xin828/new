@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            项目属性:
+            order    表示项目的排列顺序   默认值为0,数值越小,排列顺序越靠前,相反数值越大,越靠后
+            
+             
+        */
+        
+        .wrap {
+            display: flex;
+            width: 400px;
+            height: 500px;
+            background-color: hotpink;
+        }
+        
+        .wrap span {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        
+        .wrap span:nth-child(1) {
+            order: 1;
+        }
+        
+        .wrap span:nth-child(4) {
+            order: -1;
+        }
+        
+        .wrap span:nth-child(2n) {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </div>
+</body>
+
+</html>

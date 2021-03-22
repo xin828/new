@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            径向渐变:
+             语法格式:
+            background-image: radial-gradient(shape size at position, start-color, last-color, ...);
+            shape的参数   circle(圆形)或 ellipse(椭圆)
+            size  at  position
+            closest-side  at  x  y  圆心点所在的位置
+        */
+        
+        .box {
+            width: 200px;
+            height: 100px;
+            /* 颜色后面的百分比表示的是该颜色所占的比例 */
+            background: radial-gradient(circle, pink 10%, skyblue 20%, yellow);
+            background-image: radial-gradient(closest-side at 60% 55%, red, yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

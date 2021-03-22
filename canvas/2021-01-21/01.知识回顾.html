@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var myCanvas = document.querySelector('canvas');
+        var ctx = myCanvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.lineTo(200, 100);
+        ctx.lineTo(200, 200);
+        // ctx.lineTo(100, 100);
+        // 闭合路径
+        ctx.closePath();
+
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = 'red';
+        ctx.stroke();
+        ctx.fillStyle = 'skyblue';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(100, 360);
+        ctx.lineTo(200, 360);
+        ctx.strokeStyle = 'pink';
+        ctx.stroke();
+    </script>
+</body>
+
+</html>

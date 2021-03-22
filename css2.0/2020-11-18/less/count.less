@@ -1,0 +1,37 @@
+// 定义变量
+//less运算   有+ - * /   运算符左右有空格隔开
+@padding:10px + 10;
+
+@num:10;
+
+@rem:16;
+
+@rem2:16rem;
+
+.wrap{
+    width: 400px;
+    height: 400px;
+    font-size: 2px * @num;
+    border: @padding - 18 solid red;
+    .box{
+        width: 100px / @num;
+        height: 100px / @num;
+        padding: @padding + 10px;
+        background-color: purple;
+    }
+}
+
+.father{
+    // 如果两个值只有一个单位,那运算结果就取该单位
+    width: 10px * @rem;
+    height: 10px * @rem;
+    background-color: yellowgreen;
+}
+p{
+    // 如果两者都有单位  运算结果就取前面的单位
+    // width: 10px * @rem2;
+    // height: 10px * @rem2;
+    width:@rem2 * 10px;
+    height:@rem2 * 10px;
+    background-color: orange;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var canvas = document.querySelector("canvas");
+        var ctx = canvas.getContext("2d");
+
+        //图片宽高是 200*200
+        var imagew = 200;
+        var imageh = 200;
+
+        //计算出画布的中心点
+        var x0 = canvas.width / 2;
+        var y0 = canvas.height / 2;
+
+
+        //绘制一段圆弧
+        ctx.beginPath(); //开辟新路径
+        //水平上方的线和右上角的弧
+        ctx.moveTo(x0 - imagew / 2 + 50, y0 - imageh / 2); // 创建开始点
+        ctx.lineTo(x0 + imagew / 2 - 50, y0 - imageh / 2); // 创建水平线
+        ctx.arcTo(x0 + imagew / 2, y0 - imageh / 2, x0 + imagew / 2, y0 - imageh / 2 + 100, 50); // 创建弧
+
+        //垂直右边的线和右下角的弧
+        ctx.lineTo(x0 + imagew / 2, y0 + imageh / 2 - 50); // 创建水平线
+        ctx.arcTo(x0 + imagew / 2, y0 + imageh / 2, x0 + imagew / 2 - 50, y0 + imageh / 2, 50); // 创建弧
+
+        //水平边下方的线和左下角的弧
+        ctx.lineTo(x0 - imagew / 2 + 50, y0 + imageh / 2); // 创建水平线
+        ctx.arcTo(x0 - imagew / 2, y0 + imageh / 2, x0 - imagew / 2, y0 - imageh / 2 - 50, 50); // 创建弧
+
+        //垂直左边的线和左上角的弧
+        ctx.lineTo(x0 - imagew / 2, y0 - 50); // 创建水平线
+        ctx.arcTo(x0 - imagew / 2, y0 - imageh / 2, x0 - 50, y0 - imageh / 2, 50); // 创建弧
+
+        //裁剪 只有先绘制的圆角矩形区域内的才会展示
+        ctx.clip();
+
+        //绘制图片
+        var image = new Image();
+        image.onload = function() {
+            ctx.drawImage(image, x0 - imagew / 2, y0 - imageh / 2, imagew, imageh);
+
+            //从canvas中导出一张图片
+            var canvasUrl = canvas.toDataURL();
+            console.log(canvasUrl);
+        }
+        image.src = "img/cc.jpg";
+
+
+        // ctx.beginPath();
+        // ctx.moveTo(20, 20); // 创建开始点
+        // ctx.lineTo(100, 20); // 创建水平线
+        // ctx.arcTo(150, 20, 150, 70, 50); // 创建弧
+        // ctx.lineTo(150, 120); // 创建垂直线
+        ctx.stroke(); // 进行绘制
+    </script>
+</body>
+
+</html>

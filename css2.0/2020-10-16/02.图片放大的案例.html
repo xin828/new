@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            float: left;
+            width: 225px;
+            height: 137px;
+            margin-right: 10px;
+            overflow: hidden;
+        }
+        
+        .box img {
+            transition: all .5s;
+        }
+        /* box盒子hover  图片发生变化 */
+        
+        .box:hover img {
+            transform: scale(1.05, 1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="media/scale.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="media/scale.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="media/scale.jpg" alt="">
+    </div>
+</body>
+
+</html>

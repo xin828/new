@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 3d转换缩放
+            transform:scale3d(x,y,z);
+            transform:scaleX(x);
+            transform:scaleY(y);
+             缩放里面的Z单独设置不起作用
+            transform:scaleZ(z);
+         */
+        
+        body {
+            perspective: 500px;
+        }
+        
+        .box {
+            width: 300px;
+            height: 202px;
+            margin: 50px auto;
+            /* 让子元素保留3d空间 */
+            transform-style: preserve-3d;
+        }
+        
+        .box img {
+            width: 100%;
+            display: block;
+        }
+        
+        .box:hover img {
+            /* x轴方向,宽度拉伸 */
+            /* transform: scaleX(1.2); */
+            /* Y轴方向,高度拉伸 */
+            /* transform: scaleY(1.2); */
+            /* Z轴单独写不起效果 */
+            /* transform: scaleZ(1.2); */
+            /* transform:scale3d(x,y,z) */
+            /* scale3d(1, 1, 3)==scaleZ(3)  */
+            transform: scale3d(1, 1, 3) rotateX(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img/2.jpg" alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的li</li>
+        <li class="item">我是ol的li</li>
+        <li>我是ol的li</li>
+        <li>我是ol的li</li>
+        <li>我是ol的li</li>
+        <li>我是ol的li</li>
+        <li>我是ol的li</li>
+    </ol>
+    <ul>
+        <li>我是ul的li</li>
+        <li>我是ul的li</li>
+        <li>我是ul的li</li>
+        <li>我是ul的li</li>
+        <li>我是ul的li</li>
+    </ul>
+    <div class="current">我有current</div>
+    <div>我没有current</div>
+    <ul class="dot">
+        <li>
+            <a href="#">百度一下</a>
+            <div class="box">我是盒子</div>
+            <p>我是段落</p>
+            <strong>加粗</strong>
+            <i>我是斜体</i>
+        </li>
+    </ul>
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        // 都是方法,都要带小括号
+        $(function() {
+            //1.兄弟元素siblings()  是指除自己之外的所有的亲兄弟
+            $("ol .item").siblings("li").css("color", "green");
+            //2.第n个元素
+            var index = 2;
+            //(1)我们通过选择器的方式获取
+            // $("ul li:eq(2)").css("color", "red");
+            // $("ul li:eq(" + index + ")").css("color", "red");
+            //(2)通过筛选方法的方式获取eq(index) index是索引值 从0开始  更推荐这种方式
+            // $("ul li").eq(index).css("color", "red");
+            //3.判断是否有某个类 hasClass()  有的话为true 否则为false
+            // console.log($("div:first").hasClass("current")); //true
+            // console.log($("div:last").hasClass("current")); //false
+
+            //nextAll()  查找的是当前元素之后的所有同辈元素
+            $(".box").nextAll().css("background", "hotpink");
+            //prevAll() 查找的是当前元素之前的所有同辈元素
+            $(".box").prevAll().css("color", "orangered");
+        });
+    </script>
+</body>
+
+</html>

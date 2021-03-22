@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .farther{
+            width: 400px;
+            height:200px ;
+            background-color: pink;
+            margin-top: 100px;
+            padding-top:1px ;
+
+        }
+        .son{
+            width: 300px;
+            height: 100px;
+            background-color: orange;
+            margin-top: 30px;
+        }
+        /* 嵌套关系的块级盒子发生垂直外边距合并,取值为两者中的较大者
+        解决方案:
+        1.给父盒子设置上内边距
+        2.给父盒子设置上边框线
+        3.给父盒子设置overflow-hidden;
+         */
+       
+    </style>
+</head>
+<body>
+    <div class="farther">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

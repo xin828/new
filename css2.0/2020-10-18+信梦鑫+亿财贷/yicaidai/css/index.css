@@ -1,0 +1,663 @@
+/* 公共样式 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.red {
+    color: #e33333;
+}
+
+input,
+button {
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/* 版心 */
+
+.w1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* ============================= */
+
+
+/* 头部开始 */
+
+.head {
+    height: 42px;
+    background-color: #258ba1;
+}
+
+.service {
+    font-size: 12px;
+    color: #fff;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+.dl {
+    line-height: 42px;
+}
+
+.dl a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.dl span {
+    color: #060007;
+    margin: 0 10px;
+}
+
+
+/* 头部结束 */
+
+
+/* 导航栏开始 */
+
+.nav {
+    height: 80px;
+}
+
+.logo {
+    line-height: 80px;
+}
+
+.nav-s {
+    position: relative;
+}
+
+.nav-s li {
+    float: left;
+    margin-left: 50px;
+}
+
+.nav-s li a {
+    color: #666;
+    font-size: 16px;
+    line-height: 80px;
+}
+
+.nav-s span {
+    color: #000;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.nav-s li:hover a {
+    color: #288d97;
+}
+
+.nav-s li:hover span {
+    color: #288d97;
+}
+
+
+/* 导航栏结束 */
+
+
+/* 轮播图开始 */
+
+.banner {
+    width: 100%;
+    height: 593px;
+    background: url("../img/ban.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.ban-t {
+    position: relative;
+    height: 100%;
+}
+
+.register {
+    position: absolute;
+    top: 70px;
+    right: 4px;
+    width: 298px;
+    height: 321px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ecaidai img {
+    margin: 50px 0 0 260px;
+}
+
+.register .regi {
+    width: 240px;
+    height: 66px;
+    border-bottom: 1px solid #ebe7e6;
+    text-align: center;
+    margin-left: 28px;
+}
+
+.regi a {
+    color: #228b9e;
+    font-size: 16px;
+    line-height: 66px;
+}
+
+.register i {
+    display: block;
+    font-size: 16px;
+    color: #228b9e;
+    margin-top: 55px;
+}
+
+.register em {
+    color: #f25647;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.register .money {
+    display: block;
+    width: 214px;
+    height: 41px;
+    color: #fff;
+    background-color: #258ba1;
+    font-size: 12px;
+    line-height: 41px;
+    margin: 63px 0 0 41px;
+}
+
+.dot {
+    position: absolute;
+    bottom: 56px;
+    left: 50%;
+}
+
+.dot span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+.dot span:nth-child(1) {
+    background-color: #969d95;
+}
+
+.dot span:hover {
+    background-color: #969d95;
+}
+
+
+/* 轮播图结束 */
+
+
+/* 超高门槛开始 */
+
+.height {
+    width: 100%;
+    height: 232px;
+    background-color: #f9f9f9;
+    padding-top: 52px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.earnings h3 {
+    color: #4b4b4b;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 14px 0;
+}
+
+.earnings p {
+    color: #9c9c9c;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.earnings span {
+    color: #f46555;
+    font-size: 13px;
+    margin: 0 4px 1px 4px;
+}
+
+.earnings li {
+    float: left;
+    width: 160px;
+    text-align: center;
+    margin-right: 115px;
+}
+
+.earnings li:nth-child(1) {
+    margin-left: 12px;
+}
+
+.earnings li:nth-child(4) {
+    margin-right: 0;
+}
+
+
+/* 超高门槛结束 */
+
+
+/* 我要理财开始 */
+
+.financial {
+    padding: 30px 0;
+}
+
+.month {
+    width: 100%;
+    height: 190px;
+    border: 1px solid #e6e6e6;
+}
+
+.wo {
+    margin-bottom: 10px;
+}
+
+.wo a {
+    color: #297982;
+    font-size: 18px;
+    padding-left: 14px;
+    border-left: 6px solid #247382;
+}
+
+.month i {
+    color: #1c1c1c;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.top .three {
+    margin-left: 84px;
+}
+
+.top .two {
+    margin-right: 0;
+}
+
+.top {
+    margin: 28px 0 42px 0;
+}
+
+.month span {
+    font-size: 15px;
+    color: #737373;
+    margin-right: 185px;
+}
+
+.red {
+    margin-bottom: 30px;
+}
+
+.red em {
+    color: #fc655a;
+    font-size: 15px;
+}
+
+.red em:nth-child(1) {
+    margin-left: 108px;
+}
+
+.red em:nth-child(2) {
+    margin: 0 185px 0 208px;
+}
+
+.red em:nth-child(3) {
+    margin: 0 192px 0 2px;
+}
+
+.invest {
+    width: 920px;
+    height: 48px;
+    border-top: 1px solid #e5e5e5;
+    margin-left: 35px;
+}
+
+.invest a {
+    color: #707070;
+    font-size: 15px;
+}
+
+.invest a:nth-child(1) {
+    margin-left: 66px;
+}
+
+.invest a:nth-child(4) {
+    margin-right: 0;
+}
+
+.invest a {
+    margin-right: 222px;
+    line-height: 48px;
+}
+
+
+/*  我要理财结束 */
+
+
+/* 投资理财开始 */
+
+.lay {
+    width: 100%;
+    height: 400px;
+    padding-top: 30px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.biao .title tr {
+    width: 100%;
+    line-height: 52px;
+}
+
+.biao td:nth-child(1) {
+    width: 155px;
+}
+
+.biao .otr td {
+    font-size: 14px;
+    color: #818181;
+    border-bottom: 0;
+}
+
+.title td {
+    font-size: 14px;
+    color: #4d4d4d;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.biao .lend {
+    text-align: right;
+}
+
+.title span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: #218ca0;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 9px;
+}
+
+.title .blue {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #39abdf;
+    border-radius: 50%;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+.title .hr .a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #f8605d;
+    border-radius: 50%;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+.hr .huan {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-color: #e5e4e2;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+.title td:nth-of-type(1) {
+    padding: 0 100px 0 50px;
+}
+
+.title td:nth-of-type(3) {
+    padding: 0 85px 0 60px;
+}
+
+.title td:nth-of-type(4) {
+    padding-right: 46px;
+}
+
+.title td:nth-of-type(5) {
+    padding-right: 45px;
+}
+
+.title td:nth-of-type(6) {
+    padding-right: 71px;
+}
+
+.more {
+    width: 100%;
+    height: 52px;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    line-height: 52px;
+}
+
+.more a {
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+.hr {
+    position: relative;
+}
+
+
+/* 投资理财结束 */
+
+
+/* 新闻中心开始 */
+
+.list {
+    margin-right: 40px;
+}
+
+.tou {
+    width: 480px;
+    margin-bottom: 10px;
+}
+
+.tou .ment {
+    color: #297982;
+    font-size: 18px;
+    padding-left: 14px;
+    border-left: 6px solid #247382;
+}
+
+.mo {
+    font-size: 12px;
+    color: #656565;
+}
+
+.news {
+    width: 100%;
+    height: 430px;
+    padding-top: 30px;
+}
+
+.million li {
+    width: 480px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.million li a {
+    color: #4c4c4c;
+    font-size: 12px;
+}
+
+.million li span {
+    float: right;
+    font-size: 11px;
+    color: #7e7e7e;
+}
+
+.link {
+    margin-top: 20px;
+}
+
+.financi li:nth-of-type(1) {
+    margin-left: 30px;
+}
+
+.financi li:nth-of-type(14) {
+    margin-right: 0;
+}
+
+.financi li:last-child {
+    margin-left: 28px;
+}
+
+.financi {
+    width: 100%;
+}
+
+.financi li {
+    float: left;
+    margin-right: 24px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.financi li a {
+    color: #636363;
+    font-size: 13px;
+}
+
+
+/* 新闻中心结束 */
+
+
+/* 页脚开始 */
+
+.footer {
+    width: 100%;
+    height: 190px;
+    background-color: #258ba1;
+    padding-bottom: 28px;
+}
+
+.regard dl {
+    float: left;
+    margin-right: 136px;
+    text-align: center;
+}
+
+.regard dt {
+    color: #fbffff;
+    font-size: 16px;
+    margin: 30px 0 20px 0;
+}
+
+.regard dd {
+    color: #dcdcde;
+    font-size: 12px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.regard dd:hover {
+    color: #fff;
+}
+
+.heat .photo {
+    display: inline-block;
+    color: #fffff3;
+    font-size: 16px;
+    margin: 30px 10px 15px 0;
+}
+
+.heat i {
+    color: #dcdcde;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.heat h2 {
+    color: #f8fffd;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.download {
+    width: 180px;
+    height: 50px;
+}
+
+.download p {
+    color: #dcdcde;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.download p:hover {
+    color: #fff;
+}
+
+.download .sj {
+    margin-left: 10px;
+}
+
+.download span {
+    color: #78939a;
+    margin: 0 6px;
+}
+
+.download em {
+    color: #fdf9f0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.download em:hover {
+    color: #dcdcde;
+}
+
+.heat .wx {
+    margin-left: 20px;
+}
+
+
+/* 页脚结束 */
+
+
+/*版权部分开始 */
+
+.copyright {
+    width: 100%;
+    height: 50px;
+    background-color: #0c7e96;
+    /* margin-bottom: 44px; */
+}
+
+.copyright p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/*版权部分结束 */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        video   表示的是视频标签
+        语法格式:
+          <video src="media/video.mp4"></video>
+          标签属性:
+          src  视频的路径
+          controls  视频的控件
+          autopsy  自动播放   谷歌浏览器禁止了这个属性
+          width  播放器的宽度
+          height  播放器的高度
+          loop   循环播放
+          preload  auto (预加载)  none(表示的不预加载)  写了autoplay 属性可以忽略这个
+          poster  加载等待的画面图片
+          muted   禁音播放   谷歌的可以实现禁音播放
+     -->
+    <!-- 第一种方式 -->
+    <!-- <video src="media/video.mp4" controls="controls" width="300" autoplay="autoplay" loop="loop" poster="media/pig.jpg" muted="muted"></video> -->
+
+    <!-- 第二种方式  针对不同的浏览器有不同的视频版本 -->
+    <video controls="controls" autoplay="autoplay" muted="muted">
+        <source src="media/music.ogg">
+        <source src="media/video.mp4">
+        你的浏览器版本过低
+    </video>
+
+</body>
+
+</html>

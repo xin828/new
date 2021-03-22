@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        margin 的值 数值,百分数,auto 
+        margin设置盒子的水平居中
+        条件:
+        1.盒子必须要设置宽度
+        2.设置margin值的左右两边为auto
+        写法1: margin-left:auto;margin-right: auto;
+        写法2:margin:0 auto;
+        写法3: margin:auto;
+        */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* 只能让盒子里面的文本 居中 */
+            text-align: center;
+            /* margin 能让盒子水平居中 */
+            /* margin-left:auto ;
+            margin-right: auto; */
+            /* margin:0 auto; */
+            margin: auto;
+        }
+        /* 如果标签的显示模式转换了块元素,那么不能使用text-align:center;水平居中,而是要转换模式 */
+        /* 总结:
+            1.文字居中使用text-align:center;
+            可以使文字,行内元素,行内块元素水平居中
+            2.盒子水平居中使用margin:0 auto;
+        
+         */
+    </style>
+</head>
+<body>
+    <div class="box">
+        内容<br>
+    <span>行内元素</span>
+    </div>
+</body>
+</html>

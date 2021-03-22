@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 500px;
+            height: 200px;
+            background-color:yellowgreen;
+        }
+        .son1,
+        .son2{
+            width: 100px;
+            height: 100px;
+            background-color:yellow;
+        }
+        .son1{
+            float: left;
+            margin-top: 30px;
+        }
+        .son2{
+            float: right;
+            margin-top: 50px;
+        }
+
+        .box{
+            position: relative;
+            width: 500px;
+            height: 200px;
+            background-color:skyblue;
+        }
+        .box-rt{
+            position: absolute;
+            top: 50px;
+            left: 200px;
+            width: 100px;
+            height: 100px;
+            /* margin-top: 50px; */
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+     <!-- 浮动元素不会触发外边距合并 -->
+    <h2>浮动元素不会触发外边距合并</h2>
+   
+    <div class="father">
+        <div class="son1"></div>
+        <div class="son2"></div>
+    </div>
+
+
+    <!-- 绝对定位的情况下不会触发外边距合并 -->
+    <h2>绝对定位的情况下不会触发外边距合并</h2>
+    
+    <div class="box">
+        <div class="box-rt"></div>
+    </div>
+</body>
+</html>

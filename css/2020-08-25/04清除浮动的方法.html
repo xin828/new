@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除浮动的属性: 
+            选择器{
+                clear:left|right|both;
+                }   clear 清除  
+                1.额外标签法:
+                浮动元素末尾添加一个空的标签,写上clear:both;样式
+        */
+        .box1{
+            width: 800px; 
+            margin: auto;
+            background-color:green;
+        }
+        .son1,
+        .son2{
+            float: left;
+            width: 200px;
+            height: 100px;
+            background-color:sandybrown ;
+        }
+    </style>
+</head>
+<body>
+     <div class="box1">
+        <div class="son1">1</div>
+        <div class="son2">2</div>
+        <!-- 额外标签法 -->
+        <div style="clear: both;"></div>
+    </div>
+</body>
+</html>

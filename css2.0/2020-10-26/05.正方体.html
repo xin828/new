@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+        
+        .wrap {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 100px auto;
+            /* 设置子元素保留3d空间 */
+            transform-style: preserve-3d;
+            /* 调用动画 */
+            animation: rotate 10s linear infinite;
+        }
+        
+        .wrap div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            line-height: 120px;
+            font-size: 30px;
+            background-color: rgba(255, 0, 0, .1);
+            box-shadow: 0 0 12px rgba(255, 0, 0, .3) inset;
+        }
+        
+        .wrap div:nth-of-type(1) {
+            transform: rotateY(0deg) translateZ(60px);
+        }
+        
+        .wrap div:nth-of-type(2) {
+            transform: rotateY(90deg) translateZ(60px);
+        }
+        
+        .wrap div:nth-of-type(3) {
+            transform: rotateY(180deg) translateZ(60px);
+        }
+        
+        .wrap div:nth-of-type(4) {
+            transform: rotateY(270deg) translateZ(60px);
+        }
+        
+        .wrap div:nth-of-type(5) {
+            transform: rotateX(90deg) translateZ(60px);
+        }
+        
+        .wrap div:nth-of-type(6) {
+            transform: rotateX(-90deg) translateZ(60px);
+        }
+        /* 定义动画 */
+        
+        @keyframes rotate {
+            0%,
+            100% {
+                transform: rotate3d(0, 0, 0, 0deg);
+            }
+            35% {
+                transform: rotate3d(0, 1, 0, 180deg);
+            }
+            70% {
+                transform: rotate3d(1, 0, 0, 360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+</body>
+
+</html>

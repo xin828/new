@@ -1,0 +1,30 @@
+
+// 后代选择器
+// .father .son{
+//     font-size: 14px;
+//     background-color: skyblue;
+// }
+
+// less的嵌套
+.father{
+    .son{
+        font-size: 14px;
+        background-color: skyblue;
+    }
+    a{
+        text-decoration: none;
+        background-color: red;
+        color: #fff;
+        // less里面遇到伪类或者伪元素或者交集选择器  要使用"&"连接
+        &:hover{
+            background-color: pink;
+        }
+    }
+    p{
+        font-size: 30px;
+        color: bisque;
+        &.son{
+            background-color: orange;
+        }
+    }
+}

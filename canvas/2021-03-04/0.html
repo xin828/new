@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #myCanvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+
+    <script>
+        var Person = function(ctx) {
+            // 绘制工具
+            this.ctx = ctx || document.getElementById('myCanvas').getContext('2d');
+            // 图片路径
+            this.src = 'img/04.png';
+            // 画布的大小
+            this.canvasWidth = this.ctx.canvas.width;
+            this.canvasHeight = this.ctx.canvas.height;
+            // 定义行走的参数
+            this.stepSize = 5; // 步伐大小
+            this.direction = 0; // 0往前 ，1往左，2往右，3往后
+            this.stepX = 0; // 行走方向
+            this.stepY = 0; // 行走方向
+            //初始化方法
+            this.init();
+        };
+        // 定义初始化方法
+        Person.prototype.init = function() {
+            //保存当前this
+            var that = this;
+            // 加载图片
+            this.loadImage(function(image) {
+                // 图片的大小
+                that.imageWidth = image.width;
+                that.imageHeight = image.height;
+                // 人物的大小
+                that.personWidth = that.imageWidth / 4;
+                that.personHeight = that.imageHeight / 4;
+                // 绘制图片的起点
+                that.x0 = that.canvasWidth / 2 - that.personWidth / 2;
+                that.y0 = that.canvasHeight / 2 - that.personHeight / 2;
+
+                // 默认绘制在中心位置朝外
+                that.ctx.drawImage(image, // 图片
+                    0, 0, // 从图片的坐标位置开始
+                    that.personWidth, that.personHeight, // 截取多大的图片
+                    that.x0, that.y0, // 从画布的起点开始
+                    that.personWidth, that.personHeight); // 画多大
+
+                // 添加方向键控制图片的行走
+                that.index = 0;
+                document.onkeydown = function(e) {
+                    if (e.keyCode == 37) {
+                        // 左
+                        that.direction = 1;
+                        that.stepX--;
+                        that.drawImage(image);
+                        // 前
+                    } else if (e.keyCode == 38) {
+                        that.direction = 3;
+                        that.stepY--;
+                        that.drawImage(image);
+                    } else if (e.keyCode == 39) {
+                        // 右
+                        that.direction = 2;
+                        that.stepX++;
+                        that.drawImage(image);
+                    } else if (e.keyCode == 40) {
+                        // 后
+                        that.direction = 0;
+                        that.stepY++;
+                        that.drawImage(image);
+                    }
+                }
+            });
+        };
+
+        // 加载图片的方法
+        Person.prototype.loadImage = function(callback) {
+            var image = new Image();
+            image.onload = function() {
+                callback && callback(image);
+            };
+            image.src = this.src;
+        };
+
+        Person.prototype.drawImage = function(image) {
+            this.index++;
+            // 清除画布
+            this.ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
+            // 默认绘制在中心位置朝外
+            this.ctx.drawImage(image, // 图片
+                this.index * this.personWidth, this.direction * this.personHeight, // 从图片的坐标位置开始
+                this.personWidth, this.personHeight, // 截取多大的图片
+                this.x0 + this.stepX * this.stepSize, this.y0 + this.stepY * this.stepSize, // 从画布的起点开始
+                this.personWidth, this.personHeight); // 画多大
+
+            if (this.index >= 3) {
+                this.index = 0;
+            }
+        };
+
+        new Person();
+    </script>
+</body>
+
+</html>

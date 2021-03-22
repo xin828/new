@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        .box{
+            width: 1226px;
+            height:615px;
+            margin: auto;
+            background-color: skyblue;
+        }
+        .box-left{
+            float: left;
+            width: 234px;
+            height: 100%;
+        }
+        /* 给图片设置宽度 让高度等比缩放 */
+        .box-left img{
+            width: 100%;
+            height: 100%;
+        }
+        .box-right{
+            float: left;
+            width: 992px;
+        }
+        .box-right li{
+            float: left;
+            width: 234px;
+            height: 300px;
+            margin-left: 14px;
+            margin-bottom: 15px;
+            background-color: pink;
+            list-style: none;
+        }
+    </style>
+</head>
+<body> 
+    <div class="box">
+        <!-- 左边的盒子 -->
+        <div class="box-left">
+            <img src="xm.webp">
+        </div>
+         <!-- 左边的盒子结束 -->
+         <!-- 右边的盒子 -->
+         <div class="box-right">
+             <ul>
+                 <li>
+                    <a href="#">1</a>
+                 </li>
+                 <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+                <li>
+                    <a href="#">6</a>
+                </li>
+                <li>
+                    <a href="#">7</a>
+                </li>
+                <li>
+                    <a href="#">8</a>
+                </li>
+             </ul>
+         </div>
+         <!-- 右边的盒子结束 -->
+    </div>
+</body>
+</html>

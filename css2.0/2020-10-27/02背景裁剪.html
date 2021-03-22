@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 背景裁剪
+            background-clip:border-box  | padding-box  |content-box
+
+            border-box   背景图片从边框盒子开始
+            padding-box  背景图片从内边距开始
+            content-box  背景图片从内容开始
+            */
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .box {
+            width: 386px;
+            padding: 20px;
+            border: 20px solid transparent;
+            margin: 100px;
+            height: 260px;
+            background: url("img/heder.jpg") no-repeat;
+            /* 背景裁剪 */
+            /* background-clip:content-box; */
+            background-clip: padding-box;
+        }
+        
+        .box-padding {
+            position: absolute;
+            left: 120px;
+            top: 120px;
+            width: 386px;
+            height: 260px;
+            /* padding: 20px; */
+            border: 20px solid rgba(255, 0, 0, .3);
+        }
+        
+        .box-border {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 386px;
+            height: 260px;
+            /* padding: 40px; */
+            border: 40px solid rgba(0, 10, 255, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box-padding"></div>
+    <div class="box-border"></div>
+</body>
+
+</html>

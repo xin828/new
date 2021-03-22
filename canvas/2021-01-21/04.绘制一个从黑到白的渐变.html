@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var myCanvas = document.querySelector('canvas');
+        var ctx = myCanvas.getContext('2d');
+
+        /* 绘制一个矩形 */
+        // 线是由点构成的
+        // ctx.moveTo(100, 100);
+        // ctx.lineTo(355, 100);
+        // ctx.lineWidth = 30;
+        // ctx.strokeStyle = '#fff';
+        //  ctx.stroke();
+
+        ctx.lineWidth = 30;
+        /* 画多长就有多少个点,每个点颜色不一样,黑到白的rgb的颜色值刚好是从0到255 */
+        for (var i = 0; i < 255; i++) {
+            /*  每一个点都要有不同的颜色 */
+            ctx.beginPath();
+            ctx.moveTo(100 + i - 1, 100);
+            ctx.lineTo(100 + i, 100);
+            ctx.strokeStyle = 'rgb(' + i + ',' + i + ',' + i + ')';
+            ctx.stroke();
+        }
+    </script>
+</body>
+
+</html>

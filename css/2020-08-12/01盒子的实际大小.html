@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+         盒子实际大小的宽度=width(content)+padding(左右)+border(左右)
+        盒子实际大小的高度=height(content)+padding(上下)+border(上下)
+         */
+     .box{
+        width:200px;
+        height: 200px;
+        background-color: pink;
+        border: 5px solid black;
+        padding: 10px 20px;
+       }
+       /*解决方案:
+       内边距一定要设置的话,我们只能改变内容的宽度 
+        */
+    </style>
+   
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

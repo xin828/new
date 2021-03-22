@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1.引入jquery文件 -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <video src="media/mov.mp4" muted="muted"></video>
+    <script>
+        $(function() {
+            //1.DOM对象转换成jQuery对象,方法只有一种
+            // (1).我们使用原生的方式获取视频,是DOM对象
+            var myVideo = document.querySelector('video');
+            console.log(myVideo);
+            // myVideo.play(); //play()是原生的方法
+            // (2).使用jQuery获取视频  是jQuery对象
+            // $("video")
+            console.log($("video"));
+            // $("video").play();jquery对象没有DOM对象play()方法
+            // $(myVideo) //转换成了jQuery对象
+            console.log($(myVideo));
+
+
+            // 2.jQuery对象要转换成DOM对象   有两种方式
+            // 2.1 jQuery对象[索引值]
+            $('video')[0].play(); //$('video')[0]转换成了DOM对象
+            console.log($('video')[0]);
+            // 2.2  jQuery对象.get(索引值)
+            $('video').get(0).play();
+            console.log($('video').get(0));
+        })
+    </script>
+</body>
+
+</html>

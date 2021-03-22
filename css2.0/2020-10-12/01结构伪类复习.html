@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div :first-child {
+            color: red;
+        }
+        
+        div :last-child {
+            color: skyblue;
+        }
+        
+        div span:last-child {
+            color: royalblue;
+        }
+        /* 下面这个给span指定的第三个是没有用的  nth-child(n) 前面指定类型没有作用 */
+        
+        span:nth-child(3) {
+            color: salmon;
+        }
+        /* 下面的这些可以指定类型的
+            指定E元素类型的第一个 
+            E:first-of-type{}
+        */
+        
+        span:first-of-type {
+            color: seagreen;
+        }
+        
+        p:first-of-type {
+            color: indigo;
+        }
+        
+        span:last-of-type {
+            color: yellow;
+            font-weight: 700;
+        }
+        /* 
+            nth-of-type(n)选择指定类型的任意一个
+            n可以是数值,公式,关键词(even  odd)
+        */
+        
+        span:nth-of-type(2n) {
+            background-color: gray;
+        }
+        
+        a:nth-of-type(2n-1) {
+            color: tan;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#">百度一下</a>
+        <p>这是一段文字1</p>
+        <p>这是一段文字2</p>
+        <span>小盒子1</span>
+        <span>小盒子2</span>
+        <span>小盒子3</span>
+        <a href="#">百度</a>
+        <span>小盒子4</span>
+        <span>小盒子5</span>
+    </div>
+</body>
+
+</html>

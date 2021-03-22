@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+        h1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        常见块级元素：
+        div,h1-h6,p,dl,dt,dd,ul,li,ol等等,其中<div>标签是最典型的块元素
+        特点:
+        1.独占一行
+        2.可以设置宽,高,外边距和内边距;
+        3.宽度默认是容器（父级宽度）的100%
+        4.块元素是一个容器,可以放行内元素和块级元素
+        注意事项:
+        p标签里面不能放块级元素,包括标题标签,div标签
+        h1,h2,h3,h4,h5,h6,dt,这个里面不放块级元素,只放行内元素,因为他们都是文字类块级标签，里面不能放其他块级元素
+    -->
+    <h3>
+        披荆斩棘的哥哥
+    </h3>
+    
+     <div class="box">
+        <h3>三级标题</h3>
+        <p></p>
+        <span></span>
+     </div>
+     <h1>标题1</h1>
+     <h2>标题2</h2>
+     <h3>标题3</h3>
+     <p>段落</p>
+     <dl>
+        <dt>名词</dt>
+        <dd>名词解释</dd>
+     </dl>
+     <ul>
+         <li>列表</li>
+     </ul>
+
+</body>
+</html>

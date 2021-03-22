@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 旋转  3d
+            transform:rotate3d(x,y,z,angle);
+            x,y,z  里面填写的是0或者1   0表示没有  1表示有  angle 表示的是角度
+
+            transform:rotateX();
+            transform:rotateY();
+            transform:rotateZ();
+        */
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        
+        .box:hover {
+            /* 围绕的x轴方向  向上是正值  向下翻转是负值*/
+            /* transform: rotateX(-45deg); */
+            /* 围绕的Y轴旋转的方向 */
+            /* transform: rotateY(-60deg); */
+            /* 围绕z轴旋转  顺时针为正   逆时针为负值 */
+            /* transform: rotateZ(-45deg); */
+            /* 如果我们写三个值  0表示没有角度   非零的表示有角度  三个数字必须要写,没有的可以写0*/
+            transform: rotate3d(1, 1, 1, 45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

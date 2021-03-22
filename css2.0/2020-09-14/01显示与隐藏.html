@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* display: none;  表示隐藏   不保留原来的位置 */
+            display: none;
+        }
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: orchid;
+        }
+        /* 父盒子发生hover 子盒子显示 */
+        
+        .father:hover .box {
+            display: block;
+        }
+        /* 第二种方式 */
+        
+        .v-box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* 隐藏元素 */
+            visibility: hidden;
+        }
+        
+        .v-father:hover .v-box1 {
+            visibility: visible;
+        }
+        
+        .v-box2 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        
+        .o-box1,
+        .o-box2 {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        
+        .o-box1 {
+            opacity: 0;
+        }
+        
+        .o-box1:hover {
+            opacity: 1;
+        }
+        
+        .o-box2 {
+            background-color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 显示和隐藏的第一种方法
+        display:none/block;
+        none    表示隐藏  不占位置
+        block   除了转换成块元素之外  还有显示的意思
+    -->
+    <h2>显示和隐藏的第一种方法</h2>
+    <div class="father">
+        <div class="box"></div>
+    </div>
+    <div class="box2"></div>
+
+
+
+    <!-- 显示和隐藏的第二种方法 
+        visibility:hidden;/visible
+        hidden   表示隐藏  保留位置(停职留薪)
+        visible  表示显示
+    -->
+    <h2>显示和隐藏的第二种方法</h2>
+    <div class="v-father">
+        <div class="v-box1"></div>
+    </div>
+    <div class="v-box2"></div>
+
+    <!-- 隐藏与显示的第三种方法
+        opacity  表示的是不透明度  取值范围0-1
+        0 表示全透明
+        1 表示完全不透明
+    -->
+
+    <h2>显示和隐藏的第三种方法</h2>
+    <!-- <div class="o-father"></div> -->
+    <div class="o-box1"></div>
+    <div class="o-box2"></div>
+</body>
+
+</html>

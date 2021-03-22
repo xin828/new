@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            margin: 100px;
+            /* 2.调用动画 */
+            /* 动画名称  必填 */
+            /* animation-name: scale; */
+            /* 动画运动周期 必填 */
+            /* animation-duration: 1s; */
+            /* 动画曲线  默认ease */
+            /* animation-timing-function: linear; */
+            /* 动画播放的次数  默认的次数为1  infinite  表示无限次 */
+            /* animation-iteration-count: infinite; */
+            /* 动画等待延迟多长时间 */
+            /* animation-delay: 1s; */
+            /* 逆向播放  默认的是normal  alternate表示的是逆向 */
+            /* animation-direction: alternate; */
+            /* 结束后 的状态 forwards表示保持结束状态   backwards  表示回到初始状态   注意：使用这个属性次数不能设置为无限循环*/
+            /* animation-fill-mode: forwards; */
+            /* 总写   没有的可以省略*/
+            /* animation: scale 1s ease-in-out 1s infinite alternate; */
+            animation: scale 1s ease-in-out 1s 1 alternate;
+        }
+        
+        .box:hover {
+            /* 动画是否正在运行 */
+            animation-play-state: paused;
+        }
+        /* 1.定义动画 */
+        
+        @keyframes scale {
+            /* 0% {
+                transform: scale(1,1);
+            } */
+            50% {
+                transform: scale(1.2, 1.2);
+            }
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

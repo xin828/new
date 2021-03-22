@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 取消项目符 */
+
+li {
+    list-style: none;
+}
+
+
+/* 取消下划线 */
+
+a {
+    text-decoration: none;
+    color: #050505;
+    display: inline-block;
+}
+
+
+/* 导航栏 */
+
+.box {
+    position: relative;
+    left: 0;
+    width: 965px;
+    margin: auto;
+}
+
+.nav ul li {
+    float: left;
+    height: 32px;
+    width: 74px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: url(../img/nav_bg.gif) repeat-x;
+}
+
+.nav a {
+    color: #fff;
+}
+
+.nav img {
+    line-height: 32px;
+}
+
+.nav ul li img {
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.nav .time {
+    width: 190px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.nav .time a {
+    color: #f4fca7;
+}
+
+.nav .railway img {
+    margin-left: 15px;
+}
+
+.nav .pass img {
+    margin-left: 8px;
+}
+
+.nav .time img {
+    padding-left: 30px;
+}
+
+
+/*  内容上*/
+
+.content {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.new {
+    position: absolute;
+    top: 32px;
+    left: 210px;
+    width: 555px;
+}
+
+.new h2 {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    font-size: 14px;
+    color: #ce4813;
+}
+
+.content .head img {
+    display: block;
+    margin-left: 8px;
+}
+
+.content .head span {
+    position: absolute;
+    top: 206px;
+    left: 8px;
+    width: 30px;
+    height: 18px;
+    color: #fff;
+    font-size: 14px;
+    background: rgba(172, 133, 66, 0.5);
+}
+
+.content .head .ico {
+    margin: 10px 0 0 12px;
+}
+
+.content .state li {
+    height: 22px;
+    border-bottom: 1px dashed #d1d1d1;
+    font-size: 12px;
+}
+
+.content .state .buy {
+    font-size: 14px;
+    color: #0b00fd;
+}
+
+.content .state .book {
+    color: #f40800;
+    text-decoration: underline;
+}
+
+.content .state .red a {
+    color: #f40800;
+}
+
+.content .state span {
+    color: #78a0c3;
+}
+
+.content .state .year {
+    float: right;
+    color: #585c5d;
+    margin-right: 5px;
+}
+
+.content .state .more {
+    float: right;
+    border-bottom: none;
+}
+
+
+/* 内容下 */
+
+.ticket .bar li {
+    height: 34px;
+    width: 190px;
+    line-height: 34px;
+    margin: 0 0 3px 8px;
+    font-size: 12px;
+    background-color: #edf2fa;
+    border: 1px solid #d5e0f6;
+    text-indent: 24px;
+    background: url(../img/item_z.png) no-repeat;
+}
+
+.ticket .bar .click {
+    margin: 10px 0 0 8px;
+}
+
+.ticket ul li a {
+    color: #0005ed;
+}
+
+.ticket .tltel {
+    margin: 10px 0 0 6px;
+}
+
+.search h5 {
+    display: inline-block;
+}
+
+.full {
+    width: 560px;
+    height: 34px;
+    border: 1px solid #e2e2e2;
+    background: url(../img/search_bg1_1.gif);
+}
+
+.search input {
+    width: 366px;
+    height: 26px;
+    margin-top: 3px;
+    color: #797373;
+}
+
+.search {
+    position: absolute;
+    top: 280px;
+    left: 207px;
+}
+
+.search img {
+    vertical-align: middle;
+}
+
+.freight img {
+    margin-top: 3px;
+    border: 1px solid #d3e9f4;
+}
+
+.railway {
+    width: 562px;
+    height: 32px;
+    background-color: #f3f3f3;
+}
+
+.railway li {
+    float: left;
+    width: 129px;
+    height: 28px;
+    line-height: 28px;
+    margin: 3px 2px 2px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.railway li:hover {
+    border-top: 2px solid #fa0300;
+}
+
+.freight .railway li a {
+    color: #000;
+}
+
+.freight {
+    margin-bottom: 3px;
+}
+
+.railway .xin {
+    margin-left: 18px;
+}
+
+.railway .xi {
+    margin-right: 18px;
+}
+
+.place tr th {
+    width: 72px;
+    height: 28px;
+    font-size: 12px;
+    background-color: #f3f3f3;
+    text-align: right;
+}
+
+.place tr td {
+    width: 72px;
+    height: 28px;
+    font-size: 12px;
+    text-align: right;
+    border: 2px solid #f1f1f1;
+}
+
+.place tr .seat {
+    width: 52px;
+    height: 28px;
+    margin-left: 12px;
+    text-align: left;
+}
+
+.place {
+    margin-left: 6px;
+}
+
+.place table tr th {
+    padding: 0 10px 0 10px;
+}
+
+.place table tr td {
+    padding: 0 10px 0 10px;
+}
+
+.amount {
+    padding: 2px 0 2px 45px;
+    color: #fe040e;
+    font-size: 12px;
+}
+
+.search {
+    border: 2px solid #ebebeb;
+}
+
+.amount span {
+    float: right;
+    color: #0000e5;
+}
+
+
+/* 右边图片 */
+
+.photo img {
+    display: block;
+}
+
+.photo .advertising {
+    position: absolute;
+    bottom: 572px;
+    left: 0;
+    width: 26px;
+    height: 16px;
+    font-size: 12px;
+    color: #fff;
+    background: rgba(33, 10, 6, 0.6);
+}
+
+.photo {
+    position: absolute;
+    top: 183px;
+    left: 778px;
+}
+
+.cargo li {
+    height: 34px;
+    width: 190px;
+    line-height: 34px;
+    margin: 2px 0;
+    font-size: 12px;
+    background-color: #edf2fa;
+    border: 1px solid #d5e0f6;
+    text-indent: 24px;
+    background: url(../img/item_z.png) no-repeat;
+}
+
+.website a {
+    font-size: 12px;
+    text-indent: 6px;
+}
+
+.website {
+    width: 186px;
+    height: 155px;
+    overflow-y: auto;
+    background: url(../img/ico_link002.gif) repeat-y;
+}
+
+.link {
+    height: 10px;
+    background: url(../img/ico_link003.gif) repeat-x;
+}
+
+.foother {
+    height: 95px;
+    margin-top: 5px;
+    background-color: #7f017f;
+}

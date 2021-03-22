@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 注意： 浮动的元素互相贴靠一起的，但是如果父级宽度装不下这些浮动的盒子， 多出的盒子会另起一行对齐 */
+        .father{
+            width: 400px;
+            height: 300px;
+            border: 1px solid red;
+        } 
+        .son1{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .son2{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color:pink;
+        }
+        .son3{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color:purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son1">青龙</div>
+        <div class="son2">白虎</div>
+        <div class="son3">白虎</div>
+    </div>
+</body>
+</html>

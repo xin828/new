@@ -1,0 +1,17 @@
+//使用@定义变量   @变量名:值
+@bgColor :orange;
+
+
+/*变量名的 命名规范   
+    1.必须以@符为前缀
+    2.不能包含特殊字符  例如:@color~%#
+    3.不能以数字开头  例如:@1bg
+    4.区分大小写    @Color和@color  是有区别的
+*/
+p{
+    // background-color:orange;
+    background-color:@bgColor;
+}
+a{
+    color: @bgColor;
+}

@@ -1,0 +1,23 @@
+.fl {
+  float: left;
+}
+.border {
+  border: 5px dashed red;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: pink;
+}
+.box div {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+.box :nth-child(1) {
+  float: left;
+  border: 5px dashed red;
+}
+.box :nth-child(2) {
+  float: right;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            position: relative;
+            list-style: none;
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            margin-bottom: 10px;
+        }
+        
+        .item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 0;
+            height: 50px;
+            background-color: purple;
+            /* 谁发生变化  我们就给谁设置过渡(transition )  但是不能给hover设置*/
+            transition: all 1s;
+        }
+        /* item 要求三个颜色一轮换  这个里面是兄弟,,只有li有多个  每个li里面只有一个 */
+        
+        li:nth-child(3n+1) .item {
+            background-color: orange;
+        }
+        
+        li:nth-child(3n+2) .item {
+            background-color: yellow;
+        }
+        /* li标签hover的时候  item发生变化 */
+        
+        li:hover .item {
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="item"></div>
+        </li>
+        <li>
+            <div class="item"></div>
+        </li>
+        <li>
+            <div class="item"></div>
+        </li>
+        <li>
+            <div class="item"></div>
+        </li>
+        <li>
+            <div class="item"></div>
+        </li>
+        <li>
+            <div class="item"></div>
+        </li>
+        <li>
+            <div class="item"></div>
+        </li>
+        <li>
+            <div class="item"></div>
+        </li>
+    </ul>
+</body>
+
+</html>

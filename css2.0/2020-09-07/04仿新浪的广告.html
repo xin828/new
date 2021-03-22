@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .head-top {
+            /* 设置固定定位 */
+            position: fixed;
+            left: 200px;
+            top: 0;
+            width: 1519px;
+            height: 44px;
+            /* margin: auto; */
+        }
+
+        .content {
+            width: 1002px;
+            height: 1760px;
+            margin: 44px auto 0;
+        }
+ 
+        .img-lt,
+        .img-rt {
+            position: fixed;
+            top: 200px;
+        }
+
+        .img-lt {
+            left: 0;
+        }
+
+        .img-rt {
+            right: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 新浪顶部 -->
+    <div class="head-top">
+        <img src="img/top.png">
+    </div>
+    <!-- 新浪顶部结束 -->
+    <!-- 新浪内容区域 -->
+    <div class="content">
+        <img src="img/box.png">
+    </div>
+    <!-- 新浪内容区域结束 -->
+    <!-- 左右两侧 -->
+    <img src="img/ad-l.png" class="img-lt">
+    <img src="img/ad-r.png" class="img-rt">
+    <!-- 左右两侧结束 -->
+</body>
+
+</html>

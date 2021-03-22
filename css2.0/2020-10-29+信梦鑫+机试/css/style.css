@@ -1,0 +1,1255 @@
+/* 公共样式 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.red {
+    color: #e33333;
+}
+
+input,
+button {
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/* 版心 */
+
+.w1368 {
+    width: 1368px;
+    margin: 0 auto;
+}
+
+
+/* 公共样式结束 */
+
+
+/* 头部开始 */
+
+.head {
+    height: 55px;
+    background-color: #595959;
+}
+
+.dl {
+    width: 370px;
+    height: 44px;
+    padding-top: 11px;
+    background-color: #333333;
+}
+
+.menu {
+    margin: 0 25px 0 31px;
+}
+
+.dl em {
+    color: #fff;
+    font-size: 18px;
+}
+
+.account {
+    display: inline-block;
+    width: 108px;
+    height: 27px;
+    color: #8c8c8c;
+    text-align: center;
+    line-height: 27px;
+    border: 1px solid #e8820e;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-right: 23px;
+}
+
+.account i {
+    color: #e8820e;
+}
+
+.open {
+    display: inline-block;
+    width: 48px;
+    height: 27px;
+    color: #e88221;
+    text-align: center;
+    line-height: 27px;
+    border: 1px solid #e88221;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.seach input {
+    width: 264px;
+    height: 26px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #b6b6b6;
+    border-radius: 26px;
+    font-size: 12px;
+    line-height: 26px;
+    text-indent: 18px;
+}
+
+.chbar {
+    position: relative;
+    width: 264px;
+    height: 26px;
+    margin: 14px 0 0 70px;
+}
+
+.icon {
+    position: absolute;
+    right: 13px;
+    top: 6px;
+}
+
+.seach li {
+    float: left;
+    width: 105px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.seach li:hover a {
+    color: #fff;
+}
+
+.seach a {
+    color: #b4b4b4;
+    font-size: 12px;
+}
+
+.seach li:nth-child(4),
+.seach li:nth-child(5) {
+    background-color: #333;
+}
+
+.seach .white {
+    color: #fff;
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+.sj {
+    margin: 0 8px;
+}
+
+
+/* 头部结束 */
+
+
+/* 导航栏开始 */
+
+.nav {
+    height: 95px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+    margin: 17px 90px 0 90px;
+}
+
+.nav-b li {
+    position: relative;
+    float: left;
+    margin-left: 75px;
+}
+
+.nav-b li a {
+    line-height: 95px;
+    color: #474747;
+    font-size: 16px;
+}
+
+.nav-b li:hover a {
+    color: #eb810d;
+}
+
+.hot {
+    position: absolute;
+    left: 59px;
+    top: 21px;
+    width: 36px;
+    height: 27px;
+}
+
+
+/* 导航栏结束 */
+
+
+/* 轮播图开始 */
+
+.china {
+    position: relative;
+    width: 963px;
+    height: 472px;
+}
+
+.china span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #e8e8e9;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(8, 27, 43, .7);
+}
+
+.china .lt {
+    position: absolute;
+    top: 215px;
+    left: 84px;
+}
+
+.china .gt {
+    position: absolute;
+    top: 215px;
+    right: 17px;
+}
+
+.brown {
+    position: relative;
+    width: 405px;
+    height: 472px;
+    background-color: #422514;
+}
+
+.earnings {
+    width: 348px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 29px 0 0 28px;
+}
+
+.future {
+    margin-bottom: 10px;
+}
+
+.year {
+    margin: 8px 80px 0 40px;
+}
+
+.month {
+    margin-top: 8px;
+}
+
+.earnings p {
+    color: #555;
+    font-size: 12px;
+}
+
+.earnings h2 {
+    color: #e8810d;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.lo {
+    width: 348px;
+    height: 83px;
+    border-radius: 4px;
+    margin: 29px 0 0 28px;
+}
+
+.opens {
+    width: 308px;
+    height: 83px;
+    background-color: #5f371f;
+    padding: 0 15px 0 25px;
+    border-radius: 4px;
+    margin: 29px 0 0 28px;
+}
+
+.opens h5,
+p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.opens h5 {
+    padding: 10px 0 5px 0;
+}
+
+.one {
+    width: 348px;
+    height: 10px;
+    background-color: #5f371f;
+    margin: 29px 0 0 28px;
+    border-radius: 4px;
+}
+
+.top {
+    margin: 15px 0 0 187px;
+}
+
+.bottom {
+    margin: 20px 0 0 187px;
+}
+
+.hots {
+    width: 404px;
+    height: 320px;
+    background-color: #333333;
+}
+
+.hots span {
+    display: inline-block;
+    width: 90px;
+    height: 10px;
+    background-color: #cea879;
+}
+
+.hots h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 50px 0 38px 28px;
+}
+
+.hots a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.invest {
+    margin-bottom: 85px;
+}
+
+.hots h4 {
+    font-size: 14px;
+    color: #f29b1a;
+    font-weight: 400;
+}
+
+.hots p {
+    color: #919191;
+    font-size: 12px;
+}
+
+.hots td {
+    padding: 0 0 15px 20px;
+}
+
+
+/* ============ */
+
+.xiao {
+    width: 617px;
+    height: 320px;
+    background: url("../img/xiao.png") no-repeat;
+    margin-right: 14px;
+}
+
+.guo {
+    width: 320px;
+    height: 320px;
+    background: url("../img/guo.png") no-repeat;
+    margin-right: 13px;
+}
+
+.whites .xiao h3,
+.whites .guo h3 {
+    color: #fff;
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+.whites p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.five {
+    margin: 80px 0 0 80px;
+}
+
+.six {
+    margin: 80px 0 0 27px;
+}
+
+.know {
+    display: block;
+    width: 146px;
+    height: 40px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 2px;
+    margin-top: 45px;
+}
+
+
+/* ================ */
+
+.hope h2 {
+    color: #474747;
+    font-size: 29px;
+    margin: 0 0 36px 20px;
+}
+
+.hope ul {
+    width: 600px;
+    height: 50px;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+}
+
+.hope {
+    margin: 0 0 25px 380px;
+}
+
+.hope li {
+    float: left;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+}
+
+.hope li a {
+    color: #474747;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.hope li:hover {
+    background-color: #cea879;
+}
+
+.hope li:hover a {
+    color: #fff;
+}
+
+
+/* 轮播图结束 */
+
+
+/* 稳健投资开始 */
+
+.health {
+    position: relative;
+    height: 400px;
+    background-color: #f8f8f8;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    left: 530px;
+}
+
+.lay h3 {
+    font-size: 29px;
+    color: #474747;
+}
+
+.lay p {
+    color: #474747;
+    font-size: 13px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.fof h4 {
+    font-size: 19px;
+    font-weight: 400;
+    color: #474747;
+}
+
+.fof p {
+    font-size: 14px;
+    color: #919191;
+    margin-bottom: 12px;
+}
+
+.fof i {
+    display: inline-block;
+    color: #919191;
+    font-size: 14px;
+    width: 65px;
+}
+
+.fof em {
+    color: #ea8100;
+    font-size: 29px;
+}
+
+.fof a {
+    display: block;
+    width: 117px;
+    height: 32px;
+    color: #54301a;
+    font-size: 14px;
+    border: 1px solid #54301a;
+    border-radius: 4px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.centre {
+    width: 248px;
+    height: 148px;
+    border-right: 1px solid #eeeeee;
+}
+
+.tre {
+    margin-left: 40px;
+}
+
+.ment {
+    margin: 78px 0 0 240px;
+}
+
+.box {
+    margin: 70px 0 0 70px;
+}
+
+
+/* 稳健投资结束 */
+
+
+/* 医药基金开始 */
+
+.nation {
+    width: 1200px;
+    height: 520px;
+    border: 1px solid #eeeeee;
+    margin-left: 80px;
+}
+
+.fund {
+    margin-bottom: 90px;
+}
+
+.fund h2 {
+    color: #474747;
+    font-size: 29px;
+    text-align: center;
+    margin: 72px 0 11px 0;
+}
+
+.chance {
+    color: #919191;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.look li {
+    float: left;
+    width: 114px;
+    height: 130px;
+    text-align: center;
+    margin: 50px 62px 0 60px;
+}
+
+.look li p {
+    color: #474747;
+    font-size: 13px;
+}
+
+.look h5 {
+    font-size: 15px;
+    color: #474747;
+    margin-bottom: 14px;
+}
+
+.look p {
+    color: #b4b4b4;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.go {
+    margin-right: 21px;
+}
+
+.company {
+    margin-top: 25px;
+}
+
+.money {
+    width: 381px;
+    height: 250px;
+    background-color: #cea879;
+    padding-right: 1px;
+}
+
+.money h6 {
+    color: #fff;
+    font-size: 17px;
+    margin: 23px 0 0 29px;
+}
+
+.money p {
+    color: #fff;
+    font-size: 17px;
+    margin: 8px 0 0 10px;
+}
+
+.fang {
+    margin: 33px 0 0 70px;
+}
+
+.net {
+    width: 378px;
+    height: 250px;
+    background-color: #f8f8f8;
+}
+
+.net h6 {
+    color: #474747;
+    font-size: 17px;
+    margin: 23px 0 0 29px;
+}
+
+.wx {
+    margin: 52px 0 0 90px;
+}
+
+.app {
+    margin: 52px 0 0 27px;
+}
+
+.net img {
+    border: 1px solid #ff6600;
+}
+
+.net p {
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.wides {
+    position: relative;
+}
+
+.manager {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* 医药基金结束 */
+
+
+/* 热门基金开始 */
+
+.funds {
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.examine {
+    display: inline-block;
+    width: 136px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 12px;
+    color: #474747;
+    border: 1px solid #f29b0f;
+    border-radius: 4px;
+    margin-left: 77px;
+}
+
+.funds h2 {
+    color: #474747;
+    font-size: 28px;
+    margin-left: 12px;
+}
+
+.overseas li {
+    position: relative;
+    float: left;
+    width: 290px;
+    height: 284px;
+    border: 1px solid #eee;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.overseas h5 {
+    color: #474747;
+    font-size: 16px;
+    margin: 23px 0 10px 0;
+}
+
+.overseas p {
+    color: #b4b4b4;
+    font-size: 12px;
+}
+
+.overseas i,
+.overseas em,
+.overseas span {
+    display: block;
+}
+
+.overseas i {
+    color: #e8810d;
+    font-size: 24px;
+    margin: 15px 0 8px 0;
+}
+
+.overseas em {
+    color: #474747;
+    font-size: 12px;
+    margin: 20px 0 10px 0;
+}
+
+.overseas span {
+    color: #54301a;
+    width: 117px;
+    height: 32px;
+    border: 1px solid #54301a;
+    text-align: center;
+    margin-left: 86px;
+    line-height: 32px;
+    margin-top: 5px;
+}
+
+.overseas li:nth-child(1) {
+    border-top: 2px solid #f29b0f;
+}
+
+.overseas li:nth-child(2) {
+    border-top: 2px solid #649098;
+}
+
+.overseas li:nth-child(3) {
+    border-top: 2px solid #016397;
+}
+
+.overseas li:nth-child(4) {
+    border-top: 2px solid #016397;
+}
+
+.ss {
+    position: relative;
+    margin-left: 80px;
+}
+
+.tops {
+    position: absolute;
+    top: 0;
+    left: 585px;
+}
+
+.bottoms {
+    position: absolute;
+    bottom: -60px;
+    left: 585px;
+}
+
+.hotss {
+    margin-bottom: 90px;
+}
+
+.yuan {
+    position: absolute;
+    top: 11px;
+    left: 17px;
+    color: #fff;
+    display: block;
+    transform: rotate(-45deg);
+}
+
+.hai {
+    position: absolute;
+    top: 13px;
+    left: 1px;
+    color: #fff;
+    display: block;
+    transform: rotate(-45deg);
+}
+
+
+/* 热门基金结束 */
+
+
+/* 数据部分开始 */
+
+.navs {
+    height: 780px;
+}
+
+.all {
+    height: 50px;
+    background-color: #333;
+}
+
+.data li {
+    float: left;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+}
+
+.table {
+    margin-left: 80px;
+}
+
+.data li a {
+    font-size: 12px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.data li:hover {
+    background-color: #e8810d;
+}
+
+.om {
+    height: 580px;
+    width: 1200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.orange {
+    margin-top: 30px;
+    height: 630px;
+}
+
+.yell {
+    width: 1183px;
+    height: 2px;
+    background-color: #e8810d;
+    margin-top: 30px;
+}
+
+.data table tr {
+    height: 50px;
+}
+
+.data table td {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.thead {
+    width: 1183px;
+    background-color: #f5f5f5;
+}
+
+.orange .thead td {
+    border: 0;
+}
+
+.orange col:nth-of-type(1) {
+    width: 200px;
+}
+
+.orange col:nth-of-type(2) {
+    width: 130px;
+}
+
+.orange col:nth-of-type(3) {
+    width: 110px;
+}
+
+.orange col:nth-of-type(4) {
+    width: 110px;
+}
+
+.orange col:nth-of-type(5) {
+    width: 110px;
+}
+
+.orange col:nth-of-type(6) {
+    width: 110px;
+}
+
+.orange col:nth-of-type(7) {
+    width: 110px;
+}
+
+.orange col:nth-of-type(8) {
+    width: 110px;
+}
+
+.orange col:nth-of-type(9) {
+    width: 110px;
+}
+
+.orange col:nth-of-type(10) {
+    width: 110px;
+}
+
+.orange col:nth-of-type(11) {
+    width: 60px;
+}
+
+.orange span {
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin-left: 5px;
+    ;
+    background: url("../img/products_icon_rank_normal.png") no-repeat;
+}
+
+
+/* 数据部分结束 */
+
+
+/* 公司动态开始 */
+
+.states {
+    background-color: #f8f8f8;
+    padding-bottom: 22px;
+}
+
+.bazaar img {
+    width: 292px;
+    height: 136px;
+}
+
+.mo {
+    margin: 65px 93px 0 0;
+}
+
+.bazaar {
+    margin-left: 80px;
+}
+
+.bazaar li {
+    float: left;
+    width: 292px;
+    height: 206px;
+    background-color: #fff;
+    margin: 0 10px 20px 0;
+}
+
+.bazaar p {
+    color: #474747;
+    font-size: 14px;
+    padding: 0 15px;
+    margin-top: 14px;
+}
+
+.more h2 {
+    color: #474747;
+    font-size: 29px;
+    margin: 47px 0 33px 500px;
+}
+
+.xinx {
+    width: 100%;
+    height: 108px;
+}
+
+.xinx h2 {
+    float: left;
+    color: #474747;
+    font-size: 28px;
+    margin: 58px 0 0 618px;
+}
+
+.xinx a {
+    float: right;
+    color: #474747;
+    font-size: 14px;
+    margin: 65px 93px 0 0;
+}
+
+.morgan {
+    height: 220px;
+    margin-left: 140px;
+}
+
+.morgan span {
+    float: left;
+    color: #e98f0d;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.morgan ul {
+    margin-right: 46px;
+}
+
+.morgan li {
+    height: 80px;
+    width: 498px;
+    border-bottom: 1px solid #eee;
+    line-height: 80px;
+}
+
+.morgan li:hover p,
+.bazaar li:hover p {
+    color: #ea8100;
+}
+
+.morgan p {
+    float: left;
+    color: #474747;
+    font-size: 14px;
+}
+
+
+/* 公司动态结束 */
+
+
+/* 卓越实力开始 */
+
+.strength {
+    margin-top: 39px;
+    height: 600px;
+}
+
+.dates h2 {
+    font-size: 28px;
+    color: #474747;
+    margin-bottom: 20px;
+}
+
+.dates {
+    text-align: center;
+}
+
+.dates p {
+    color: #b4b4b4;
+    font-size: 14px;
+    margin-bottom: 62px;
+}
+
+.asset p {
+    color: #474747;
+    font-size: 16px;
+}
+
+.asset {
+    margin-left: 100px;
+}
+
+.asset li {
+    float: left;
+    width: 227px;
+    height: 180px;
+    margin-right: 195px;
+    text-align: center;
+}
+
+.middle i {
+    color: #ea8100;
+    font-size: 38px;
+    margin-right: 18px;
+}
+
+.middle em {
+    font-size: 16px;
+    color: #ea8100;
+}
+
+
+/* 卓越实力结束 */
+
+
+/* 理财故事开始 */
+
+.story {
+    background-color: #333;
+    height: 671px;
+}
+
+.box1 {
+    width: 340px;
+    height: 550px;
+    background-color: #c9a071;
+    text-align: center;
+}
+
+.news h2 {
+    font-size: 28px;
+    color: #fff;
+}
+
+.solve {
+    padding: 90px 0 12px 0;
+}
+
+.news {
+    padding: 58px 0 0 180px;
+}
+
+.guide li {
+    float: left;
+    width: 70px;
+    height: 90px;
+    margin: 45px 0 0 70px;
+}
+
+.guide p {
+    margin-top: 5px;
+}
+
+.wealth {
+    width: 568px;
+    height: 512px;
+    background-color: #fff;
+}
+
+.wealth h4 {
+    color: #474747;
+    font-size: 20px;
+    margin: 34px 0 30px 18px;
+}
+
+.wealth span {
+    display: block;
+    font-size: 15px;
+    color: #474747;
+    margin: 14px 0 17px 0;
+}
+
+.photo {
+    width: 492px;
+    height: 380px;
+    margin-left: 18px;
+    overflow: hidden;
+}
+
+.wealth p {
+    color: #919191;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.wealth {
+    position: relative;
+    margin-top: 20px;
+}
+
+.yellow {
+    position: absolute;
+    top: 93px;
+    right: 32px;
+    width: 5px;
+    height: 380px;
+    border-radius: 380px;
+    background: linear-gradient(to bottom, #cead89 30%, #eeeeee 50%);
+}
+
+
+/* 理财故事结束 */
+
+
+/* 服务介绍开始 */
+
+.serve {
+    padding: 35px 0 100px 0;
+    margin-left: 160px;
+}
+
+.serve dl {
+    float: left;
+    margin-right: 100px;
+}
+
+.serve dt {
+    color: #919191;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.serve dd:hover a {
+    color: #ea8100;
+}
+
+.serve dd {
+    color: #b4b4b4;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.code h5 {
+    color: #919191;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.ones {
+    margin-right: 24px;
+}
+
+.code p {
+    color: #b4b4b4;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+/* 服务介绍结束 */
+
+
+/* 版权开始 */
+
+.copy {
+    background-color: #333;
+    height: 77px;
+    padding-top: 20px;
+}
+
+.copy p {
+    color: #cea879;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+/* 版权 结束 */
+
+
+/* logo部分 */
+
+.log {
+    height: 128px;
+    width: 100%;
+}
+
+.footer {
+    margin-left: 800px;
+}
+
+.log img {
+    display: block;
+}
+
+.log img:first-child {
+    margin: 14px 0 26px 39px;
+}
+
+
+/* logo部分结束 */
+
+
+/* 固定定位开始 */
+
+.fixation {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+}
+
+
+/* 固定定位结束 */

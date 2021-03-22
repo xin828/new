@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+        
+        .map {
+            position: relative;
+            width: 747px;
+            height: 617px;
+            margin: auto;
+            background: url("map.png") no-repeat center;
+        }
+        
+        .city {
+            position: absolute;
+            right: 197px;
+            top: 230px;
+            color: #fff;
+        }
+        
+        .bj {
+            right: 197px;
+            top: 230px;
+        }
+        
+        .tb {
+            right: 83px;
+            top: 499px;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgb(0, 151, 255);
+        }
+        
+        div[class^="ring"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            border: 1px solid rgb(0, 151, 255);
+            box-shadow: 0 0 12px rgb(0, 151, 255);
+            animation: ringBig 1.2s linear infinite;
+        }
+        
+        .city .ring2 {
+            animation-delay: 0.4s;
+        }
+        
+        .city .ring3 {
+            animation-delay: 0.8s;
+        }
+        
+        @keyframes ringBig {
+            0% {}
+            70% {
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+            100% {
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map">
+        <div class="city bj">
+            <div class="dot"></div>
+            <div class="ring1"></div>
+            <div class="ring2"></div>
+            <div class="ring3"></div>
+        </div>
+        <div class="city tb">
+            <div class="dot"></div>
+            <div class="ring1"></div>
+            <div class="ring2"></div>
+            <div class="ring3"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

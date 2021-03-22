@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 取消项目符 */
+
+li {
+    list-style: none;
+}
+
+
+/* 取消下划线 */
+
+a {
+    text-decoration: none;
+    color: #b9b9b9;
+    display: inline-block;
+}
+
+
+/* 确定版心 */
+
+.w1170 {
+    width: 1170px;
+    margin: auto;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+
+/* 左浮动 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* 清除浮动 */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 头部 */
+
+.box {
+    background: #040404 url(../img/bg-top.jpg) no-repeat center top;
+    height: 520px;
+}
+
+.head .lg {
+    margin-top: 12px;
+}
+
+.head ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav li a {
+    line-height: 60px;
+    color: #b9b9b9;
+}
+
+.head-top {
+    height: 60px;
+    background: rgba(23, 24, 26, 0.5);
+    border-bottom: 1px solid #2f3031;
+}
+
+.head .game {
+    margin-left: 30px;
+}
+
+.support a {
+    line-height: 60px;
+    color: #b9b9b9;
+}
+
+.support .me {
+    margin-left: 30px;
+}
+
+.banner {
+    position: relative;
+    width: 970px;
+    padding: 53px 102px 0 98px;
+}
+
+.bnet {
+    margin-bottom: 77px;
+}
+
+.des {
+    line-height: 42px;
+    color: #62737e;
+    font-size: 30px;
+}
+
+.know {
+    position: relative;
+    top: -5px;
+    margin-left: 5px;
+    width: 92px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #62737e;
+    color: #62737e;
+}
+
+.sign-in {
+    width: 115px;
+    height: 35px;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0081b4;
+}
+
+.sign-up {
+    margin-left: 22px;
+    color: #00b6ff;
+    font-size: 12px;
+}
+
+.desktop {
+    position: absolute;
+    right: 100px;
+    top: 215px;
+}
+
+.gain {
+    color: #14a8f1;
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+
+/* 头部结束 */
+
+
+/* 内容 */
+
+.content {
+    height: 417px;
+    background-color: #d3d1ce;
+    border-bottom: 4px solid #777674;
+}
+
+.content li {
+    position: relative;
+    top: -58px;
+    left: 0;
+    margin-right: 30px;
+    float: left;
+    width: 160px;
+    height: 392px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #3e414a;
+}
+
+.world ul li a {
+    font-size: 14px;
+    color: #b2bac7;
+}
+
+.world li {
+    background: url(../img/wow.png) no-repeat;
+}
+
+.world .wow1 {
+    margin-left: 28px;
+}
+
+.world .wow6 {
+    margin-right: 0;
+}
+
+.world .wow1:hover {
+    background: url(../img/starcraft2.png) no-repeat;
+}
+
+.world .wow2:hover {
+    background: url(../img/destiny2.png) no-repeat;
+}
+
+.world .wow3:hover {
+    background: url(../img/diablo3.png) no-repeat;
+}
+
+.world .wow4:hover {
+    background: url(../img/hearthstone-cn.png) no-repeat;
+}
+
+.world .wow5:hover {
+    background: url(../img/heroes.png) no-repeat;
+}
+
+.world .wow6:hover {
+    background: url(../img/overwatch.png) no-repeat;
+}
+
+
+/* 内容结束 */
+
+
+/* 页面底部 */
+
+.foother {
+    background-color: #040404;
+    text-align: center;
+}
+
+.logo img {
+    margin: 30px 0 49px;
+}
+
+.with {
+    margin-bottom: 20px;
+}
+
+.with .work a {
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+.with .work li {
+    display: inline-block;
+}
+
+.with .work span {
+    margin: 0 10px;
+    height: 10px;
+    color: #b3b3b3;
+}
+
+.safety p {
+    font-size: 12px;
+    color: #4d4d4d;
+}
+
+.foother .safety .law {
+    color: #b3b3b3;
+}
+
+.home img {
+    margin-top: 14px;
+}
+
+.safety .health {
+    margin-bottom: 20px;
+}

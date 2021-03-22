@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.a用于左侧的门 */
+        
+        .nav1 {
+            /* 要转变显示模式,但是不能设置固定的宽度  通过padding把左侧按钮圆弧的地方推开 */
+            display: inline-block;
+            text-decoration: none;
+            height: 33px;
+            line-height: 33px;
+            padding-left: 18px;
+            color: #fff;
+            background: url(img/to.png) no-repeat left;
+        }
+        /* 2.span是用于右侧的门 */
+        
+        span {
+            display: inline-block;
+            height: 33px;
+            line-height: 33px;
+            padding-right: 18px;
+            background: url(img/to.png) no-repeat right;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="nav1">
+        <span>首页首页首页</span>
+    </a>
+</body>
+
+</html>

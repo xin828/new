@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .load {
+            width: 140px;
+            height: 26px;
+            margin: 50px auto;
+        }
+        
+        .load li {
+            position: relative;
+            float: left;
+            width: 11px;
+            height: 26px;
+            list-style: none;
+            margin-left: 1px;
+            background-color: #000;
+            border: 1px solid #000;
+        }
+        
+        .load li:first-child {
+            margin-left: 0px;
+        }
+        
+        .load li::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            width: 11px;
+            height: 26px;
+            opacity: 0;
+            background: linear-gradient(to bottom, rgb(142, 219, 250), rgb(20, 182, 247));
+            /* animation: change .5s linear forwards; */
+        }
+        /* li:nth-child(2)::after {
+            animation-delay: 0.5s;
+        }
+        
+        li:nth-child(3)::after {
+            animation-delay: 1s;
+        }
+        
+        li:nth-child(4)::after {
+            animation-delay: 1.5s;
+        }
+        
+        li:nth-child(5)::after {
+            animation-delay: 2s;
+        }
+        
+        li:nth-child(6)::after {
+            animation-delay: 2.5s;
+        }
+        
+        li:nth-child(7)::after {
+            animation-delay: 3s;
+        }
+        
+        li:nth-child(8)::after {
+            animation-delay: 3.5s;
+        }
+        
+        li:nth-child(9)::after {
+            animation-delay: 4s;
+        }
+        
+        li:nth-child(10)::after {
+            animation-delay: 4.5s;
+        } */
+        
+        @keyframes change {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="load">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <button>按钮</button>
+    <script>
+        var btn = document.querySelector('button');
+        var lis = document.querySelectorAll('.load li');
+        btn.onclick = function() {
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].style.animation = ' change .5s linear forwards ' + i * 0.5 + 's';
+            }
+        }
+    </script>
+</body>
+
+</html>

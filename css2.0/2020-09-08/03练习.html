@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 练习:
+            实现盒子左中.右中.中上.中下.中中定位
+         */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            margin: 0 auto;
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+            width: 100px;
+            height: 50px;
+        }
+
+        .box1 {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -25px;
+            background-color: red;
+        }
+
+        .box2 {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -50px;
+            background-color: orange;
+        }
+
+        .box3 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -25px;
+            background-color: yellow;
+        }
+
+        .box4 {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -25px;
+            background-color: green;
+        }
+
+        .box5 {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            margin-left: -50px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+</body>
+
+</html>

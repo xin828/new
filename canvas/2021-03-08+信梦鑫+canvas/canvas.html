@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="700" height="500"></canvas>
+    <script>
+        var data = [{
+            x: 50,
+            y: 50,
+            src: 'img/qy.jpg',
+            name: '卿洋'
+        }, {
+            x: 190,
+            y: 50,
+            src: 'img/xw.jpg',
+            name: '夏唯'
+        }, {
+            x: 330,
+            y: 50,
+            src: 'img/lj.jpg',
+            name: '罗佳'
+        }, {
+            x: 470,
+            y: 50,
+            src: 'img/qq.jpg',
+            name: '钱棋'
+        }, {
+            x: 610,
+            y: 50,
+            src: 'img/pcq.jpg',
+            name: '彭超群'
+        }, {
+            x: 50,
+            y: 180,
+            src: 'img/lxs.jpg',
+            name: '刘香狮'
+        }, {
+            x: 190,
+            y: 180,
+            src: 'img/xh.jpg',
+            name: '肖衡'
+        }, {
+            x: 330,
+            y: 180,
+            src: 'img/thn.jpg',
+            name: '谭欢妮'
+        }, {
+            x: 470,
+            y: 180,
+            src: 'img/cc.jpg',
+            name: 'cc'
+        }, {
+            x: 610,
+            y: 180,
+            src: 'img/tjb.jpg',
+            name: '唐锦标'
+        }, {
+            x: 50,
+            y: 420,
+            src: 'img/jlw.jpg',
+            name: '蒋梁文'
+        }, {
+            x: 190,
+            y: 300,
+            src: 'img/pql.jpg',
+            name: '彭奇龙'
+        }, {
+            x: 330,
+            y: 300,
+            src: 'img/xjg.jpg',
+            name: '信金桂'
+        }, {
+            x: 470,
+            y: 300,
+            src: 'img/l.jpg',
+            name: '李老师'
+        }, {
+            x: 610,
+            y: 300,
+            src: 'img/w.jpg',
+            name: '王老师'
+        }, {
+            x: 50,
+            y: 300,
+            src: 'img/y.jpg',
+            name: '杨老师'
+        }, {
+            x: 190,
+            y: 420,
+            src: 'img/yjj.jpg',
+            name: '佳佳老师'
+        }, {
+            x: 330,
+            y: 420,
+            src: 'img/z.jpg',
+            name: '张老师'
+        }];
+
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+        var imageWidth = 50;
+        var imageHeight = 50;
+        var r = 20;
+
+
+        function images(data) {
+            var x = data.x;
+            var y = data.y;
+            var image = new Image();
+            image.onload = function() {
+                ctx.save();
+                ctx.beginPath();
+                ctx.moveTo(x - imageWidth + r, y - imageHeight);
+                ctx.arcTo(x + imageWidth, y - imageHeight, x + imageWidth, y + imageHeight, r);
+                ctx.arcTo(x + imageWidth, y + imageHeight, x - imageWidth, y + imageHeight, r);
+                ctx.arcTo(x - imageWidth, y + imageHeight, x - imageWidth, y - imageHeight, r);
+                ctx.arcTo(x - imageWidth, y - imageHeight, x + imageWidth, y - imageHeight, r);
+                ctx.clip();
+                ctx.drawImage(image, x - imageWidth, y - imageHeight, imageWidth * 2, imageHeight * 2);
+                ctx.font = '20px 微软雅黑';
+                ctx.textAlign = 'center';
+                ctx.fillStyle = "blue";
+                ctx.fillText(data.name, x, y);
+                ctx.restore();
+                console.log(canvas.toDataURL('img/jpg', 1.0));
+            }
+            image.src = data.src;
+        }
+
+        data.forEach(val => {
+            images(val);
+        })
+    </script>
+</body>
+
+</html>

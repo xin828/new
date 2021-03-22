@@ -1,0 +1,1 @@
+html(超文本标记)head(头部)body(身体)title(标题)p(段落标签)img(图片标签)

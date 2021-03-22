@@ -1,0 +1,265 @@
+/* 轮播图开始 */
+.banner {
+  position: relative;
+  /* width: 100%; */
+  height: 9.2rem;
+  margin-bottom: 1.15rem;
+  background: url("../img/banner.png") no-repeat center;
+}
+.dot {
+  position: absolute;
+  bottom: 0.45rem;
+  left: 47%;
+}
+.dot li {
+  float: left;
+  width: 0.14rem;
+  height: 0.14rem;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  background-color: #fff;
+}
+.dot li:first-child {
+  background-color: transparent;
+  border: 0.03rem solid #fff;
+}
+.number {
+  position: absolute;
+  right: 1.8rem;
+  bottom: 0.38rem;
+  width: 1.2rem;
+}
+.number span,
+.number i {
+  color: #fff;
+  font-size: 0.16rem;
+}
+.number i {
+  float: right;
+}
+.number .wire {
+  position: relative;
+  width: 1.2rem;
+  height: 0.01rem;
+  margin: 0.22rem 0;
+  background-color: #7a766e;
+}
+.wire em {
+  position: absolute;
+  left: 0;
+  bottom: 0.01rem;
+  background-color: #fff;
+  width: 0.3rem;
+  height: 0.03rem;
+}
+/* 轮播图结束 */
+/* 羽绒服开始 */
+.coat span {
+  font-size: 0.3rem;
+  color: #000;
+  font-weight: bold;
+}
+.coat {
+  margin-bottom: 0.48rem;
+}
+.coat i {
+  font-size: 0.25rem;
+  color: #000;
+  margin: 0.04rem 0.1rem 0 0.06rem;
+}
+.coat img {
+  margin-top: 0.08rem;
+}
+.photo {
+  position: relative;
+  height: 7.25rem;
+}
+.photo .one {
+  position: absolute;
+  left: 0.01rem;
+  top: 0;
+  z-index: 1;
+}
+.photo .two {
+  position: absolute;
+  right: 0;
+  top: 0.69rem;
+}
+.photo {
+  margin-bottom: 0.4rem;
+}
+.down {
+  margin-bottom: 0.88rem;
+}
+/* 羽绒服结束 */
+/* 产品故事开始 */
+.story {
+  width: 100%;
+  height: 4.08rem;
+  margin-bottom: 0.75rem;
+  background: url("../img/gs.png") no-repeat center;
+}
+.product {
+  padding: 1rem 0 0.64rem 0;
+}
+.product h2 {
+  float: left;
+  font-size: 0.46rem;
+  color: #000;
+  margin-right: 0.5rem;
+}
+.product h3 {
+  float: left;
+  font-size: 0.45rem;
+  font-weight: 400;
+  color: #000;
+}
+.people p {
+  font-size: 0.16rem;
+  color: #000;
+  line-height: 0.32rem;
+}
+.arrows {
+  margin-bottom: 0.6rem;
+}
+.arrows span {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #988878;
+  color: #fff;
+  font-size: 0.3rem;
+  text-align: center;
+  line-height: 0.5rem;
+  margin-right: 0.25rem;
+}
+.quality li {
+  float: left;
+}
+.quality li h3 {
+  font-size: 0.22rem;
+  color: #000;
+  margin-bottom: 0.3rem;
+}
+.quality li p {
+  line-height: 0.36rem;
+  font-size: 0.16rem;
+  color: #000;
+}
+.quality li:first-child {
+  margin-left: 2.35rem;
+}
+.quality li:nth-child(2) {
+  margin: 0 1.1rem 0 0.6rem;
+}
+.quality li:nth-child(4) {
+  margin: 0 0.3rem 0 0.6rem;
+}
+.quality li:nth-child(2n) {
+  width: 2.7rem;
+}
+.jia {
+  position: relative;
+  margin-bottom: 1.15rem;
+}
+.jnd {
+  position: absolute;
+  top: 1.1rem;
+  right: 0;
+}
+/* 产品故事结束 */
+/* 品牌历史开始 */
+.history {
+  position: relative;
+  width: 100%;
+  height: 7.34rem;
+  background: url("../img/b_21.png") no-repeat center;
+}
+.bretagne {
+  width: 100%;
+  height: 14.22rem;
+  background-color: #efebe2;
+}
+.palm {
+  width: 5.5rem;
+  height: 100%;
+  background-color: #c3b9ad;
+}
+.brand {
+  position: absolute;
+  top: 6.72rem;
+  left: 0.55rem;
+  width: 18rem;
+  height: 3.58rem;
+  z-index: 1;
+  background-color: #fff;
+}
+.brands {
+  margin: 0 1.05rem;
+  padding-top: 0.65rem;
+}
+.title h2 {
+  color: #000;
+  font-size: 0.48rem;
+}
+.title span {
+  font-size: 0.45rem;
+  color: #000;
+}
+.terrace {
+  margin: 0.1rem 0 0 0.95rem;
+}
+.terrace p {
+  color: #3f3e3d;
+  font-size: 0.16rem;
+  line-height: 0.34rem;
+}
+.share {
+  width: 1.96rem;
+  height: 0.46rem;
+  background-color: #988878;
+  line-height: 0.46rem;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+.share span {
+  font-size: 0.16rem;
+  color: #fff;
+  margin-left: 0.15rem;
+}
+.relation h2 {
+  float: left;
+  font-size: 0.48rem;
+  color: #000;
+  margin-right: 0.4rem;
+}
+.relation i {
+  float: left;
+  font-size: 0.45rem;
+  color: #000;
+}
+.relation p {
+  color: #3f3e3d;
+  font-size: 0.16rem;
+  line-height: 0.36rem;
+}
+.bretagne {
+  position: relative;
+}
+.tie {
+  position: absolute;
+  bottom: 2.29rem;
+  left: 1.5rem;
+}
+.relation {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 2.45rem;
+}
+.us {
+  margin-bottom: 0.2rem;
+}
+.contact:first-child {
+  margin-bottom: 1.2rem;
+}
+/* 品牌历史结束 */

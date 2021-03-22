@@ -1,0 +1,16 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+.box {
+  width: 2rem;
+  height: 2rem;
+  background-color: pink;
+  font-size: 2rem;
+}

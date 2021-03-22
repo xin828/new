@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        /* 绘制矩形路径  不是独立路径 */
+        // ctx.rect(x, y, w, h);其中x和y表示起点的坐标,w,h分别表示宽高
+        // ctx.rect(100, 100, 300, 200);
+        // ctx.stroke();
+        ctx.fillStyle = "pink";
+        // ctx.fill();
+
+        /* 绘制矩形  有自己独立路径 */
+        // ctx.strokeRect(x, y, w, h);
+        // ctx.strokeRect(200, 100, 100, 150);
+        // ctx.fillRect(200, 100, 100, 150);
+        ctx.fillRect(100, 100, 200, 150);
+
+
+        /* 清除矩形区域 */
+        //clearRect(x,y,w,h)w,h分别表示擦除的区域
+        // ctx.clearRect(0, 0, 200, 150);
+
+        /* 擦掉整个画布 */
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    </script>
+</body>
+
+</html>

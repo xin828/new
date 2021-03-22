@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>个人信息表</div>
+    <!-- 标题标签 caption
+        语法格式：<caption>标题内容</caption>
+        特点：
+        1.定义表格的标题，文字居中并且在表格上方
+        2.caption标签必须紧跟table标签之后
+        3.caption标签只有在表格里面才有效
+
+        以下两个浏览器会自动生成
+        tbody表示的表格的身体
+        thead表示表格的头部
+
+    -->
+    <table border="2" cellspacing="0" cellpadding="0" width="500" height="100" align="center">
+        <!-- th也是一个单元格，只是和td不一样，会让里面的元素加粗又居中 -->
+        <caption>个人信息</caption>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>电话</th>
+        </tr>
+        <tr>
+            <td>小王</td>
+            <td>女</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>小明</td>
+            <td>男</td>
+            <td>120</td>
+        </tr>
+    </table>
+</body>
+</html>

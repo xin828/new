@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 328px;
+            height: 128px;
+            border: solid 1px red;
+            transform: translate(-50%, -50%);
+        }
+        
+        .box img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* 改变旋转中心点 */
+            transform-origin: right top;
+            /* 过渡 */
+            transition: all .5s;
+        }
+        /* box盒子hover的时候,图片发生变化 */
+        
+        .box:hover img:nth-of-type(1) {
+            transform: rotate(60deg);
+        }
+        
+        .box:hover img:nth-of-type(2) {
+            transform: rotate(120deg);
+        }
+        
+        .box:hover img:nth-of-type(3) {
+            transform: rotate(180deg);
+        }
+        
+        .box:hover img:nth-of-type(4) {
+            transform: rotate(240deg);
+        }
+        
+        .box:hover img:nth-of-type(5) {
+            transform: rotate(300deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img/peiqi6.jpg">
+        <img src="img/peiqi5.jpg" class="pq5">
+        <img src="img/peiqi4.jpg" class="pq4">
+        <img src="img/peiqi3.jpg" alt="">
+        <img src="img/peiqi2.jpg" alt="">
+        <img src="img/peiqi1.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

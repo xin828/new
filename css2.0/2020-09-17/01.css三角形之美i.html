@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 通过边框做小图标 */
+        
+        .box {
+            width: 0;
+            height: 0;
+            /* 先写大的 */
+            border: 20px solid skyblue;
+            /* 不需要的方向  边框颜色设置透明 */
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid transparent;
+        }
+        
+        .box1 {
+            width: 0;
+            height: 0;
+            /* 必须要写四个方向 */
+            border-left: 40px solid pink;
+            border-right: 40px solid orange;
+            border-top: 40px solid gray;
+            border-bottom: 40px solid yellow;
+        }
+        
+        .box2 {
+            width: 8px;
+            height: 8px;
+            border: 1px solid black;
+            border-left: 1px solid transparent;
+            /* border-right: 2px solid transparent; */
+            border-top: 1px solid transparent;
+            transform: rotate(45deg);
+            /*旋转*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div><br>
+    <div class="box1"></div><br>
+    <div class="box2"></div>
+</body>
+
+</html>

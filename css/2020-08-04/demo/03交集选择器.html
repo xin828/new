@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*交集选择器(不常用):既具有标签1的特点,又具有标签2的特点
+        格式:
+        标签选择器.类名选择器{
+            属性:属性值;
+        }
+        注意:两个地方不能有空格
+        */
+      /*选择文本为"二十不惑"*/
+      /*即是span标签又是类名为.text*/
+      span.text{
+          color: tomato;
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="text">p标签段落</p>
+        <span class="text">二十不惑</span>
+        <span>三十而已</span>
+    </div>
+</body>
+</html>

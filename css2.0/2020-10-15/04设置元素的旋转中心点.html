@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+             transform-origin的取值可以是百分数
+             还可以是方位名词  left  top  bottom  right
+             默认的是元素的中心点: transform-origin:50% 50% /
+             center center
+        */
+        
+        .wrap {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: 100px;
+            transition: all 2s;
+            /* 改变旋转的中心点 */
+            /* transform-origin: 50% 50%; */
+            transform-origin: left bottom;
+        }
+        
+        .wrap:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap"></div>
+</body>
+
+</html>

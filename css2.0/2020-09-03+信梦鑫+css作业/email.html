@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 300px;
+            height: 367px;
+            background-color:#eee;
+            margin: auto;
+
+        }
+        .logo img{
+            height:90px;
+            margin:0 40px 30px;
+        }
+       .qq img{
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        vertical-align: middle;
+       }
+       input{
+           width: 290px;
+           height: 46px;
+           background-color: #fff;
+           border: 0;
+           border-radius: 6px;
+           margin:0 4px;
+           color: #aaa;
+           padding-left: 16px;
+           font-size: 14px;
+       }
+       .phone{
+           margin-bottom:2px;
+       }
+      .remember{
+          margin: 16px 8px 16px 13px;
+      }
+      span{
+          color:#246183;
+          font-size: 12px;
+      }
+      .register{
+          width: 284px;
+          height: 44px;
+          font-size: 16px;
+          color: #fff;
+          text-align: center;
+          line-height:44px;
+          background-color:#146fdf;
+          margin:0 8px;
+          border-radius: 4px;
+      }
+      .password a{
+          text-decoration: none;
+          color: #246183;
+          font-size: 12px;
+          margin:0 6px;
+      }
+      .new{
+          float: right;
+      }
+      .password{
+          margin-top:25px;
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="logo">
+            <img src="./img/logo.png">
+        </div>
+        <div class="qq">
+            <input type="text" class="phone" value="QQ号码/手机/邮箱">
+            <input type="text" value="请输入你的QQ密码"><br>
+           <img src="img/checked.jpg" class="remember"><span>记住登录状态</span>
+            <div class="register">登录</div>
+        </div>
+        <div class="password">
+            <a href="#">忘了密码</a>
+            <a href="#" class="new">注册新账号</a>
+        </div>
+    </div>
+</body>
+</html>

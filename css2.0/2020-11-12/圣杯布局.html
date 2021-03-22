@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .demo {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .header,
+        .footer {
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background-color: #ccc;
+        }
+        
+        .body {
+            display: flex;
+            text-align: center;
+            height: 300px;
+            line-height: 300px;
+        }
+        
+        .bd-left,
+        .bd-right {
+            flex: 0 0 20%;
+            background-color: pink;
+            height: 100%;
+        }
+        
+        .bd-center {
+            flex: 1;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <div class="header">头部</div>
+        <div class="body">
+            <div class="bd-left">left</div>
+            <div class="bd-center">center</div>
+            <div class="bd-right">right</div>
+        </div>
+        <div class="footer">底部</div>
+</body>
+
+</html>

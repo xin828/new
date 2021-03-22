@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .box {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+        }
+        
+        .box img {
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            user-select: none;
+            pointer-events: none;
+        }
+        
+        canvas {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img/02.jpg" alt="">
+        <canvas width="600" height="400"></canvas>
+    </div>
+
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        //获取画布的宽高
+        var canvaswidth = canvas.width;
+        var canvasheight = canvas.height;
+
+        //先将盖在上面的图片绘制出来
+        var image = new Image();
+        //图片要加载
+        image.onload = function() {
+            ctx.drawImage(image, 0, 0, canvaswidth, canvasheight);
+
+            //设置目标图像和原图像的叠加方式
+            ctx.globalCompositeOperation = "destination-out";
+
+            //画线
+            //画线的样式
+            ctx.beginPath();
+            ctx.lineWidth = 10;
+            ctx.lineCap = "round";
+            ctx.lineJoin = "round";
+
+        }
+        image.src = "img/16.jpg";
+
+        //注册鼠标事件
+
+        //记录鼠标按下的点
+        var startPoint = {
+            x: null,
+            y: null
+        }
+
+        //getBoundingClientRect() 获取元素的坐标信息 位置信息 宽高
+
+        //鼠标按下,记录位置
+        canvas.addEventListener("mousedown", function(e) {
+
+            //获取鼠标按下距离canvas左上角的位置
+            startPoint = {
+                x: e.pageX - canvas.getBoundingClientRect().x,
+                y: e.pageY - canvas.getBoundingClientRect().y,
+            }
+
+            //鼠标移动事件
+            canvas.addEventListener("mousemove", moveHandle);
+        })
+
+        //移动处理函数
+        function moveHandle(e) {
+            var movePointer = {
+                    x: e.pageX - canvas.getBoundingClientRect().x,
+                    y: e.pageY - canvas.getBoundingClientRect().y,
+                }
+                // 拿到算好的点 直接画线
+            ctx.moveTo(startPoint.x, startPoint.y);
+            ctx.lineTo(movePointer.x, movePointer.y);
+            ctx.stroke();
+
+            //更新点 把上一次移动的点 作为下一次的开始点
+            startPoint = movePointer;
+
+            //边擦边检查的
+            testEmtyData();
+        }
+
+
+        // 鼠标松开 移除移动事件
+        canvas.addEventListener("mouseup", function() {
+            canvas.removeEventListener('mousemove', moveHandle);
+        })
+
+
+
+        function testEmtyData() {
+            //getImageData 获取画布某块区域的上像素点的信息
+            var canvasImgData = ctx.getImageData(0, 0, canvaswidth, canvasheight);
+            //取到想要的所有像素信息 r g b a
+            var canvasDataArr = canvasImgData.data;
+            // console.log(canvasDataArr);
+
+            var total = 0;
+
+            for (var i = 0; i < canvasDataArr.length; i += 4) {
+                var r = canvasDataArr[i];
+                var g = canvasDataArr[i + 1];
+                var b = canvasDataArr[i + 2];
+                var a = canvasDataArr[i + 3];
+                //相当于这个像素透明的 被擦除了
+                if (a == 0) {
+                    total++;
+                }
+            }
+
+            //等循环走完了,就可以知道擦除了多少个像素点
+            console.log(total);
+            console.log(total / (canvaswidth * canvasheight));
+            var percent = total / (canvaswidth * canvasheight) * 100;
+            //假设擦了65%  就清除全部画布
+            if (percent >= 65) {
+                ctx.clearRect(0, 0, canvaswidth, canvasheight);
+                console.log('擦完了');
+            }
+
+        }
+    </script>
+</body>
+
+</html>

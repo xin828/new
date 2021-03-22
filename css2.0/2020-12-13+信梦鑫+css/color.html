@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bootstrap/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <select class="bg">
+        <option value="green">green</option>
+        <option value="pink">pink</option>
+        <option value="red">red</option>
+    </select>
+    <button>换</button>
+    <script>
+        $(function() {
+            $('button').click(function() {
+                $('body').css('background-color', $('.bg').val())
+            })
+        })
+    </script>
+</body>
+
+</html>

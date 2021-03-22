@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.4.2.js"></script>
+    <script src="js/wordgame.js"></script>
+    <style>
+        #screen{
+            /* position: relative; */
+        }
+        #msg{
+            width: 100%;
+            height: 0px;
+            position: absolute;
+            top:0;
+            left: 0;
+            z-index: 999;
+            overflow: hidden;
+            background-color: #333333;
+            color: white;
+        }
+        #msg > p{
+            line-height: 35px;
+        }
+
+        #close{
+            position: absolute;
+            right: 0;
+            bottom:0;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#tim").click(function(){
+                $("#msg").css("height","500px")
+                $("#msg").css("transition","all 6s linear")
+            });
+
+            $("#close").click(function(){
+                $("#msg").css("height","0px")
+                $("#msg").css("transition","all 6s linear")
+            });
+
+            // $("#save").click(function(){
+            //     var fso;
+            //     try {
+            //     fso=new ActiveXObject("Scripting.FileSystemObject");
+            //     } catch (e) {
+            //     alert("当前浏览器不支持");
+            //     return;
+            //     }
+            //     var f1 = fso.createtextfile("words2.txt",true);
+            // });
+        })
+         
+    </script>
+</head>
+<body>
+    <div id="screen">
+        <div id="msg">
+            <h2>说明</h2>
+            <p>1.把你所要记住的单词以下面的格式写入到words.txt：<br />
+                如：head(头部)title(标题)table(表格)form(表单)
+            </p>
+            <p>2.可以在页面中调整单词中缺少的字母数量，也可以控制单词出现的速度，数值越大则越慢，反之则越快</p>
+            <!-- <p>添加单词：<textarea name="" id="" cols="30" rows="10"></textarea> </p>
+            <p><a href="javascript:void(0)" id="save">保存</a></p> -->
+            <span id="close">关闭</span>
+        </div>
+         <div id="logo">
+             <!-- <img src="images/words.png" alt="logo" /> -->
+             <h1 class="colorful">单词记忆游戏</h1>
+            </div>
+         <div class="menu">
+         <div>
+         缺少<input id="txtletterCount" type="text"  value="1"/>个字母
+         </div>
+         <div>
+         <input id="txtNewLetterTime"  value="2000"/>微秒后出现新单词
+         </div>
+         <div id="beginGame">
+         开始游戏
+         </div>
+         </div>
+         <div  id="tim">说明</div>
+    </div>
+
+</body>
+</html>

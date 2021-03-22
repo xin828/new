@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
+        var cvsw = ctx.canvas.width;
+        var cvsh = ctx.canvas.height;
+
+        /* 移动画笔  把起点放到圆心的位置*/
+        ctx.moveTo(cvsw / 2, cvsh / 2);
+
+        /* 绘制圆弧路径 */
+        ctx.arc(cvsw / 2, cvsh / 2, 150, 0, Math.PI / 2);
+        //闭合路径
+        ctx.closePath();
+        ctx.fillStyle = 'skyblue';
+        ctx.fill();
+        // 绘制描边
+        // ctx.stroke();
+    </script>
+</body>
+
+</html>

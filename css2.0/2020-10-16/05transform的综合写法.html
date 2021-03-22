@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  
+            2D转换的综合写法
+            transform: translate() rotate() scale();
+            属性之间用空格隔开
+            有顺序之分，一般如果有位移，要先写位移
+        */
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: all 1s;
+        }
+        
+        .box:hover {
+            /* 有顺序之分，一般如果有位移，要先写位移 */
+            transform: translate(100px, 50px) rotate(180deg) scale(1.2);
+            /* 总结：
+               1.顺序会影响到转换的效果(先旋转会改变坐标轴方向) 
+               2.同时有位置或者其他属性的时候，要将位移放到最前面 
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

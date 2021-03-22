@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*结构伪类选择器
+        E:first-child   选择E元素里面第一个子元素
+         
+        
+        */
+        
+        p:first-child {
+            background-color: yellowgreen;
+            font-weight: 700;
+        }
+        
+        li:first-child {
+            background-color: gray;
+            font-weight: 700;
+            color: orangered;
+        }
+        /* 
+        E:last-child  选择E元素里面的最后一个
+        */
+        
+        li:last-child {
+            background-color: yellow;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>这是一个段落1</p>
+        <p>这是一个段落2</p>
+        <a href="#">百度以下</a>
+        <span>这是一个盒子1</span>
+        <span>这是一个盒子2</span>
+    </div>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>
+            <ul>
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+            </ul>
+        </li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+</body>
+
+</html>
